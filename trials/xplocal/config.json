@@ -1,0 +1,24 @@
+{
+    "treatments": [
+        {
+            "action": "like",
+            "topic": "oscars"
+        },
+        {
+            "action": "",
+            "topic": ""
+        }
+    ],
+    "replication": 1,
+    "days": 2,
+    "experiment_id": "xplocal",
+    "platforms": [
+        "Reddit",
+        "YouTube",
+        "Twitter",
+        "Facebook"
+    ],
+    "email_template": "xplocalceap",
+    "database": "experiment.db",
+    "path": "/Users/hussam/Desktop/Projects/algopologist/trials/xplocal/data"
+}

@@ -5,6 +5,7 @@ import json
 LAB = 301
 
 # Determine the base directory based on the operating system
+
 if LAB == 301:
     print('LAB 301...')
 
@@ -25,7 +26,6 @@ if LAB == 317:  # Windows
     else: # Unix-like systems (Linux, macOS)
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
         DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
-
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')
