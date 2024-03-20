@@ -4,6 +4,7 @@ from core.utils.log import *
 import core.constants as constants
 import core.utils.monkey as monkey
 from core.platforms.Platform import Platform
+from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -495,7 +496,7 @@ class Reddit(Platform):
     def chromeLogin(self):
         try:
             wait(1)
-            monkey.click(x=1800, y=234)
+            monkey.click(x=CONTINUE_GOOGLE_X, y=CONTINUE_GOOGLE_Y)
         except Exception as e:
             print(e)
             pass

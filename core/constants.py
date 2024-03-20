@@ -1,15 +1,31 @@
 import os
 import json
 
+
+LAB = 301
+
 # Determine the base directory based on the operating system
-if os.name == 'nt':  # Windows
-    BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
-    DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
-    # BASE_DIR = "H:\\Desktop\\spartaaceap\\engine"
-    # DATA_DIR = "H:\\Desktop\\spartaaceap\\engine\\data"
-elif os.name == 'posix':  # Unix-like systems (Linux, macOS)
-    BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
-    DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
+
+if LAB == 301:
+    print('LAB 301...')
+
+    BASE_DIR = "H:\\Desktop\\algopologist"
+    DATA_DIR = "H:\\Desktop\\algopologist\\data"
+    
+    CONTINUE_GOOGLE_X = 1800
+    CONTINUE_GOOGLE_Y = 234
+
+if LAB == 317:  # Windows
+    CONTINUE_GOOGLE_X = 2300
+    CONTINUE_GOOGLE_Y = 233
+
+    if os.name == 'posix':        
+        BASE_DIR = '/Users/hussam/Desktop/Projects/Platform behavior'
+        DATA_DIR = '/Users/hussam/Desktop/Projects/Platforms behavior/data'
+
+    else: # Unix-like systems (Linux, macOS)
+        BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
+        DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')
@@ -44,7 +60,6 @@ except:
     print("Password file not found")
     BASIC_PASSWORD = 'password'
     COMPLEX_PASSWORD = 'password'
-
 
 def getPlatform(platform_name):
     platform_name = platform_name.lower()

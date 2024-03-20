@@ -8,6 +8,7 @@ from core.utils.log import debug, info, error
 from core.utils import monkey
 
 import core.constants as constants
+from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
 
 from abc import ABC, abstractclassmethod
 from PIL import Image
@@ -58,11 +59,7 @@ class Platform(ABC):
     def chromeLogin(self):
         try:
             wait(1)
-            screenWidth, screenHeight = gui.size()
-            if screenWidth == 1920:
-                monkey.click(x=1800, y=245)
-            else:
-                monkey.click(x=2300, y=230)
+            monkey.click(x=CONTINUE_GOOGLE_X, y=CONTINUE_GOOGLE_Y)
             return f'{self.userId}@spartaaceap.com'
         except Exception as e:
             print(e)
