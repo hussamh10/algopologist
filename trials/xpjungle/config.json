@@ -1,10 +1,8 @@
 {
     "experiment_id": "xpjungle",
     "database": "experiment.db",
-    "path" : "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xpjungle\\data",
+    "path" : "H:\\Desktop\\algopologist\\data\\trials\\xpjungle\\data",
     "platforms": [
-        "YouTube",
-        "Twitter",
         "Reddit"
     ],
     "1": {
