@@ -1,6 +1,7 @@
 import sys
 from core.account_creation.JuicySMS import juicy
 
+from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
 from core.utils.util import convertStringToNumber;
 from core.utils.log import debug
 from core.utils.util import wait
@@ -81,7 +82,7 @@ class Twitter(Platform):
 
     def chromeLogin(self):
         wait(4)
-        monkey.click(x=1800, y=234)
+        monkey.click(x=CONTINUE_GOOGLE_X, y=CONTINUE_GOOGLE_Y)
         wait(10)
         monkey.type('m')
         monkey.next()

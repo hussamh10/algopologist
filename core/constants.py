@@ -1,15 +1,31 @@
 import os
 import json
 
+
+LAB = 301
+
 # Determine the base directory based on the operating system
-if os.name == 'nt':  # Windows
-    # BASE_DIR = "C:\\Users\\hussa\\Desktop\\spartaaceap\\engine"
-    # DATA_DIR = "C:\\Users\\hussa\\Desktop\\spartaaceap\\engine\\data"
-    BASE_DIR = "H:\\Desktop\\spartaaceap\\engine"
-    DATA_DIR = "H:\\Desktop\\spartaaceap\\engine\\data"
-elif os.name == 'posix':  # Unix-like systems (Linux, macOS)
-    BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
-    DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
+
+if LAB == 301:
+    print('LAB 301...')
+
+    BASE_DIR = "H:\\Desktop\\algopologist"
+    DATA_DIR = "H:\\Desktop\\algopologist\\data"
+    
+    CONTINUE_GOOGLE_X = 1800
+    CONTINUE_GOOGLE_Y = 234
+
+if LAB == 317:  # Windows
+    CONTINUE_GOOGLE_X = 2300
+    CONTINUE_GOOGLE_Y = 233
+
+    if os.name == 'posix':        
+        BASE_DIR = '/Users/hussam/Desktop/Projects/Platform behavior'
+        DATA_DIR = '/Users/hussam/Desktop/Projects/Platforms behavior/data'
+
+    else: # Unix-like systems (Linux, macOS)
+        BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
+        DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')
@@ -45,26 +61,25 @@ except:
     BASIC_PASSWORD = 'password'
     COMPLEX_PASSWORD = 'password'
 
-
 def getPlatform(platform_name):
     platform_name = platform_name.lower()
     if platform_name == 'reddit':
-        from platforms.Reddit import Reddit
+        from core.platforms.Reddit import Reddit
         return Reddit
     elif platform_name == 'facebook':
-        from platforms.Facebook import Facebook
+        from core.platforms.Facebook import Facebook
         return Facebook
     elif platform_name == 'instagram':
-        from platforms.Instagram import Instagram
+        from core.platforms.Instagram import Instagram
         return Instagram
     elif platform_name == 'twitter':
-        from platforms.Twitter import Twitter
+        from core.platforms.Twitter import Twitter
         return Twitter
     elif platform_name == 'youtube':
-        from platforms.Youtube import Youtube
+        from core.platforms.Youtube import Youtube
         return Youtube
     elif platform_name == 'tiktok':
-        from platforms.TikTok import TikTok
+        from core.platforms.TikTok import TikTok
         return TikTok
     else:
         raise Exception('Platform not supported')
