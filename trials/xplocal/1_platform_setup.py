@@ -1,10 +1,14 @@
 import json
-from experiment.Experiment import Experiment
-from utils.log import debug, error, logging
-from utils.util import bigWait
+import sys
+sys.path.append('C:\\Users\\hussa\\Desktop\\algopologist')
 
+from core.browser.Selenium import BrowserFactory
+from core.experiment.Experiment import Experiment
+from core.utils.log import debug, error, logging
+from core.utils.util import bigWait
 
 if __name__ == "__main__":
+    BrowserFactory(browser_type='multi_ip')
     config = json.load(open('config.json', 'r'))
     platforms = config['platforms']
     print(config)
@@ -23,13 +27,13 @@ if __name__ == "__main__":
             subjects[subject.id][platform] = subject
 
     subject_names = list(subjects.keys())
-    for subject_name in subject_names[4:]:
-        # chrome = subjects[subject_name]['YouTube']
-        # signed = chrome.checkChromeSignin()
-        # debug(f'Chrome signed in: {signed}')
-        # if not signed:
-        #     error(f'Chrome not signed in: {subject_name}')
-        #     chrome.chromeSignIn()
+    for subject_name in subject_names:
+        chrome = subjects[subject_name]['YouTube']
+        signed = chrome.checkChromeSignin()
+        debug(f'Chrome signed in: {signed}')
+        if not signed:
+            error(f'Chrome not signed in: {subject_name}')
+            chrome.chromeSignIn()
 
         for platform in platforms:
             debug(f'Platform: {platform}, Subject: {subject_name}')

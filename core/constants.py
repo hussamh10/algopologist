@@ -3,10 +3,10 @@ import json
 
 # Determine the base directory based on the operating system
 if os.name == 'nt':  # Windows
-    # BASE_DIR = "C:\\Users\\hussa\\Desktop\\spartaaceap\\engine"
-    # DATA_DIR = "C:\\Users\\hussa\\Desktop\\spartaaceap\\engine\\data"
-    BASE_DIR = "H:\\Desktop\\spartaaceap\\engine"
-    DATA_DIR = "H:\\Desktop\\spartaaceap\\engine\\data"
+    BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
+    DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
+    # BASE_DIR = "H:\\Desktop\\spartaaceap\\engine"
+    # DATA_DIR = "H:\\Desktop\\spartaaceap\\engine\\data"
 elif os.name == 'posix':  # Unix-like systems (Linux, macOS)
     BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
     DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
@@ -49,22 +49,22 @@ except:
 def getPlatform(platform_name):
     platform_name = platform_name.lower()
     if platform_name == 'reddit':
-        from platforms.Reddit import Reddit
+        from core.platforms.Reddit import Reddit
         return Reddit
     elif platform_name == 'facebook':
-        from platforms.Facebook import Facebook
+        from core.platforms.Facebook import Facebook
         return Facebook
     elif platform_name == 'instagram':
-        from platforms.Instagram import Instagram
+        from core.platforms.Instagram import Instagram
         return Instagram
     elif platform_name == 'twitter':
-        from platforms.Twitter import Twitter
+        from core.platforms.Twitter import Twitter
         return Twitter
     elif platform_name == 'youtube':
-        from platforms.Youtube import Youtube
+        from core.platforms.Youtube import Youtube
         return Youtube
     elif platform_name == 'tiktok':
-        from platforms.TikTok import TikTok
+        from core.platforms.TikTok import TikTok
         return TikTok
     else:
         raise Exception('Platform not supported')

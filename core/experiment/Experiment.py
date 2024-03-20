@@ -1,12 +1,12 @@
 import json
 import os
 import pickle as pkl
-from utils.log import debug, error, info
-from account_creation.GoogleWorkspace import GoogleWorkspace
-from utils import shuffleIP as IP
-from utils.util import wait
-from constants import getPlatform
-from experiment.Subject import Subject
+from core.utils.log import debug, error, info
+from core.account_creation.GoogleWorkspace import GoogleWorkspace
+from core.utils import shuffleIP as IP
+from core.utils.util import wait
+from core.constants import getPlatform
+from core.experiment.Subject import Subject
 
 class Experiment():
     def __init__(self, config, platform):
@@ -63,7 +63,7 @@ class Experiment():
                 topic = treatment['topic']
                 name = f'{action}_{topic}_{replicate}' 
                 subject = Subject()
-                subject.create(self.config['path'], self.platform, name, action, topic, replicate, self.config['experiment_id'])
+                subject.create(self.config['path'], self.platform, name, action, topic, replicate, self.config['experiment_id'], None)
                 subject_list.append(subject.id)   
                 subjects.append(subject)
 

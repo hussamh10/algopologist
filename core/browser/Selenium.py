@@ -55,7 +55,7 @@ class UC_IP_Browser(Browser):
                 'https': f'https://{ip}'
             }
         }
-        self.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options)
+        self.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options, version_main=122)
         sleep(4)
         monkey.GotIt()
         sleep(2)

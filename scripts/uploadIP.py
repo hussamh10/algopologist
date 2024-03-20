@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append('/Users/hussam/Desktop/Projects/algopologist')
+sys.path.append('C:\\Users\\hussa\\Desktop\\algopologist')
 
 import sqlite3
 import pandas as pd
@@ -14,6 +14,7 @@ for ip in ips:
     ip = ip.split(":")
     user_ip = f'{ip[2]}:{ip[3]}@{ip[0]}:{ip[1]}'
     print(user_ip)
+    user_ips.append(user_ip)
 
 print(IP_DB_NAME)
 conn = sqlite3.connect(IP_DB_NAME)
@@ -23,7 +24,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS ip_addresses
 conn.commit()
 conn.close()
 
-pd = pd.DataFrame(ips, columns=["ip_address"])
+pd = pd.DataFrame(user_ips, columns=["ip_address"])
 pd['username'] = None
 pd = pd[['username', 'ip_address']]
 conn = sqlite3.connect(IP_DB_NAME)
