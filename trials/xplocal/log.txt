@@ -1,0 +1,121 @@
+DEBUG: Users required: 2
+DEBUG: No users created yet
+DEBUG: Creating users
+DEBUG: Users not uploaded to Google Admin yet
+DEBUG: Signing In Users...
+DEBUG: None
+DEBUG: SIGNING IN: {'fname': 'Julissa', 'lname': 'Charania', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_account_setup': False, 'google_signin': False, 'chrome_signin': False, 'chrome_session': None, 'reddit': 0, 'twitter': 0, 'youtube': 0, 'tiktok': 0}
+DEBUG: Creating account for xplocalceap0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Users required: 2
+DEBUG: No users created yet
+DEBUG: Creating users
+DEBUG: Users not uploaded to Google Admin yet
+DEBUG: Signing In Users...
+DEBUG: None
+DEBUG: SIGNING IN: {'fname': 'Julia', 'lname': 'Barrios', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_account_setup': False, 'google_signin': False, 'chrome_signin': False, 'chrome_session': None, 'reddit': 0, 'twitter': 0, 'youtube': 0, 'tiktok': 0}
+ERROR: User 'xplocalceap0' is already assigned an IP address.
+DEBUG: Creating account for xplocalceap0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Users required: 2
+DEBUG: No users created yet
+DEBUG: Creating users
+DEBUG: Users required: 2
+DEBUG: No users created yet
+DEBUG: Creating users
+DEBUG: Users not uploaded to Google Admin yet
+DEBUG: Signing In Users...
+DEBUG: None
+DEBUG: SIGNING IN: {'fname': 'Billy', 'lname': 'Lawhorn', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_account_setup': False, 'google_signin': False, 'chrome_signin': False, 'chrome_session': None, 'reddit': 0, 'twitter': 0, 'youtube': 0, 'tiktok': 0}
+ERROR: User 'xplocalceap0' is already assigned an IP address.
+DEBUG: Creating account for xplocalceap0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1
+DEBUG: Signed In
+DEBUG: Waiting for 5 minutes
+DEBUG: None
+DEBUG: SIGNING IN: {'fname': 'Kevin', 'lname': 'Mena', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_account_setup': False, 'google_signin': False, 'chrome_signin': False, 'chrome_session': None, 'reddit': 0, 'twitter': 0, 'youtube': 0, 'tiktok': 0}
+DEBUG: Creating account for xplocalceap1@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1
+DEBUG: Signed In
+DEBUG: Waiting for 5 minutes
+DEBUG: Users created and chromed signed in
+DEBUG: Loading experiment config
+DEBUG: Saving experiment
+DEBUG: Initiating Reddit experiment...
+DEBUG: 	 Creating subjects
+DEBUG: Users required: 2
+DEBUG: Enough users already created: [{'fname': 'Julissa', 'lname': 'Charania', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Joseph', 'lname': 'Troutman', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Julia', 'lname': 'Barrios', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Joe', 'lname': 'Foster', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Billy', 'lname': 'Lawhorn', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Kevin', 'lname': 'Mena', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}]
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Initiating Reddit experiment...
+DEBUG: 	 Creating subjects
+DEBUG: Users required: 2
+DEBUG: Enough users already created: [{'fname': 'Julissa', 'lname': 'Charania', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Joseph', 'lname': 'Troutman', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Julia', 'lname': 'Barrios', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Joe', 'lname': 'Foster', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Billy', 'lname': 'Lawhorn', 'email': 'xplocalceap0@spartaaceap.com', 'id': 'xplocalceap0', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap0', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}, {'fname': 'Kevin', 'lname': 'Mena', 'email': 'xplocalceap1@spartaaceap.com', 'id': 'xplocalceap1', 'exp': 'xplocal', 'google_signin': None, 'chrome_signin': 1, 'chrome_session': 'xplocalceap1', 'reddit': None, 'twitter': None, 'youtube': None, 'tiktok': None, 'facebook': None}]
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Initiating Reddit experiment...
+DEBUG: 	 Creating subjects
+DEBUG: 			 Assigning xplocalceap0 chrome for like_oscars_0
+DEBUG: 			 Assigning xplocalceap1 chrome for __0
+DEBUG: Loading experiment config
+DEBUG: Saving experiment
+DEBUG: Initiating YouTube experiment...
+DEBUG: 	 Creating subjects
+DEBUG: 			 Assigning xplocalceap0 chrome for like_oscars_0
+DEBUG: 			 Assigning xplocalceap1 chrome for __0
+DEBUG: Loading experiment config
+DEBUG: Saving experiment
+DEBUG: Initiating Twitter experiment...
+DEBUG: 	 Creating subjects
+DEBUG: 			 Assigning xplocalceap0 chrome for like_oscars_0
+DEBUG: 			 Assigning xplocalceap1 chrome for __0
+DEBUG: Loading experiment config
+DEBUG: Saving experiment
+DEBUG: Initiating Facebook experiment...
+DEBUG: 	 Creating subjects
+DEBUG: 			 Assigning xplocalceap0 chrome for like_oscars_0
+DEBUG: 			 Assigning xplocalceap1 chrome for __0
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: Chrome signed in: True
+DEBUG: Platform: Reddit, Subject: like_oscars_0
+DEBUG: 	 Signing in like_oscars_0 on Reddit
+Loading browser for user: xplocalceap0

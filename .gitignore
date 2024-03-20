@@ -3,6 +3,7 @@ data/sessions/
 data/users/
 data/*.db
 res/
+trials/*/data/
 
 __pycache__/
 *.py[cod]

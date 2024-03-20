@@ -112,9 +112,14 @@ class Subject():
         self.topic = topic
         self.replicate = replicate
         self.experiment_id = experiment_id
-        self.email = email
-        self.chrome = email.split('@')[0]
-        self.chromeid = self.chrome
+        if email is None:
+            self.email = None
+            self.chrome = None
+            self.chromeid = None
+        else:
+            self.email = email
+            self.chrome = email.split('@')[0]
+            self.chromeid = self.chrome
         self.Platform = getPlatform(self.platform)
 
 
