@@ -1,0 +1,10 @@
+innertube==2.1.10
+names==0.3.0
+pandas
+pillow==10.2.0
+praw
+PyAutoGUI
+selenium==4.12.0
+tqdm
+undetected-chromedriver==3.5.5
+webdriver-manager==4.0.1

@@ -1,0 +1,9 @@
+data/sessions/
+data/users/
+res/
+
+__pycache__/
+*.py[cod]
+**/.DS_Store
+**/.vscode
+
