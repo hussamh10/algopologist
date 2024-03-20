@@ -1,12 +1,11 @@
 {
     "experiment_id": "xpjungle",
     "database": "experiment.db",
-    "path" : "H:\\Desktop\\spartaaceap\\engine\\xpjungle\\data",
+    "path" : "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xpjungle\\data",
     "platforms": [
         "YouTube",
         "Twitter",
-        "Reddit",
-        "Facebook"
+        "Reddit"
     ],
     "1": {
         "email": "xpjungleaceap1@spartaaceap.com",

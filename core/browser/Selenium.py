@@ -37,7 +37,7 @@ class Browser:
         return self.driver
 
     def closeDriver(self):
-        self.driver.quit()
+        pass
 
 class UC_IP_Browser(Browser):
     def __init__(self, session):
@@ -85,7 +85,7 @@ class UC_single_Browser(Browser):
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-infobars")
         
-        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False)
+        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=122)
         sleep(4)
         monkey.GotIt()
         sleep(2)

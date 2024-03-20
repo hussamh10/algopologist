@@ -8,3 +8,67 @@ run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • 
 run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
 run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
 run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
+DEBUG: Signed In
+DEBUG: Google signed in: 0
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+ERROR: 	 Error signing in like_oscars_0 on YouTube
+ERROR: 	 HTTPConnectionPool(host='localhost', port=52436): Max retries exceeded with url: /session/c10daef0de0de8260775f396dab2f690/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000140CA568BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+DEBUG: Signed in like_oscars_0 on YouTube
+DEBUG: Waiting for 1 minutes
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Youtube\create-91bcf25a.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_oscars_0 on YouTube
+DEBUG: Waiting for 1 minutes
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Twitter\create-e8f41659.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_oscars_0 on Twitter
+DEBUG: Waiting for 1 minutes
+DEBUG: Platform: Reddit, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Email: xpjungleaceap1@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Reddit\create-91e04566.png
+DEBUG: Signal added: create
