@@ -7,7 +7,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import undetected_chromedriver as uc
-from seleniumwire import undetected_chromedriver as seleniumwire_uc
 from time import sleep
 import core.constants as constants
 import pickle as pkl
@@ -41,6 +40,8 @@ class Browser:
 
 class UC_IP_Browser(Browser):
     def __init__(self, session):
+        from seleniumwire import undetected_chromedriver as seleniumwire_uc
+
         self.session = session
         path = os.path.join(constants.SESSIONS_PATH, self.session)
         options = uc.ChromeOptions()

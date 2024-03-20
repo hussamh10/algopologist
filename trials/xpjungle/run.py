@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.append("C:\\Users\\hussa\\Desktop\\algopologist")
+sys.path.append("H:\\Desktop\\algopologist")
 
 
 # sys.path.append(os.path.join('H:/', 'Desktop', 'spartaaceap', 'engine', 'src'))
