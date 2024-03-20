@@ -8,8 +8,8 @@ if os.name == 'nt':  # Windows
     BASE_DIR = "H:\\Desktop\\spartaaceap\\engine"
     DATA_DIR = "H:\\Desktop\\spartaaceap\\engine\\data"
 elif os.name == 'posix':  # Unix-like systems (Linux, macOS)
-    BASE_DIR = '/Users/hussam/Desktop/Projects/Platform behavior'
-    DATA_DIR = '/Users/hussam/Desktop/Projects/Platforms behavior/data'
+    BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
+    DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')

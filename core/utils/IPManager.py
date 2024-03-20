@@ -9,7 +9,7 @@ class IPManager:
         conn = sqlite3.connect(IP_DB_NAME)
         c = conn.cursor()
         c.execute('''CREATE TABLE IF NOT EXISTS ip_addresses
-                     (username TEXT PRIMARY KEY, ip_address TEXT UNIQUE)''')
+                     (username TEXT, ip_address TEXT UNIQUE)''')
         conn.commit()
         conn.close()
 
