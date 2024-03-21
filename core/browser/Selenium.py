@@ -12,6 +12,7 @@ import core.constants as constants
 import pickle as pkl
 import core.utils.monkey as monkey
 from core.utils.IPManager import IPManager
+from core.utils.log import debug, error, info, log
 
 class BrowserFactory:
     _instance = None
@@ -39,24 +40,42 @@ class Browser:
         pass
 
 class UC_IP_Browser(Browser):
-    def __init__(self, session):
+    _instance = None
+
+    def __new__(cls, session):
+        if cls._instance is None:
+            info('Creating new instance of UC_IP_Browser')
+            cls._instance = super().__new__(cls)
+            cls._init_once(cls._instance, session)
+        elif cls._instance.session != session:
+            info('Recreating instance of UC_IP_Browser')
+            cls._instance._closeDriver()
+            sleep(10)
+            cls._instance = super().__new__(cls)
+            cls._init_once(cls._instance, session)
+        else:
+            info('Reusing instance of UC_IP_Browser')
+        return cls._instance
+
+    @classmethod
+    def _init_once(cls, instance, session):
         from seleniumwire import undetected_chromedriver as seleniumwire_uc
 
-        self.session = session
-        path = os.path.join(constants.SESSIONS_PATH, self.session)
+        instance.session = session
+        path = os.path.join(constants.SESSIONS_PATH, instance.session)
         options = uc.ChromeOptions()
         options.add_argument("--disable-notifications")
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-infobars")
 
-        ip = IPManager.get_ip(self.session)
+        ip = IPManager.get_ip(instance.session)
 
         sw_options = {
             'proxy': {
                 'https': f'https://{ip}'
             }
         }
-        self.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options, version_main=122)
+        instance.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options, version_main=122)
         sleep(4)
         monkey.GotIt()
         sleep(2)
@@ -67,6 +86,9 @@ class UC_IP_Browser(Browser):
         gui.hotkey('win', 'up')
         sleep(5)
         return 
+    
+    def _closeDriver(self):
+        self.driver.quit()
 
 class UC_single_Browser(Browser):
     _instance = None
@@ -97,6 +119,6 @@ class UC_single_Browser(Browser):
         gui.hotkey('win', 'up')
         sleep(5)
 
-    def close_driver(self):
+    def closeDriver(self):
         pass
     

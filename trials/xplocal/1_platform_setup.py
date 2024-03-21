@@ -6,6 +6,7 @@ from core.browser.Selenium import BrowserFactory
 from core.experiment.Experiment import Experiment
 from core.utils.log import debug, error, logging
 from core.utils.util import bigWait
+from ping import getItem, updateItem, basicSetup
 
 if __name__ == "__main__":
     BrowserFactory(browser_type='multi_ip')
@@ -27,6 +28,7 @@ if __name__ == "__main__":
             subjects[subject.id][platform] = subject
 
     subject_names = list(subjects.keys())
+
     for subject_name in subject_names:
         chrome = subjects[subject_name]['YouTube']
         signed = chrome.checkChromeSignin()
@@ -36,11 +38,16 @@ if __name__ == "__main__":
             chrome.chromeSignIn()
 
         for platform in platforms:
+            item = f'{platform}_{subject_name}'
+            if getItem(item) == 1:
+                debug(f'{subject_name} already setup')
+                continue
             debug(f'Platform: {platform}, Subject: {subject_name}')
             subject = subjects[subject_name][platform]
             try:
                 debug(f'\t Signing in {subject_name} on {platform}')
                 signed = subject.platformSignIn()
+                updateItem(item, 1)
             except Exception as e:
                 error(f'\t Error signing in {subject_name} on {platform}')
                 error(f'\t {e}')

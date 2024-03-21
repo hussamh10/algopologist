@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 sys.path.append('C:\\Users\\hussa\\Desktop\\algopologist')
 
 from core.utils.util import wait, bigWait
@@ -9,6 +10,7 @@ from core.utils.log import debug, error, logging
 from core.experiment.Experiment import Experiment
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
 from core.browser.Selenium import BrowserFactory
+from ping import getItem, updateItem, basicSetup
 
 if __name__ == "__main__":
     BrowserFactory(browser_type='multi_ip')
@@ -17,6 +19,10 @@ if __name__ == "__main__":
     print(config)
     IPManager.initialize_db()
     # IPManager.update_db_from_csv('data\\ip.csv')
+
+    if getItem('google') == 1:
+        debug("Google already setup")
+        exit()
 
     GW = GoogleWorkspace()
     if GW.needUsers(config):
@@ -35,6 +41,8 @@ if __name__ == "__main__":
             if subject.id not in subjects:
                 subjects[subject.id] = dict()
             subjects[subject.id][platform] = subject
+
+    updateItem('google', 1)
 
     subject_names = list(subjects.keys())
     print(subject_names)
