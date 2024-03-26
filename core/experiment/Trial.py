@@ -1,3 +1,4 @@
+import pandas as pd
 from core.utils.log import debug
 from core.utils.util import wait
 from time import sleep
@@ -32,33 +33,32 @@ class Trial():
     def closeDriver(self):
         self.user.closeDriver()
 
-    def runExperiment(self):
+    def runExperiment(self, topics):
         debug('User loaded')
+
+        searchable = topics[self.platform.name][self.action][self.topic]
 
         dump = 'No Treatment'
         if self.action == '':
             pass
 
         if self.action == 'search':
-            self.user.search(self.topic)
-
-        if self.action == 'comment':
-            self.user.comment(self.topic, self.supplement)
+            self.user.search(searchable)
 
         if self.action == 'open':
-            dump = self.user.openPost(self.topic)
+            dump = self.user.openPost(searchable)
 
         if self.action == 'dislike':
-            self.user.dislikePost(self.topic)
+            self.user.dislikePost(searchable)
 
         if self.action == 'like':
-            dump = self.user.likePost(self.topic)
+            dump = self.user.likePost(searchable)
 
         if self.action == 'join':
-            self.user.joinCommunity(self.topic)
+            self.user.joinCommunity(searchable)
 
         if self.action == 'follow':
-            self.user.followUser(self.topic)
+            self.user.followUser(searchable)
 
         if self.action == 'vanilla':
             if self.platform.name == 'reddit':

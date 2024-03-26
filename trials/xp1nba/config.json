@@ -26,18 +26,18 @@
         }
 
     ],
-    "replication": 1,
+    "replication": 3,
     "days": 2,
-    "experiment_id": "xplocal",
+    "experiment_id": "xp1nba",
     "platforms": [
         "Reddit",
         "YouTube",
         "Twitter",
         "Facebook"
     ],
-    "email_template": "xplocalceap",
+    "email_template": "xp1nba",
     "database": "experiment.db",
-    "path": "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xplocal\\data",
+    "path": "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xp1nba\\data",
 
     "topics": {
         "youtube": {

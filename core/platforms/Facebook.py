@@ -13,8 +13,9 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from datetime import datetime
 import names
-
+import os
 import imaplib
+import sqlite3
 import email
 from email.header import decode_header
 from email.utils import parsedate_to_datetime
@@ -81,11 +82,24 @@ class Facebook(Platform):
     url='https://www.facebook.com'
     search_url='https://www.facebook.com/search/pages/?q=%s'
     creation_url='https://www.facebook.com/reg'
+    login_url='https://www.facebook.com/login'
 
     def __init__(self, userId):
         super().__init__(Facebook.name, Facebook.url, userId)
 
+    def signIn(self):
+        self.loadPage(Facebook.login_url)
+        wait(2)
+        phone = self.getPhone()
+        monkey.type(self.getPhone())
+        monkey.next()
+        monkey.type(constants.BASIC_PASSWORD)
+        monkey.enter()
+
     def createUserMobile(self, info):
+        if self.userExists():
+            return
+
         areas = {'USA': '+1', 'NL': '+31' , 'UK': '+44'}
         sms = juicy()
 
@@ -131,6 +145,38 @@ class Facebook(Platform):
         wait(5)
         monkey.enter()
         wait(5)
+        phone_number = f'{areas[area]}{phone}'
+        self.saveUser(phone_number)
+
+    def saveUser(self, phone_number):   
+        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        db = sqlite3.connect(path)
+        cursor = db.cursor()
+        cursor.execute('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, phone TEXT)')
+        cursor.execute('INSERT INTO users (id, phone) VALUES (?, ?)', (self.userId, phone_number))
+        db.commit()
+        
+
+    def userExists(self):
+        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        db = sqlite3.connect(path)
+        cursor = db.cursor()
+        cursor.execute('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, phone TEXT)')
+        cursor.execute('SELECT * FROM users WHERE id=?', (self.userId,))
+        user = cursor.fetchone()
+        if user == None:
+            return False
+        return True
+
+    def getPhone(self):
+        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        db = sqlite3.connect(path)
+        cursor = db.cursor()
+        cursor.execute('SELECT * FROM users WHERE id=?', (self.userId,))
+        user = cursor.fetchone()
+        if user == None:
+            return None
+        return user[1]
 
     def createUser(self, info):
         self.createUserMobile(info)
