@@ -217,11 +217,11 @@ class Subject():
         logger = Logger(self.path, self.platform, self.experiment_id)
         logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
 
-    def treatment(self):
+    def treatment(self, topics):
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)
         trial.loadUser()
         try:
-            dump = trial.runExperiment()
+            dump = trial.runExperiment(topics)
         except Exception as e:
             error(e)
             trial.closeDriver()
