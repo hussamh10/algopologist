@@ -15,6 +15,7 @@ from ping import getItem, updateItem, basicSetup
 if __name__ == "__main__":
     BrowserFactory(browser_type='multi_ip')
     config = json.load(open('config.json', 'r'))
+    basicSetup(config)
     platforms = config['platforms']
     print(config)
     IPManager.initialize_db()

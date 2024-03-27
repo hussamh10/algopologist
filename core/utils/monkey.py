@@ -18,7 +18,7 @@ def remindMeLater():
     gui.click()
 
 def GotIt():
-    gui.moveTo(1140, 720)
+    gui.moveTo(1140, 726)
     pause()
     gui.click()
 
