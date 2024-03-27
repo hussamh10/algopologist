@@ -1400,3 +1400,144 @@ DEBUG: Observing open_prolife_0 on Twitter
 DEBUG: SIGNING IN: xp1nba0
 Loading browser for user: xp1nba0
 INFO: Reusing instance of UC_IP_Browser
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+INFO: Creating new instance of UC_IP_Browser
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+INFO: Creating new instance of UC_IP_Browser
+DEBUG: Chrome signed in: True
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: Waiting for 5 minutes
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+INFO: Creating new instance of UC_IP_Browser
+DEBUG: Chrome signed in: True
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: Platform: Facebook, Subject: open_prolife_0
+DEBUG: 	 Signing in open_prolife_0 on Facebook
+Loading browser for user: xp1nba0
+INFO: Reusing instance of UC_IP_Browser
+ERROR: 	 Error signing in open_prolife_0 on Facebook
+ERROR: 	 unable to open database file
+DEBUG: Signed in open_prolife_0 on Facebook
+DEBUG: Waiting for 5 minutes
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: Platform: Facebook, Subject: open_prolife_0
+DEBUG: 	 Signing in open_prolife_0 on Facebook
+Loading browser for user: xp1nba0
+INFO: Creating new instance of UC_IP_Browser
+ERROR: 	 Error signing in open_prolife_0 on Facebook
+ERROR: 	 unable to open database file
+DEBUG: Signed in open_prolife_0 on Facebook
+DEBUG: Waiting for 5 minutes
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: Platform: Facebook, Subject: open_prolife_0
+DEBUG: 	 Signing in open_prolife_0 on Facebook
+Loading browser for user: xp1nba0
+INFO: Creating new instance of UC_IP_Browser
+DEBUG: Trying US
+DEBUG: ORDER_ID_3670380_NUMBER_5714068788
+DEBUG: USA
+DEBUG: 5714068788
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3670380
+DEBUG: WAITING
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3670380
+DEBUG: WAITING
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3670380
+DEBUG: SUCCESS_FB-07470 is your Facebook confirmation code
+DEBUG: 07470
+DEBUG: 07470
+DEBUG: Email: Grant_Hairston@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xp1nba\xp1nba0\Facebook\create-5e631946.png
+DEBUG: Signal added: create
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Reddit already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment YouTube already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Twitter already initiated.
+DEBUG: Loading experiment config
+DEBUG: Loading experiment
+DEBUG: Experiment Facebook already initiated.
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: open_prolife_0 already setup
+DEBUG: Platform: Facebook, Subject: open_prolife_0
+DEBUG: 	 Signing in open_prolife_0 on Facebook
+Loading browser for user: xp1nba0
+INFO: Creating new instance of UC_IP_Browser
+DEBUG: Email: Wayne_Hildreth@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xp1nba\xp1nba0\Facebook\create-c6ae3880.png
+DEBUG: Signal added: create

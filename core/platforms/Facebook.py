@@ -149,7 +149,7 @@ class Facebook(Platform):
         self.saveUser(phone_number)
 
     def saveUser(self, phone_number):   
-        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        path = os.path.join(constants.DATA_DIR, 'facebook.db')
         db = sqlite3.connect(path)
         cursor = db.cursor()
         cursor.execute('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, phone TEXT)')
@@ -158,10 +158,16 @@ class Facebook(Platform):
         
 
     def userExists(self):
-        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        path = os.path.join(constants.DATA_DIR, 'facebook.db')
+        if not os.path.exists(path):
+            db = sqlite3.connect(path)
+            cursor = db.cursor()
+            cursor.execute('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, phone TEXT)')
+            db.commit()
+            return False
+
         db = sqlite3.connect(path)
         cursor = db.cursor()
-        cursor.execute('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, phone TEXT)')
         cursor.execute('SELECT * FROM users WHERE id=?', (self.userId,))
         user = cursor.fetchone()
         if user == None:
@@ -169,7 +175,7 @@ class Facebook(Platform):
         return True
 
     def getPhone(self):
-        path = os.path.join(constants.USERS_PATH, 'facebook.db')
+        path = os.path.join(constants.DATA_DIR, 'facebook.db')
         db = sqlite3.connect(path)
         cursor = db.cursor()
         cursor.execute('SELECT * FROM users WHERE id=?', (self.userId,))

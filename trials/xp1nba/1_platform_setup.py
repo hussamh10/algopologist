@@ -30,12 +30,12 @@ if __name__ == "__main__":
     subject_names = list(subjects.keys())
 
     for subject_name in subject_names:
-        chrome = subjects[subject_name]['YouTube']
-        signed = chrome.checkChromeSignin()
-        debug(f'Chrome signed in: {signed}')
-        if not signed:
-            error(f'Chrome not signed in: {subject_name}')
-            chrome.chromeSignIn()
+        # chrome = subjects[subject_name]['YouTube']
+        # signed = chrome.checkChromeSignin()
+        # debug(f'Chrome signed in: {signed}')
+        # if not signed:
+        #     error(f'Chrome not signed in: {subject_name}')
+        #     chrome.chromeSignIn()
 
         for platform in platforms:
             item = f'{platform}_{subject_name}'
