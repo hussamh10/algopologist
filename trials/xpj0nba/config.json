@@ -1,8 +1,9 @@
 {
     "experiment_id": "xpj0nba",
     "database": "experiment.db",
-    "path": "/Users/hussam/Desktop/Projects/algopologist/trials/xpj0nba/data",
+    "macpath": "/Users/hussam/Desktop/Projects/algopologist/trials/xpj0nba/data",
     "winpath" : "H:\\Desktop\\algopologist\\data\\trials\\xpj0nba\\data",
+    "path" : "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xpj0nba\\data",
     "platforms": [
         "YouTube",
         "Reddit",

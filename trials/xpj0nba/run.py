@@ -1,9 +1,8 @@
 import sys
 import os
-# sys.path.append("H:\\Desktop\\algopologist")
-# sys.path.append(os.path.join('H:/', 'Desktop', 'spartaaceap', 'engine', 'src'))
-# sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'Platform behavior' ))
-
+sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'algopologist')) # 317 win
+sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
+sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')) # 317 win
 
 from core.constants import IP_DB_NAME
 from core.utils.IPManager import IPManager
@@ -48,7 +47,7 @@ if __name__ == '__main__':
     email = config['users'][CLIENT_ID]['email']
     action = config['users'][CLIENT_ID]['action']
     topic = config['users'][CLIENT_ID]['topic']
-    replicate = config['users'][CLIENT_ID]['replicate']
+    replicate = config['users'][CLIENT_ID]['replication']
     
     google_signed = getItem(path, 'google')
     if not google_signed:

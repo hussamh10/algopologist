@@ -482,3 +482,6 @@ DEBUG: TREATMENT
 DEBUG: ALREADY TREATED: Platform: Reddit, Subject: open_oscars_0
 DEBUG: OBSERVE
 DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
