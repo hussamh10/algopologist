@@ -64,5 +64,3 @@ class IPManager:
         else:
             raise ValueError(f"No IP address found for username {username}")
         conn.close()
-
-IPManager.initialize_db()

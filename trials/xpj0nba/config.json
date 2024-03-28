@@ -1,0 +1,62 @@
+{
+    "experiment_id": "xpj0nba",
+    "database": "experiment.db",
+    "path": "/Users/hussam/Desktop/Projects/algopologist/trials/xpj0nba/data",
+    "winpath" : "H:\\Desktop\\algopologist\\data\\trials\\xpj0nba\\data",
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter",
+        "Facebook"
+    ],
+    "users": {
+        "0": {
+            "action": "open",
+            "topic": "nn",
+            "replication": 0,
+            "email": "xp0nba0@spartaaceap.com"
+        },
+        "1": {
+            "action": "search",
+            "topic": "nba",
+            "replication": 0,
+            "email": "xp0nba1@spartaaceap.com"
+        },
+        "2": {
+            "action": "like",
+            "topic": "nba",
+            "replication": 0,
+            "email": "xp0nba2@spartaaceap.com"
+        }
+    },
+    "topics": {
+        "youtube": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "twitter": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "reddit": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "facebook": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        }
+    }
+}

@@ -47,6 +47,27 @@ class GoogleWorkspace():
         if len(users) < num_users:
             error(f"Not enough users created: {users}")
             return True
+
+    @staticmethod
+    def createCSV(config):
+        csv_path = os.path.join(config['path'], 'google_users.csv')
+        num_users = len(config['treatments']) * config['replication']
+        i = input("Are users uploaded to Google Admin? (y/n) ")
+        if i == 'n':
+            debug("Users not uploaded to Google Admin yet")
+            users = self.signUp(num_users, config['email_template'], config['experiment_id'], csv_path)
+            input("*** Upload CSV to Google Admin and press enter to continue... ***")
+            self.usersUploaded(users)
+        else:
+            debug("Users uploaded to Google Admin already")
+            users = self.get_users(config['experiment_id'])
+
+        debug("Signing In Users...")
+        self.chromeSignInAll(users)
+
+        debug("Users created and chromed signed in")
+
+
         
     def createUsers(self, config):
         csv_path = os.path.join(config['path'], 'google_users.csv')
@@ -86,6 +107,26 @@ class GoogleWorkspace():
         df = pd.read_sql(query, sql.connect(self.db_path))
         users = list(df.to_dict('records'))
         return len(users) > 0
+        
+    def createUserCSV(self, emails, path):
+        header = 'First Name [Required],Last Name [Required],Email Address [Required],Password [Required],Password Hash Function [UPLOAD ONLY],Org Unit Path [Required],New Primary Email [UPLOAD ONLY],Recovery Email,Home Secondary Email,Work Secondary Email,Recovery Phone [MUST BE IN THE E.164 FORMAT],Work Phone,Home Phone,Mobile Phone,Work Address,Home Address,Employee ID,Employee Type,Employee Title,Manager Email,Department,Cost Center,Building ID,Floor Name,Floor Section,Change Password at Next Sign-In,New Status [UPLOAD ONLY],Advanced Protection Program enrollment'
+        users = []
+        for email in emails:
+            user = dict()
+            user['fname'] = names.get_first_name()
+            user['lname'] = names.get_last_name()
+            user['email'] = email
+            user['id'] = email.split('@')[0]
+            users.append(user)
+
+        lines = []
+        for user in users:
+            line = self.createUserLine(user)
+            lines.append(line)
+        
+        with open(path, 'w') as f:
+            f.write('\n'.join([header] + lines))
+
         
     def createUserLine(self, user):
         temp = '%s,%s,%s,%s,,/,,sparta.aceap@gmail.com,,,,,,,,,aceap000,,,,,,,,,False,,False'
