@@ -969,3 +969,126 @@ Loading browser for user: xp0nba2
 DEBUG: Observing like_nba_0 on Facebook
 DEBUG: SIGNING IN: xp0nba2
 Loading browser for user: xp0nba2
+ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
+  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00358D03+51395]
+	(No symbol) [0x002C5F61]
+	(No symbol) [0x0017E13A]
+	(No symbol) [0x001B62BB]
+	(No symbol) [0x001B63EB]
+	(No symbol) [0x001EC162]
+	(No symbol) [0x001D3ED4]
+	(No symbol) [0x001EA570]
+	(No symbol) [0x001D3C26]
+	(No symbol) [0x001AC629]
+	(No symbol) [0x001AD40D]
+	GetHandleVerifier [0x006D68D3+3712147]
+	GetHandleVerifier [0x00715CBA+3971194]
+	GetHandleVerifier [0x00710FA8+3951464]
+	GetHandleVerifier [0x00409D09+776393]
+	(No symbol) [0x002D1734]
+	(No symbol) [0x002CC618]
+	(No symbol) [0x002CC7C9]
+	(No symbol) [0x002BDDF0]
+	BaseThreadInitThunk [0x75E97BA9+25]
+	RtlInitializeExceptionChain [0x772FBDAB+107]
+	RtlClearBits [0x772FBD2F+191]
+	(No symbol) [0x00000000]
+
+DEBUG: Waiting for 2 minutes
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
+DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Observing like_nba_0 on Reddit
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+ERROR: 'client_id'
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
+DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Observing like_nba_0 on Facebook
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
+DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Observing like_nba_0 on Reddit
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+ERROR: 'client_id'
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
+DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Observing like_nba_0 on Facebook
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
+  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00438D03+51395]
+	(No symbol) [0x003A5F61]
+	(No symbol) [0x0025E13A]
+	(No symbol) [0x002962BB]
+	(No symbol) [0x002963EB]
+	(No symbol) [0x002CC162]
+	(No symbol) [0x002B3ED4]
+	(No symbol) [0x002CA570]
+	(No symbol) [0x002B3C26]
+	(No symbol) [0x0028C629]
+	(No symbol) [0x0028D40D]
+	GetHandleVerifier [0x007B68D3+3712147]
+	GetHandleVerifier [0x007F5CBA+3971194]
+	GetHandleVerifier [0x007F0FA8+3951464]
+	GetHandleVerifier [0x004E9D09+776393]
+	(No symbol) [0x003B1734]
+	(No symbol) [0x003AC618]
+	(No symbol) [0x003AC7C9]
+	(No symbol) [0x0039DDF0]
+	BaseThreadInitThunk [0x75E97BA9+25]
+	RtlInitializeExceptionChain [0x772FBDAB+107]
+	RtlClearBits [0x772FBD2F+191]
+
+DEBUG: TREATMENT
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: like_nba_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: like_nba_0
+DEBUG: TREATING: Platform: Facebook, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
+DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+DEBUG: Observing like_nba_0 on Reddit
+DEBUG: SIGNING IN: xp0nba2
+Loading browser for user: xp0nba2
+ERROR: 'client_id'
+DEBUG: Waiting for 2 minutes
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: like_nba_0

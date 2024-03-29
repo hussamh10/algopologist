@@ -5,6 +5,7 @@ import core.constants as constants
 import core.utils.monkey as monkey
 from core.platforms.Platform import Platform
 from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
+from core.constants import PRAW
 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By

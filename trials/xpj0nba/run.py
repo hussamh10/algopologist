@@ -13,6 +13,8 @@ from core.experiment.Subject import Subject
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
 from core.utils.util import wait, bigWait
 from core.utils.log import debug, error, logging
+from core.constants import PRAW
+
 
 def getItem(path, item):
     items = json.load(open(os.path.join(path, 'items.json'), 'r'))
@@ -37,8 +39,9 @@ if __name__ == '__main__':
     path = os.path.join(path, CLIENT_ID)
     if not os.path.exists(path):
         os.makedirs(path)
-    
-    print(path)
+
+    print(PRAW)
+    print(PRAW['client_id'])
     basicSetup(path)
 
     platforms = config['platforms']
@@ -124,7 +127,7 @@ if __name__ == '__main__':
         except Exception as e:
             error(f'Error observing {subject.id} on {platform}')
             error(e)
-        bigWait(waiting)
+        # bigWait(waiting)
         
     debug("TREATMENT")
 
