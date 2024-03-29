@@ -37,7 +37,8 @@ if __name__ == '__main__':
     path = os.path.join(path, CLIENT_ID)
     if not os.path.exists(path):
         os.makedirs(path)
-
+    
+    print(path)
     basicSetup(path)
 
     platforms = config['platforms']
@@ -129,6 +130,8 @@ if __name__ == '__main__':
 
     for subject in subjects:
         plt = subject.platform.lower()
+        if plt == 'youtube':
+            continue
         plt_obs = f"{plt}_treatment"
         treated = getItem(path, plt_obs)
         if treated:
