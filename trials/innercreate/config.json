@@ -1,8 +1,6 @@
 {
     "experiment_id": "innercreate",
     "database": "experiment.db",
-    "path": "/Users/hussam/Desktop/Projects/algopologist/trials/innercreate/data",
-    "winpath" : "H:\\Desktop\\algopologist\\data\\trials\\innercreate\\data",
     "platforms": [
         "YouTube"
     ],

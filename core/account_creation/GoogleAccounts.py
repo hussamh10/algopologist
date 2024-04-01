@@ -61,11 +61,12 @@ class GoogleAccount():
             monkey.type(phone_number)
             wait(1)
             monkey.enter()
-            wait(2)
+            wait(3)
             hasError = self.driver.find_elements(By.XPATH, "//span[@id='error']")
             if len(hasError) > 0:
                 debug('Error page')
                 failed = True
+                self.sms.skip_number()
             else:
                 failed = False
 
@@ -82,7 +83,12 @@ class GoogleAccount():
             # if len(inputs) > 0:
                 debug('WAITING FOR CODE')
                 code = self.sms.get_code()
+                ii = 0
                 while code == -1:
+                    ii += 1
+                    if ii > 10:
+                        self.sms.skip_number()
+                        return False
                     wait(2)
                     code = self.sms.get_code()
                 # inputs[0].click()
@@ -94,6 +100,8 @@ class GoogleAccount():
                 btn = self.driver.find_element(By.XPATH, "//input[@name='confirm']")
                 btn.click()
                 wait(3)
+                return True
+
 
 
     def create(self):
@@ -135,19 +143,19 @@ class GoogleAccount():
         debug(url)
         if 'myaccount.google.com' in url:
             debug('Signed In')
-            return
+            return True
 
 
-        self.phoneNumberPage()
-        wait(2)
+        if not self.phoneNumberPage():
+            return False
 
         url = self.driver.current_url
 
         if 'myaccount.google.com' in url:
             debug('Signed In')
-            return
+            return True
 
-        return
+        return True
     
     def checkChromeSignedIn(self):
         self.loadBrowser()

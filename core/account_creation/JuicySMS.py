@@ -52,12 +52,12 @@ class juicy():
         debug(self.code)
         return self.code
 
+
     def skip_number(self):
         request = f'https://juicysms.com/api/skipnumber?key={self.key}&orderId={self.order_number}'
         debug(request)
         response = requests.get(request)
         debug(response.text)
-
 
     def get_number(self, service='Google'):
         if service.lower() == 'google':
@@ -82,14 +82,14 @@ class juicy():
             return self.area, self.phone_number
 
     def get_phone_number(self, service_id=GOOGLE):
-        debug("Trying US")
+        debug("Trying UK")
+        self.area = 'UK'
         request = f'https://juicysms.com/api/makeorder?key={self.key}&serviceId={service_id}&country={self.area}'
         response = requests.get(request)
         debug(response.text)
 
         if response.text == 'NO_PHONE_AVAILABLE':
-            debug("Trying UK")
-            self.area = 'UK'
+            debug("Trying US")
             request = f'https://juicysms.com/api/makeorder?key={self.key}&serviceId={service_id}&country={self.area}'
             response = requests.get(request)
             debug(response.text)

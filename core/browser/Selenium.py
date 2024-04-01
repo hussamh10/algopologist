@@ -39,6 +39,14 @@ class Browser:
     def closeDriver(self):
         pass
 
+    def forceCloseDriver(cls):
+        cls._instance.driver.quit()
+        cls._instance = None
+        try:
+            os.system("taskkill /f /im chrome.exe")
+        except:
+            pass
+    
 class UC_IP_Browser(Browser):
     _instance = None
 
@@ -121,4 +129,3 @@ class UC_single_Browser(Browser):
 
     def closeDriver(self):
         pass
-    
