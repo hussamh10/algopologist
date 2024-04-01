@@ -27,7 +27,10 @@ class GoogleWorkspace():
         sms = juicy()
         account = GoogleAccount(email, 'aaaa', 'bbb', BASIC_PASSWORD, sms)
         debug(f"Creating account for {email}...")
-        account.create()
+        created = account.create()
+        while not created:
+            debug("Retrying...")
+            created = account.create()
         account.closeDriver()
 
     def needUsers(self, config):
