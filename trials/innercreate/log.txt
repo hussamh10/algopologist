@@ -1,0 +1,484 @@
+run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
+run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
+run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
+run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
+DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
+DEBUG: Signed In
+DEBUG: Google signed in: 0
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+ERROR: 	 Error signing in like_oscars_0 on YouTube
+ERROR: 	 HTTPConnectionPool(host='localhost', port=52436): Max retries exceeded with url: /session/c10daef0de0de8260775f396dab2f690/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000140CA568BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+DEBUG: Signed in like_oscars_0 on YouTube
+DEBUG: Waiting for 1 minutes
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Youtube\create-91bcf25a.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_oscars_0 on YouTube
+DEBUG: Waiting for 1 minutes
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
+DEBUG: Platform: Twitter, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Twitter\create-e8f41659.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_oscars_0 on Twitter
+DEBUG: Waiting for 1 minutes
+DEBUG: Platform: Reddit, Subject: like_oscars_0
+Loading browser for user: xpjungleaceap1
+DEBUG: Email: xpjungleaceap1@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Reddit\create-91e04566.png
+DEBUG: Signal added: create
+DEBUG: Creating account for xpjungleaceap2@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
+DEBUG: Signed In
+DEBUG: Google signed in: 0
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: open_oscars_0
+Loading browser for user: xpjungleaceap2
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Youtube\create-c4e059b9.png
+DEBUG: Signal added: create
+DEBUG: Signed in open_oscars_0 on YouTube
+DEBUG: Waiting for 2 minutes
+DEBUG: Platform: Twitter, Subject: open_oscars_0
+Loading browser for user: xpjungleaceap2
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Twitter\create-59ba2dee.png
+DEBUG: Signal added: create
+DEBUG: Signed in open_oscars_0 on Twitter
+DEBUG: Waiting for 2 minutes
+DEBUG: Platform: Reddit, Subject: open_oscars_0
+Loading browser for user: xpjungleaceap2
+DEBUG: Email: xpjungleaceap2@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Reddit\create-c71bc58a.png
+DEBUG: Signal added: create
+DEBUG: Signed in open_oscars_0 on Reddit
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVING
+DEBUG: OBSERVING: Platform: YouTube, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing open_oscars_0 on YouTube
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-youtube-e5605616.png
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVING: Platform: Twitter, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Observing open_oscars_0 on Twitter
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not find text
+ERROR: Could not find text
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-twitter-20042d53.png
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVING: Platform: Reddit, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Observing open_oscars_0 on Reddit
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: module 'core.constants' has no attribute 'PRAW'
+DEBUG: Waiting for 2 minutes
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: User loaded
+INFO: Opeining post for oscars
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="c66f12fecf03a8ff947a658a17378407", element="f.04293CC1FDE4C838A28BEE19831F7EDF.d.011C594E1FE19077F941C186AA183C4C.e.87")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Youtube\search-d63c9647.png
+DEBUG: Signal added: search
+DEBUG: Watching video for 30 seconds
+ERROR: too many values to unpack (expected 2)
+DEBUG: Waiting for 2 minutes
+DEBUG: TREATING: Platform: Twitter, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: User loaded
+INFO: Opeining post for oscars
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Twitter\search-f15251b2.png
+DEBUG: Signal added: search
+DEBUG: opened
+ERROR: too many values to unpack (expected 2)
+DEBUG: Waiting for 2 minutes
+DEBUG: TREATING: Platform: Reddit, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: User loaded
+INFO: Opeining post for oscars
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Reddit\search-78847b5b.png
+DEBUG: Signal added: search
+DEBUG: Posts: 25
+ERROR: module 'core.constants' has no attribute 'PRAW'
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVE
+DEBUG: OBSERVING: Platform: YouTube, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing open_oscars_0 on YouTube
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-youtube-a6d2c56f.png
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVING: Platform: Twitter, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Observing open_oscars_0 on Twitter
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-twitter-dc925c14.png
+DEBUG: Waiting for 2 minutes
+DEBUG: OBSERVING: Platform: Reddit, Subject: open_oscars_0
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+DEBUG: Observing open_oscars_0 on Reddit
+DEBUG: SIGNING IN: xpjungleaceap2
+Loading browser for user: xpjungleaceap2
+ERROR: module 'core.constants' has no attribute 'PRAW'
+DEBUG: Waiting for 2 minutes
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: Reddit, Subject: open_oscars_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0
+DEBUG: TREATMENT
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: open_oscars_0
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0

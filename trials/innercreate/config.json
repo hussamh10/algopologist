@@ -1,0 +1,161 @@
+{
+    "experiment_id": "innercreate",
+    "database": "experiment.db",
+    "path": "/Users/hussam/Desktop/Projects/algopologist/trials/innercreate/data",
+    "winpath" : "H:\\Desktop\\algopologist\\data\\trials\\innercreate\\data",
+    "platforms": [
+        "YouTube"
+    ],
+    "users":{
+        "0": {
+            "action": "",
+            "topic": "",
+            "replication": 0,
+            "email": "inner0@spartaaceap.com"
+        },
+        "1": {
+            "action": "",
+            "topic": "",
+            "replication": 1,
+            "email": "inner1@spartaaceap.com"
+        },
+        "2": {
+            "action": "",
+            "topic": "",
+            "replication": 2,
+            "email": "inner2@spartaaceap.com"
+        },
+        "3": {
+            "action": "",
+            "topic": "",
+            "replication": 3,
+            "email": "inner3@spartaaceap.com"
+        },
+        "4": {
+            "action": "",
+            "topic": "",
+            "replication": 4,
+            "email": "inner4@spartaaceap.com"
+        },
+        "5": {
+            "action": "",
+            "topic": "",
+            "replication": 5,
+            "email": "inner5@spartaaceap.com"
+        },
+        "6": {
+            "action": "",
+            "topic": "",
+            "replication": 6,
+            "email": "inner6@spartaaceap.com"
+        },
+        "7": {
+            "action": "",
+            "topic": "",
+            "replication": 7,
+            "email": "inner7@spartaaceap.com"
+        },
+        "8": {
+            "action": "",
+            "topic": "",
+            "replication": 8,
+            "email": "inner8@spartaaceap.com"
+        },
+        "9": {
+            "action": "",
+            "topic": "",
+            "replication": 9,
+            "email": "inner9@spartaaceap.com"
+        },
+        "10": {
+            "action": "",
+            "topic": "",
+            "replication": 10,
+            "email": "inner10@spartaaceap.com"
+        },
+        "11": {
+            "action": "",
+            "topic": "",
+            "replication": 11,
+            "email": "inner11@spartaaceap.com"
+        },
+        "12": {
+            "action": "",
+            "topic": "",
+            "replication": 12,
+            "email": "inner12@spartaaceap.com"
+        },
+        "13": {
+            "action": "",
+            "topic": "",
+            "replication": 13,
+            "email": "inner13@spartaaceap.com"
+        },
+        "14": {
+            "action": "",
+            "topic": "",
+            "replication": 14,
+            "email": "inner14@spartaaceap.com"
+        },
+        "15": {
+            "action": "",
+            "topic": "",
+            "replication": 15,
+            "email": "inner15@spartaaceap.com"
+        },
+        "16": {
+            "action": "",
+            "topic": "",
+            "replication": 16,
+            "email": "inner16@spartaaceap.com"
+        },
+        "17": {
+            "action": "",
+            "topic": "",
+            "replication": 17,
+            "email": "inner17@spartaaceap.com"
+        },
+        "18": {
+            "action": "",
+            "topic": "",
+            "replication": 18,
+            "email": "inner18@spartaaceap.com"
+        },
+        "19": {
+            "action": "",
+            "topic": "",
+            "replication": 19,
+            "email": "inner19@spartaaceap.com"
+        }
+    },
+    "topics": {
+        "youtube": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "twitter": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "reddit": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "facebook": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        }
+    }
+}

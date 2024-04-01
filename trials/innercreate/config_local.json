@@ -1,0 +1,73 @@
+{
+    "treatments": [
+        {
+            "action": "open",
+            "topic": "prolife"
+        },
+        {
+            "action": "search",
+            "topic": "prolife"
+        },
+        {
+            "action": "like",
+            "topic": "prolife"
+        },
+        {
+            "action": "follow",
+            "topic": "prolife"
+        },
+        {
+            "action": "join",
+            "topic": "prolife"
+        },
+        {
+            "action": "",
+            "topic": ""
+        }
+
+    ],
+    "replication": 3,
+    "days": 2,
+    "experiment_id": "xp1nba",
+    "platforms": [
+        "Reddit",
+        "YouTube",
+        "Twitter",
+        "Facebook"
+    ],
+    "email_template": "xp1nba",
+    "database": "experiment.db",
+    "path": "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xp1nba\\data",
+
+    "topics": {
+        "youtube": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "twitter": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "reddit": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "facebook": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        }
+    }
+
+}
