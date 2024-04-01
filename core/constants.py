@@ -2,7 +2,7 @@ import os
 import json
 
 
-LAB = 317
+LAB = 301
 
 # Determine the base directory based on the operating system
 
@@ -60,6 +60,15 @@ except:
     print("Password file not found")
     BASIC_PASSWORD = 'password'
     COMPLEX_PASSWORD = 'password'
+
+
+_PRAW_PATH = os.path.join(BASE_DIR, 'res', 'praw.json')
+try:
+    PRAW = json.load(open(_PRAW_PATH))
+except:
+    print("praw file not found")
+    
+
 
 def getPlatform(platform_name):
     platform_name = platform_name.lower()
