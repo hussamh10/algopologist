@@ -1,9 +1,10 @@
 {
     "experiment_id": "xpj0nba",
     "database": "experiment.db",
-    "macpath": "/Users/hussam/Desktop/Projects/algopologist/trials/xpj0nba/data",
-    "winpath" : "H:\\Desktop\\algopologist\\data\\trials\\xpj0nba\\data",
-    "path" : "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xpj0nba\\data",
+    "mac_path": "/Users/hussam/Desktop/Projects/algopologist/trials/xpj0nba/data",
+    "win_path" : "H:\\Desktop\\algopologist\\data\\trials\\xpj0nba\\data",
+    "dell_path" : "C:\\Users\\hussa\\Desktop\\algopologist\\trials\\xpj0nba\\data",
+    "path": "H:\\Desktop\\algopologist\\trials\\xpj0nba\\data",
     "platforms": [
         "YouTube",
         "Reddit",
@@ -24,6 +25,12 @@
             "email": "xp0nba1@spartaaceap.com"
         },
         "2": {
+            "action": "like",
+            "topic": "nba",
+            "replication": 0,
+            "email": "xp0nba2@spartaaceap.com"
+        },
+        "3": {
             "action": "like",
             "topic": "nba",
             "replication": 0,

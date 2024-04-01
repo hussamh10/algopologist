@@ -5,6 +5,7 @@ import core.constants as constants
 import core.utils.monkey as monkey
 from core.platforms.Platform import Platform
 from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
+from core.constants import PRAW
 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -17,9 +18,9 @@ class RedditPRAW():
 
     def __init__(self):
         self.reddit_client = praw.Reddit(
-            client_id=constants.PRAW.client_id,
-            client_secret=constants.PRAW.client_secret,
-            user_agent=constants.PRAW.user_agent,
+            client_id=constants.PRAW['client_id'],
+            client_secret=constants.PRAW['client_secret'],
+            user_agent=constants.PRAW['user_agent'],
         )
 
         self.db_path = os.path.join(constants.DATA_DIR, 'praw.db')
