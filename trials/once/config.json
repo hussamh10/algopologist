@@ -1,0 +1,48 @@
+{
+    "experiment_id": "xpj0nba",
+    "database": "experiment.db",
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter",
+        "Facebook"
+    ],
+    "users": {
+        "0": {
+            "action": "like",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "anastasia@spartaaceap.com"
+        }
+    },
+    "topics": {
+        "youtube": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "twitter": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "reddit": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "facebook": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        }
+    }
+}
