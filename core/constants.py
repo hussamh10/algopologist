@@ -1,7 +1,6 @@
 import os
 import json
 
-
 LAB = 317
 
 # Determine the base directory based on the operating system
@@ -14,10 +13,15 @@ if LAB == 301:
     
     CONTINUE_GOOGLE_X = 1800
     CONTINUE_GOOGLE_Y = 234
+    GOT_IT_X = 1140
+    GOT_IT_Y = 726
+
 
 if LAB == 317:  # Windows
     CONTINUE_GOOGLE_X = 2300
     CONTINUE_GOOGLE_Y = 233
+    GOT_IT_X = 1140
+    GOT_IT_Y = 726
 
     if os.name == 'posix':        
         BASE_DIR = '/Users/hussam/Desktop/Projects/Platform behavior'
@@ -26,6 +30,10 @@ if LAB == 317:  # Windows
     else: # Unix-like systems (Linux, macOS)
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
         DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
+
+# Click positions
+CHROME_REMIND_X = 950
+CHROME_REMIND_Y = 185
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')

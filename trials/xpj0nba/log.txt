@@ -485,3 +485,16 @@ DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0
 DEBUG: Creating account for xp0nba0@spartaaceap.com...
 INFO: loading browser...
 DEBUG: waiting for signin
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://accounts.google.com/speedbump/idvreenable?TL=AEzbmxzjZCMV2WCG_XzgwyB4xyHrY8NL7d3GrmlVqvmtq7xmZdvz8ZO12Srkj-4L&checkConnection=youtube%3A147&checkedDomains=youtube&ddm=0&dsh=S-384982508%3A1711645080163976&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=ARZ0qKLJjyMHFFlKzRt-HaYHPCb5zB_R29uHiubCSR3yb1uKJOndqc_PdYfVtC5kz1jtze1Apw9w&pstMsg=1&theme=mn
+DEBUG: Verify
+DEBUG: TRYING YELLOWPAGE
+DEBUG: Trying US
+DEBUG: NO_PHONE_AVAILABLE
+DEBUG: Trying UK
+DEBUG: NO_PHONE_AVAILABLE
+DEBUG: Trying NL
+DEBUG: NO_PHONE_AVAILABLE
+No phone number available

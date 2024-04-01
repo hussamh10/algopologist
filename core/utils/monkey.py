@@ -3,6 +3,7 @@ from secrets import randbits
 import pyautogui as gui
 from time import sleep
 from random import randint
+from core.constants import GOT_IT_X, GOT_IT_Y, CHROME_REMIND_X, CHROME_REMIND_Y
 
 from core.utils.log import error
 
@@ -13,12 +14,12 @@ def pause(k=1000):
     sleep(t)
 
 def remindMeLater():
-    gui.moveTo(950, 185)
+    gui.moveTo(CHROME_REMIND_X, CHROME_REMIND_Y)
     pause()
     gui.click()
 
 def GotIt():
-    gui.moveTo(1140, 726)
+    gui.moveTo(GOT_IT_X, GOT_IT_Y)
     pause()
     gui.click()
 
