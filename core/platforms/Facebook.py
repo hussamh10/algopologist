@@ -432,19 +432,23 @@ class Facebook(Platform):
             return
 
     def getPagePosts(self, n=10):
-        page = self.driver.find_element(By.XPATH, '//div[@role="feed"]')
-        results = page.find_elements(By.XPATH, './/div[@role="article"]')
-        posts = []
-        for r in results[:n+3]:
-            p = self.getFeedPosts(r)
-            if p == None:
-                continue
-            p['position'] = len(posts)
-            obj = self.convertToObject(p, 'home')
-            posts.append(obj)
-            if len(posts)%4 == 0:
-                # scroll down one page
-                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight/3);")
+        try:
+            page = self.driver.find_element(By.XPATH, '//div[@role="feed"]')
+            results = page.find_elements(By.XPATH, './/div[@role="article"]')
+            posts = []
+            for r in results[:n+3]:
+                p = self.getFeedPosts(r)
+                if p == None:
+                    continue
+                p['position'] = len(posts)
+                obj = self.convertToObject(p, 'home')
+                posts.append(obj)
+                if len(posts)%4 == 0:
+                    # scroll down one page
+                    self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight/3);")
+        except:
+            error('Error getting posts')
+            return []
 
         return posts
 

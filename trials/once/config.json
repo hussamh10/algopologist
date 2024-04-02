@@ -9,7 +9,7 @@
     ],
     "users": {
         "0": {
-            "action": "like",
+            "action": "follow",
             "topic": "NBA",
             "replication": 0,
             "email": "anastasia@spartaaceap.com"

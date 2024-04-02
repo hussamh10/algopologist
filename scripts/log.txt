@@ -1,0 +1,130 @@
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
+DEBUG: Signed In
+Loading browser for user: xp0nba0
+DEBUG: Turning on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\xp0nba0\Youtube\create-77305933.png
+DEBUG: Signal added: create
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: Creating account for xp0nba0@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Signed In
+DEBUG: Retrying...
+INFO: loading browser...
+DEBUG: waiting for signin
+Loading browser for user: xp0nba0
+ERROR: Message: unknown error: cannot connect to chrome at 127.0.0.1:33741
+from chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00D58D03+51395]
+	(No symbol) [0x00CC5F61]
+	(No symbol) [0x00B7E004]
+	(No symbol) [0x00B71A34]
+	(No symbol) [0x00BA940C]
+	(No symbol) [0x00BA1F15]
+	(No symbol) [0x00BA1D57]
+	(No symbol) [0x00BDC655]
+	(No symbol) [0x00BDC1FA]
+	(No symbol) [0x00BD3C26]
+	(No symbol) [0x00BAC629]
+	(No symbol) [0x00BAD40D]
+	GetHandleVerifier [0x010D68D3+3712147]
+	GetHandleVerifier [0x01115CBA+3971194]
+	GetHandleVerifier [0x01110FA8+3951464]
+	GetHandleVerifier [0x00E09D09+776393]
+	(No symbol) [0x00CD1734]
+	(No symbol) [0x00CCC618]
+	(No symbol) [0x00CCC7C9]
+	(No symbol) [0x00CBDDF0]
+	BaseThreadInitThunk [0x762E7BA9+25]
+	RtlInitializeExceptionChain [0x7757BDAB+107]
+	RtlClearBits [0x7757BD2F+191]
+
+ERROR: Could not load browser
+DEBUG: Trying again...
+Loading browser for user: xp0nba0
+Loading browser for user: xp0nba0
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\xp0nba0\Youtube\create-5bd5d82a.png
+DEBUG: Signal added: create
+DEBUG: Turning of history
+ERROR: InnerTube error
+ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Izo45cvolkM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': a5i-KdUQ47o&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': XKR3SfC6DdQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA

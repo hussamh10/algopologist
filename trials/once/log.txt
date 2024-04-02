@@ -1251,3 +1251,151 @@ Loading browser for user: anastasia
 DEBUG: Taking screenshot
 DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-facebook-2374ce84.png
 DEBUG: Waiting for 0 minutes
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: OBSERVING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing follow_NBA_0 on YouTube
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-b330e094.png
+DEBUG: OBSERVING: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Reddit
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-a9103b2b.png
+DEBUG: OBSERVING: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Twitter
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+ERROR: Could not find text
+ERROR: Could not find text
+ERROR: Could not find text
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-cdcf3f55.png
+DEBUG: OBSERVING: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Facebook
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
+  (Session info: chrome=123.0.6312.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00638D03+51395]
+	(No symbol) [0x005A5F61]
+	(No symbol) [0x0045E13A]
+	(No symbol) [0x004962BB]
+	(No symbol) [0x004963EB]
+	(No symbol) [0x004CC162]
+	(No symbol) [0x004B3ED4]
+	(No symbol) [0x004CA570]
+	(No symbol) [0x004B3C26]
+	(No symbol) [0x0048C629]
+	(No symbol) [0x0048D40D]
+	GetHandleVerifier [0x009B68D3+3712147]
+	GetHandleVerifier [0x009F5CBA+3971194]
+	GetHandleVerifier [0x009F0FA8+3951464]
+	GetHandleVerifier [0x006E9D09+776393]
+	(No symbol) [0x005B1734]
+	(No symbol) [0x005AC618]
+	(No symbol) [0x005AC7C9]
+	(No symbol) [0x0059DDF0]
+	BaseThreadInitThunk [0x762E7BA9+25]
+	RtlInitializeExceptionChain [0x7757BDAB+107]
+	RtlClearBits [0x7757BD2F+191]
+
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVE
+DEBUG: OBSERVING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing follow_NBA_0 on YouTube
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-fb2c5694.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Reddit
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-6ed02b28.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Twitter
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+ERROR: Could not find text
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-112f26be.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing follow_NBA_0 on Facebook
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
+  (Session info: chrome=123.0.6312.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00638D03+51395]
+	(No symbol) [0x005A5F61]
+	(No symbol) [0x0045E13A]
+	(No symbol) [0x004962BB]
+	(No symbol) [0x004963EB]
+	(No symbol) [0x004CC162]
+	(No symbol) [0x004B3ED4]
+	(No symbol) [0x004CA570]
+	(No symbol) [0x004B3C26]
+	(No symbol) [0x0048C629]
+	(No symbol) [0x0048D40D]
+	GetHandleVerifier [0x009B68D3+3712147]
+	GetHandleVerifier [0x009F5CBA+3971194]
+	GetHandleVerifier [0x009F0FA8+3951464]
+	GetHandleVerifier [0x006E9D09+776393]
+	(No symbol) [0x005B1734]
+	(No symbol) [0x005AC618]
+	(No symbol) [0x005AC7C9]
+	(No symbol) [0x0059DDF0]
+	BaseThreadInitThunk [0x762E7BA9+25]
+	RtlInitializeExceptionChain [0x7757BDAB+107]
+	RtlClearBits [0x7757BD2F+191]
+
+DEBUG: Waiting for 0 minutes
+DEBUG: Google signed in: 1

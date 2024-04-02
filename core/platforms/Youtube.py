@@ -124,13 +124,29 @@ class Youtube(Platform):
         home.click()
         wait(2)
 
+    def pauseHistory(self):
+        debug('Turning offf history')
+        self.driver.get('https://www.youtube.com/feed/history')
+        wait(2)
+        try:
+            button = self.driver.find_element(By.XPATH, '//button[@aria-label="Pause watch history"]')
+            button.click()
+            wait(1)
+            button = self.driver.find_element(By.XPATH, '//button[@aria-label="Pause"]')
+            button.click()
+            wait(1)
+        except Exception as e:
+            debug('Already turned on history')
+            pass
+
     def getRecommendations(self, post):
-        video_link = f"https://www.youtube.com/watch?v={post['id']}"
+        video_link = f"https://www.youtube.com/watch?v={post}"
         self.loadPage(video_link)
+        wait(30)
         if self.isAd():
             self._handleAd()
 
-        wait(2)
+        wait(30)
 
         recommendations = self.driver.find_elements(By.XPATH, '//a[@class="yt-simple-endpoint style-scope ytd-compact-video-renderer"]')
         r = [recommendation.get_attribute('href').split('?v=')[1] for recommendation in recommendations if recommendation.get_attribute('href')]
@@ -228,7 +244,13 @@ class Youtube(Platform):
             debug('Already turned on history')
             pass
 
+    def addToHistory(self, video):
+        video_link = f"https://www.youtube.com/watch?v={video}"
+        self.loadPage(video_link)
 
+        if self.isAd():
+            self._handleAd()
+        wait(10)
 
 
     def getPagePosts(self, posts_n=30):

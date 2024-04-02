@@ -35,7 +35,6 @@ def basicSetup(path):
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    BASIC_PASSWORD = 'password'
     # for i in range(0, 20):
 
     CLIENT_ID = sys.argv[1]

@@ -115,7 +115,7 @@ class GoogleAccount():
 
         if 'myaccount.google.com' in self.driver.current_url:
             debug('Signed In')
-            return
+            return True
 
         email = self.driver.find_element(By.XPATH, "//input[@id='identifierId']")
         email.click()
