@@ -252,7 +252,6 @@ class Youtube(Platform):
             self._handleAd()
         wait(10)
 
-
     def getPagePosts(self, posts_n=30):
         video_elems = self.driver.find_elements(By.XPATH, '//a[@id="video-title-link"]')
         tube = MyTube()
