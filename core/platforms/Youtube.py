@@ -124,6 +124,18 @@ class Youtube(Platform):
         home.click()
         wait(2)
 
+    def getRecommendations(self, post):
+        video_link = f"https://www.youtube.com/watch?v={post['id']}"
+        self.loadPage(video_link)
+        if self.isAd():
+            self._handleAd()
+
+        wait(2)
+
+        recommendations = self.driver.find_elements(By.XPATH, '//a[@class="yt-simple-endpoint style-scope ytd-compact-video-renderer"]')
+        r = [recommendation.get_attribute('href').split('?v=')[1] for recommendation in recommendations if recommendation.get_attribute('href')]
+
+        return r
 
     def followUser(self, channel=None, name=None):
         self.openChannelResults()
