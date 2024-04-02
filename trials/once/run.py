@@ -4,7 +4,7 @@ sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'algopolo
 sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
 sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')) # 317 win
 
-from core.constants import IP_DB_NAME
+from core.constants import IP_DB_NAME, BASE_DIR
 from core.utils.IPManager import IPManager
 import json
 from core.browser.Selenium import BrowserFactory
@@ -33,15 +33,13 @@ def basicSetup(path):
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    CLIENT_ID = getId()
+    CLIENT_ID = '0'
     config = json.load(open('config.json', 'r'))
-    path = config['path']
-    path = os.path.join(path, CLIENT_ID)
+    
+    path = os.path.join(BASE_DIR, 'trials', config['experiment_id'], 'data')
     if not os.path.exists(path):
         os.makedirs(path)
 
-    print(PRAW)
-    print(PRAW['client_id'])
     basicSetup(path)
 
     platforms = config['platforms']

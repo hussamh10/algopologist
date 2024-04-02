@@ -1092,3 +1092,162 @@ ERROR: 'client_id'
 DEBUG: Waiting for 2 minutes
 DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
 DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: like_nba_0
+DEBUG: Creating account for anastasia@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: Creating account for anastasia@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
+DEBUG: Signed In
+DEBUG: Google signed in: 0
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: Platform: YouTube, Subject: like_NBA_0
+Loading browser for user: anastasia
+DEBUG: Turning on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\create-16794f2c.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_NBA_0 on YouTube
+DEBUG: Waiting for 0 minutes
+DEBUG: Platform: Reddit, Subject: like_NBA_0
+Loading browser for user: anastasia
+DEBUG: Email: anastasia@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Reddit\create-6f8ac180.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_NBA_0 on Reddit
+DEBUG: Waiting for 0 minutes
+DEBUG: Platform: Twitter, Subject: like_NBA_0
+Loading browser for user: anastasia
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Twitter\create-17f8a71f.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_NBA_0 on Twitter
+DEBUG: Waiting for 0 minutes
+DEBUG: Platform: Facebook, Subject: like_NBA_0
+Loading browser for user: anastasia
+DEBUG: Trying UK
+DEBUG: ORDER_ID_3691919_NUMBER_07570866274
+DEBUG: UK
+DEBUG: 07570866274
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3691919
+DEBUG: WAITING
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3691919
+DEBUG: WAITING
+DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
+DEBUG: order_number: 3691919
+DEBUG: SUCCESS_FB-83170 is your Facebook confirmation code
+DEBUG: 83170
+DEBUG: 83170
+DEBUG: Email: James_Garner@spartaaceap.com
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Facebook\create-3a3f5e16.png
+DEBUG: Signal added: create
+DEBUG: Signed in like_NBA_0 on Facebook
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING
+DEBUG: OBSERVING: Platform: YouTube, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing like_NBA_0 on YouTube
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-df8733c8.png
+DEBUG: OBSERVING: Platform: Reddit, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Reddit
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-41b4a747.png
+DEBUG: OBSERVING: Platform: Twitter, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Twitter
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+ERROR: Could not find text
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-00d4aefe.png
+DEBUG: OBSERVING: Platform: Facebook, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Facebook
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-facebook-80093292.png
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: Reddit, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: TREATING: Platform: Twitter, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: TREATING: Platform: Facebook, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVE
+DEBUG: OBSERVING: Platform: YouTube, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: Observing like_NBA_0 on YouTube
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-3923864b.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Reddit, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Reddit
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-3c38cc1a.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Twitter, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Twitter
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-d58b9862.png
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVING: Platform: Facebook, Subject: like_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Observing like_NBA_0 on Facebook
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-facebook-2374ce84.png
+DEBUG: Waiting for 0 minutes
