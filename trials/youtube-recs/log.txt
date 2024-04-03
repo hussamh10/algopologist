@@ -237,3 +237,123 @@ DEBUG: Email: None
 DEBUG: Taking screenshot
 DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner4\Youtube\create-de678ee8.png
 DEBUG: Signal added: create
+ERROR: Cant skip
+ERROR: Cant skip
+DEBUG: Turning offf history
+Loading browser for user: inner4
+Loading browser for user: inner5
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner5\Youtube\create-e604c627.png
+DEBUG: Signal added: create
+DEBUG: Turning offf history
+DEBUG: Already turned on history
+Loading browser for user: inner5
+Loading browser for user: inner6
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner6\Youtube\create-b9f4f8ee.png
+DEBUG: Signal added: create
+DEBUG: Turning offf history
+Loading browser for user: inner6
+ERROR: InnerTube error
+ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 0LhqaZHWu64&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Izo45cvolkM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': XKR3SfC6DdQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+Loading browser for user: inner7
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner7\Youtube\create-050bc832.png
+DEBUG: Signal added: create
+DEBUG: Turning offf history
+Loading browser for user: inner7
+ERROR: InnerTube error
+ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 0LhqaZHWu64&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Izo45cvolkM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': a5i-KdUQ47o&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': XKR3SfC6DdQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+Loading browser for user: inner8
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner8\Youtube\create-978e4fc5.png
+DEBUG: Signal added: create
+DEBUG: Turning offf history
+Loading browser for user: inner8
+Loading browser for user: inner9
+DEBUG: Turning on history
+DEBUG: Already turned on history
+DEBUG: Email: None
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\yt-recs\inner9\Youtube\create-fdad58a0.png
+DEBUG: Signal added: create
+DEBUG: Turning offf history
+Loading browser for user: inner9
+ERROR: InnerTube error
+ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 0LhqaZHWu64&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': Izo45cvolkM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': a5i-KdUQ47o&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
+ERROR: InnerTube error
+ERROR: 'videoDetails': XKR3SfC6DdQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
