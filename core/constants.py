@@ -1,8 +1,10 @@
 import os
 import json
 
-LAB = 317
+LAB = 301
 # Determine the base directory based on the operating system
+
+#CHANGE TO TRY EXCEPT
 
 if LAB == 301:
     print('LAB 301...')

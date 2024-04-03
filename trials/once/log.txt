@@ -1,1098 +1,8 @@
-run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
-run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
-run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
-run.py • <module> • 51 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 29 • debug(f"Creating account for {email}...") ► log.py • debug • 26 • log(f"DEBUG: {e}", p=False, caller=inspect.stack()) ►  => DEBUG: Creating account for xpjungleaceap1@spartaaceap.com... 
-run.py • <module> • 53 • g.initiateUser(email) ► GoogleWorkspace.py • initiateUser • 30 • account.create() ► GoogleAccounts.py • create • 100 • info('loading browser...') ► log.py • info • 19 • log(f"INFO: {e}", p=False, caller=inspect.stack()) ►  => INFO: loading browser... 
-DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
-INFO: loading browser...
-DEBUG: Creating account for xpjungleaceap1@spartaaceap.com...
-INFO: loading browser...
-DEBUG: waiting for signin
-DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
-DEBUG: Signed In
-DEBUG: Google signed in: 0
-DEBUG: Google signed in: 1
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: Platform: YouTube, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-ERROR: 	 Error signing in like_oscars_0 on YouTube
-ERROR: 	 HTTPConnectionPool(host='localhost', port=52436): Max retries exceeded with url: /session/c10daef0de0de8260775f396dab2f690/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000140CA568BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
-DEBUG: Signed in like_oscars_0 on YouTube
-DEBUG: Waiting for 1 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: Platform: YouTube, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Turning on history
-DEBUG: Already turned on history
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Youtube\create-91bcf25a.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_oscars_0 on YouTube
-DEBUG: Waiting for 1 minutes
-DEBUG: Platform: Twitter, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
-DEBUG: Platform: Twitter, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Google signed in: 1
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
-DEBUG: Platform: Twitter, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_oscars_0
-DEBUG: Platform: Twitter, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Twitter\create-e8f41659.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_oscars_0 on Twitter
-DEBUG: Waiting for 1 minutes
-DEBUG: Platform: Reddit, Subject: like_oscars_0
-Loading browser for user: xpjungleaceap1
-DEBUG: Email: xpjungleaceap1@spartaaceap.com
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap1\Reddit\create-91e04566.png
-DEBUG: Signal added: create
-DEBUG: Creating account for xpjungleaceap2@spartaaceap.com...
-INFO: loading browser...
-DEBUG: waiting for signin
-DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
-DEBUG: Signed In
-DEBUG: Google signed in: 0
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: Platform: YouTube, Subject: open_oscars_0
-Loading browser for user: xpjungleaceap2
-DEBUG: Turning on history
-DEBUG: Already turned on history
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Youtube\create-c4e059b9.png
-DEBUG: Signal added: create
-DEBUG: Signed in open_oscars_0 on YouTube
-DEBUG: Waiting for 2 minutes
-DEBUG: Platform: Twitter, Subject: open_oscars_0
-Loading browser for user: xpjungleaceap2
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Twitter\create-59ba2dee.png
-DEBUG: Signal added: create
-DEBUG: Signed in open_oscars_0 on Twitter
-DEBUG: Waiting for 2 minutes
-DEBUG: Platform: Reddit, Subject: open_oscars_0
-Loading browser for user: xpjungleaceap2
-DEBUG: Email: xpjungleaceap2@spartaaceap.com
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Reddit\create-c71bc58a.png
-DEBUG: Signal added: create
-DEBUG: Signed in open_oscars_0 on Reddit
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING
-DEBUG: OBSERVING: Platform: YouTube, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing open_oscars_0 on YouTube
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-youtube-e5605616.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Twitter, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Observing open_oscars_0 on Twitter
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not find text
-ERROR: Could not find text
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-twitter-20042d53.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Reddit, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Observing open_oscars_0 on Reddit
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATMENT
-DEBUG: TREATING: Platform: YouTube, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: User loaded
-INFO: Opeining post for oscars
-DEBUG: <undetected_chromedriver.webelement.WebElement (session="c66f12fecf03a8ff947a658a17378407", element="f.04293CC1FDE4C838A28BEE19831F7EDF.d.011C594E1FE19077F941C186AA183C4C.e.87")>
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Youtube\search-d63c9647.png
-DEBUG: Signal added: search
-DEBUG: Watching video for 30 seconds
-ERROR: too many values to unpack (expected 2)
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATING: Platform: Twitter, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: User loaded
-INFO: Opeining post for oscars
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Twitter\search-f15251b2.png
-DEBUG: Signal added: search
-DEBUG: opened
-ERROR: too many values to unpack (expected 2)
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATING: Platform: Reddit, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: User loaded
-INFO: Opeining post for oscars
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungle\xpjungleaceap2\Reddit\search-78847b5b.png
-DEBUG: Signal added: search
-DEBUG: Posts: 25
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVE
-DEBUG: OBSERVING: Platform: YouTube, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing open_oscars_0 on YouTube
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Djyg0lR6-4Q&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': Tqjw-H4QyG0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': hAnePKLB1EY&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': EIhk4XZjx-Y&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': HDMRTsPgSDU&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': kCLhx43ON1s&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': g83Y19JezCM&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': _6orWlNGdu0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 62ZwX3EDG4w&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 9iP83ZKmhm8&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-youtube-a6d2c56f.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Twitter, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Observing open_oscars_0 on Twitter
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpjungleaceap2-xpjungle-twitter-dc925c14.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Reddit, Subject: open_oscars_0
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-DEBUG: Observing open_oscars_0 on Reddit
-DEBUG: SIGNING IN: xpjungleaceap2
-Loading browser for user: xpjungleaceap2
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: Reddit, Subject: open_oscars_0
-DEBUG: OBSERVING
-DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0
-DEBUG: TREATMENT
-DEBUG: ALREADY TREATED: Platform: Reddit, Subject: open_oscars_0
-DEBUG: OBSERVE
-DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: open_oscars_0
-DEBUG: Creating account for xp0nba0@spartaaceap.com...
-INFO: loading browser...
-DEBUG: waiting for signin
-DEBUG: Creating account for xp0nba2@spartaaceap.com...
-INFO: loading browser...
-DEBUG: waiting for signin
-DEBUG: Creating account for xp0nba2@spartaaceap.com...
-INFO: loading browser...
-DEBUG: waiting for signin
-DEBUG: https://myaccount.google.com/?utm_source=sign_in_no_continue
-DEBUG: Signed In
-DEBUG: Google signed in: 0
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: Platform: YouTube, Subject: like_nba_0
-Loading browser for user: xp0nba2
-DEBUG: Turning on history
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpj0nba\xp0nba2\Youtube\create-437e83e8.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_nba_0 on YouTube
-DEBUG: Waiting for 2 minutes
-DEBUG: Platform: Reddit, Subject: like_nba_0
-Loading browser for user: xp0nba2
-DEBUG: Email: xp0nba2@spartaaceap.com
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpj0nba\xp0nba2\Reddit\create-13d22481.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_nba_0 on Reddit
-DEBUG: Waiting for 2 minutes
-DEBUG: Platform: Twitter, Subject: like_nba_0
-Loading browser for user: xp0nba2
-DEBUG: Email: None
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpj0nba\xp0nba2\Twitter\create-3bbce4e5.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_nba_0 on Twitter
-DEBUG: Waiting for 2 minutes
-DEBUG: Platform: Facebook, Subject: like_nba_0
-Loading browser for user: xp0nba2
-DEBUG: Trying US
-DEBUG: ORDER_ID_3678376_NUMBER_3092616848
-DEBUG: USA
-DEBUG: 3092616848
-DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3678376
-DEBUG: WAITING
-DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3678376
-DEBUG: WAITING
-DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3678376
-DEBUG: WAITING
-DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3678376
-DEBUG: SUCCESS_FB-70771 is your Facebook confirmation code
-DEBUG: 70771
-DEBUG: 70771
-DEBUG: Email: Freddie_Pollock@spartaaceap.com
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xpj0nba\xp0nba2\Facebook\create-7701642b.png
-DEBUG: Signal added: create
-DEBUG: Signed in like_nba_0 on Facebook
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING
-DEBUG: OBSERVING: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing like_nba_0 on YouTube
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': zZUUHthMeA4&pp=sAQB
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 11rpGprITo0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xp0nba2-xpj0nba-youtube-cc11071b.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Twitter
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-ERROR: Could not get post
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xp0nba2-xpj0nba-twitter-2f3ca684.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Facebook
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00A18D03+51395]
-	(No symbol) [0x00985F61]
-	(No symbol) [0x0083E13A]
-	(No symbol) [0x008762BB]
-	(No symbol) [0x008763EB]
-	(No symbol) [0x008AC162]
-	(No symbol) [0x00893ED4]
-	(No symbol) [0x008AA570]
-	(No symbol) [0x00893C26]
-	(No symbol) [0x0086C629]
-	(No symbol) [0x0086D40D]
-	GetHandleVerifier [0x00D968D3+3712147]
-	GetHandleVerifier [0x00DD5CBA+3971194]
-	GetHandleVerifier [0x00DD0FA8+3951464]
-	GetHandleVerifier [0x00AC9D09+776393]
-	(No symbol) [0x00991734]
-	(No symbol) [0x0098C618]
-	(No symbol) [0x0098C7C9]
-	(No symbol) [0x0097DDF0]
-	BaseThreadInitThunk [0x75E97BA9+25]
-	RtlInitializeExceptionChain [0x772FBDAB+107]
-	RtlClearBits [0x772FBD2F+191]
-
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATMENT
-DEBUG: TREATING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATING: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 2 minutes
-DEBUG: TREATING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVE
-DEBUG: OBSERVING: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing like_nba_0 on YouTube
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': SyXfJi2KZ-A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': rDG-6Ue_Qbw&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': tJkPh2vluFQ&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': CLl9FZ4WizE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ykg6kyTBvw0&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ROhlsgTOsgc&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': m3tksl4nxPo&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': 3hgabcFcp4A&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-ERROR: InnerTube error
-ERROR: 'videoDetails': ctb0QmHRpRE&list=RDCLAK5uy_k5n4srrEB1wgvIjPNTXS9G1ufE9WQxhnA
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xp0nba2-xpj0nba-youtube-fcc13a23.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Twitter
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\xp0nba2-xpj0nba-twitter-aeadfcb2.png
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Facebook
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00A18D03+51395]
-	(No symbol) [0x00985F61]
-	(No symbol) [0x0083E13A]
-	(No symbol) [0x008762BB]
-	(No symbol) [0x008763EB]
-	(No symbol) [0x008AC162]
-	(No symbol) [0x00893ED4]
-	(No symbol) [0x008AA570]
-	(No symbol) [0x00893C26]
-	(No symbol) [0x0086C629]
-	(No symbol) [0x0086D40D]
-	GetHandleVerifier [0x00D968D3+3712147]
-	GetHandleVerifier [0x00DD5CBA+3971194]
-	GetHandleVerifier [0x00DD0FA8+3951464]
-	GetHandleVerifier [0x00AC9D09+776393]
-	(No symbol) [0x00991734]
-	(No symbol) [0x0098C618]
-	(No symbol) [0x0098C7C9]
-	(No symbol) [0x0097DDF0]
-	BaseThreadInitThunk [0x75E97BA9+25]
-	RtlInitializeExceptionChain [0x772FBDAB+107]
-	RtlClearBits [0x772FBD2F+191]
-
-DEBUG: Waiting for 2 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
-DEBUG: OBSERVING
-DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: module 'core.constants' has no attribute 'PRAW'
-DEBUG: Waiting for 2 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
-DEBUG: OBSERVING
-DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
-DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: like_nba_0
-DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Facebook
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00358D03+51395]
-	(No symbol) [0x002C5F61]
-	(No symbol) [0x0017E13A]
-	(No symbol) [0x001B62BB]
-	(No symbol) [0x001B63EB]
-	(No symbol) [0x001EC162]
-	(No symbol) [0x001D3ED4]
-	(No symbol) [0x001EA570]
-	(No symbol) [0x001D3C26]
-	(No symbol) [0x001AC629]
-	(No symbol) [0x001AD40D]
-	GetHandleVerifier [0x006D68D3+3712147]
-	GetHandleVerifier [0x00715CBA+3971194]
-	GetHandleVerifier [0x00710FA8+3951464]
-	GetHandleVerifier [0x00409D09+776393]
-	(No symbol) [0x002D1734]
-	(No symbol) [0x002CC618]
-	(No symbol) [0x002CC7C9]
-	(No symbol) [0x002BDDF0]
-	BaseThreadInitThunk [0x75E97BA9+25]
-	RtlInitializeExceptionChain [0x772FBDAB+107]
-	RtlClearBits [0x772FBD2F+191]
-	(No symbol) [0x00000000]
-
-DEBUG: Waiting for 2 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
-DEBUG: OBSERVING
-DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: 'client_id'
-DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Facebook
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Twitter, Subject: like_nba_0
-DEBUG: SIGNED IN: Platform: Facebook, Subject: like_nba_0
-DEBUG: OBSERVING
-DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: 'client_id'
-DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Facebook
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00438D03+51395]
-	(No symbol) [0x003A5F61]
-	(No symbol) [0x0025E13A]
-	(No symbol) [0x002962BB]
-	(No symbol) [0x002963EB]
-	(No symbol) [0x002CC162]
-	(No symbol) [0x002B3ED4]
-	(No symbol) [0x002CA570]
-	(No symbol) [0x002B3C26]
-	(No symbol) [0x0028C629]
-	(No symbol) [0x0028D40D]
-	GetHandleVerifier [0x007B68D3+3712147]
-	GetHandleVerifier [0x007F5CBA+3971194]
-	GetHandleVerifier [0x007F0FA8+3951464]
-	GetHandleVerifier [0x004E9D09+776393]
-	(No symbol) [0x003B1734]
-	(No symbol) [0x003AC618]
-	(No symbol) [0x003AC7C9]
-	(No symbol) [0x0039DDF0]
-	BaseThreadInitThunk [0x75E97BA9+25]
-	RtlInitializeExceptionChain [0x772FBDAB+107]
-	RtlClearBits [0x772FBD2F+191]
-
-DEBUG: TREATMENT
-DEBUG: ALREADY TREATED: Platform: Reddit, Subject: like_nba_0
-DEBUG: ALREADY TREATED: Platform: Twitter, Subject: like_nba_0
-DEBUG: TREATING: Platform: Facebook, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 2 minutes
-DEBUG: OBSERVE
-DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: like_nba_0
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_nba_0
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-DEBUG: Observing like_nba_0 on Reddit
-DEBUG: SIGNING IN: xp0nba2
-Loading browser for user: xp0nba2
-ERROR: 'client_id'
-DEBUG: Waiting for 2 minutes
-DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: like_nba_0
-DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: like_nba_0
 DEBUG: Creating account for anastasia@spartaaceap.com...
+INFO: loading browser...
+DEBUG: waiting for signin
+DEBUG: https://accounts.google.com/v3/signin/challenge/pwd?TL=AEzbmxxqkEbnWcGEs-VNVFzKl48vS3jd7-8sFB9Lg3tsDGV6cpcO2uNdHAMXUvtz&checkConnection=youtube%3A80&checkedDomains=youtube&cid=1&ddm=0&dsh=S-1811320351%3A1712094825706983&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=ARZ0qKJoGP4enBn8GDEN-3SdArXsQ4Ixb8vtnOOSpwnEsUYa4khrEo5VPdPNTiWeIu1WnYr4U4Um3w&pstMsg=1&theme=mn
+DEBUG: Retrying...
 INFO: loading browser...
 DEBUG: waiting for signin
 DEBUG: Creating account for anastasia@spartaaceap.com...
@@ -1103,161 +13,52 @@ DEBUG: Signed In
 DEBUG: Google signed in: 0
 DEBUG: Chrome signed in: True
 DEBUG: SIGNIN
-DEBUG: Platform: YouTube, Subject: like_NBA_0
+DEBUG: Platform: YouTube, Subject: follow_NBA_0
 Loading browser for user: anastasia
 DEBUG: Turning on history
+DEBUG: Already turned on history
 DEBUG: Email: None
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\create-16794f2c.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\create-7f5d1327.png
 DEBUG: Signal added: create
-DEBUG: Signed in like_NBA_0 on YouTube
+DEBUG: Signed in follow_NBA_0 on YouTube
 DEBUG: Waiting for 0 minutes
-DEBUG: Platform: Reddit, Subject: like_NBA_0
+DEBUG: Platform: Reddit, Subject: follow_NBA_0
 Loading browser for user: anastasia
 DEBUG: Email: anastasia@spartaaceap.com
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Reddit\create-6f8ac180.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Reddit\create-fa41016f.png
 DEBUG: Signal added: create
-DEBUG: Signed in like_NBA_0 on Reddit
+DEBUG: Signed in follow_NBA_0 on Reddit
 DEBUG: Waiting for 0 minutes
-DEBUG: Platform: Twitter, Subject: like_NBA_0
+DEBUG: Platform: Twitter, Subject: follow_NBA_0
 Loading browser for user: anastasia
 DEBUG: Email: None
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Twitter\create-17f8a71f.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Twitter\create-2d5782bb.png
 DEBUG: Signal added: create
-DEBUG: Signed in like_NBA_0 on Twitter
+DEBUG: Signed in follow_NBA_0 on Twitter
 DEBUG: Waiting for 0 minutes
-DEBUG: Platform: Facebook, Subject: like_NBA_0
+DEBUG: Platform: Facebook, Subject: follow_NBA_0
 Loading browser for user: anastasia
 DEBUG: Trying UK
-DEBUG: ORDER_ID_3691919_NUMBER_07570866274
+DEBUG: ORDER_ID_3693591_NUMBER_07379996791
 DEBUG: UK
-DEBUG: 07570866274
+DEBUG: 07379996791
 DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3691919
+DEBUG: order_number: 3693591
 DEBUG: WAITING
 DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3691919
-DEBUG: WAITING
-DEBUG: key: 991e49c07e4d5ba878b66a1828c602b8
-DEBUG: order_number: 3691919
-DEBUG: SUCCESS_FB-83170 is your Facebook confirmation code
-DEBUG: 83170
-DEBUG: 83170
-DEBUG: Email: James_Garner@spartaaceap.com
+DEBUG: order_number: 3693591
+DEBUG: SUCCESS_FB-25985 is your Facebook confirmation code
+DEBUG: 25985
+DEBUG: 25985
+DEBUG: Email: Deborah_Gibson@spartaaceap.com
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Facebook\create-3a3f5e16.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Facebook\create-42f85161.png
 DEBUG: Signal added: create
-DEBUG: Signed in like_NBA_0 on Facebook
+DEBUG: Signed in follow_NBA_0 on Facebook
 DEBUG: Waiting for 0 minutes
-DEBUG: OBSERVING
-DEBUG: OBSERVING: Platform: YouTube, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing like_NBA_0 on YouTube
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-df8733c8.png
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Reddit
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-41b4a747.png
-DEBUG: OBSERVING: Platform: Twitter, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Twitter
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-ERROR: Could not find text
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-00d4aefe.png
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Facebook
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-facebook-80093292.png
-DEBUG: TREATMENT
-DEBUG: TREATING: Platform: Reddit, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 0 minutes
-DEBUG: TREATING: Platform: Twitter, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 0 minutes
-DEBUG: TREATING: Platform: Facebook, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: User loaded
-ERROR: string indices must be integers, not 'str'
-DEBUG: Waiting for 0 minutes
-DEBUG: OBSERVE
-DEBUG: OBSERVING: Platform: YouTube, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Checking if logged in
-DEBUG: Checking if logged in: https://www.youtube.com/account
-DEBUG: Observing like_NBA_0 on YouTube
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-3923864b.png
-DEBUG: Waiting for 0 minutes
-DEBUG: OBSERVING: Platform: Reddit, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Reddit
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-3c38cc1a.png
-DEBUG: Waiting for 0 minutes
-DEBUG: OBSERVING: Platform: Twitter, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Twitter
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-d58b9862.png
-DEBUG: Waiting for 0 minutes
-DEBUG: OBSERVING: Platform: Facebook, Subject: like_NBA_0
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Observing like_NBA_0 on Facebook
-DEBUG: SIGNING IN: anastasia
-Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-facebook-2374ce84.png
-DEBUG: Waiting for 0 minutes
-DEBUG: Google signed in: 1
-DEBUG: Chrome signed in: True
-DEBUG: SIGNIN
-DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
-DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
-DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
-DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
 DEBUG: OBSERVING
 DEBUG: OBSERVING: Platform: YouTube, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
@@ -1268,15 +69,14 @@ DEBUG: Observing follow_NBA_0 on YouTube
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-b330e094.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-youtube-aa6ca7d2.png
 DEBUG: OBSERVING: Platform: Reddit, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 DEBUG: Observing follow_NBA_0 on Reddit
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-a9103b2b.png
+ERROR: no such table: posts
 DEBUG: OBSERVING: Platform: Twitter, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
@@ -1284,42 +84,30 @@ DEBUG: Observing follow_NBA_0 on Twitter
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 ERROR: Could not find text
-ERROR: Could not find text
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
+ERROR: Could not get post
 ERROR: Could not find text
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-cdcf3f55.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-twitter-8dc5ae4d.png
 DEBUG: OBSERVING: Platform: Facebook, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 DEBUG: Observing follow_NBA_0 on Facebook
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=123.0.6312.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00638D03+51395]
-	(No symbol) [0x005A5F61]
-	(No symbol) [0x0045E13A]
-	(No symbol) [0x004962BB]
-	(No symbol) [0x004963EB]
-	(No symbol) [0x004CC162]
-	(No symbol) [0x004B3ED4]
-	(No symbol) [0x004CA570]
-	(No symbol) [0x004B3C26]
-	(No symbol) [0x0048C629]
-	(No symbol) [0x0048D40D]
-	GetHandleVerifier [0x009B68D3+3712147]
-	GetHandleVerifier [0x009F5CBA+3971194]
-	GetHandleVerifier [0x009F0FA8+3951464]
-	GetHandleVerifier [0x006E9D09+776393]
-	(No symbol) [0x005B1734]
-	(No symbol) [0x005AC618]
-	(No symbol) [0x005AC7C9]
-	(No symbol) [0x0059DDF0]
-	BaseThreadInitThunk [0x762E7BA9+25]
-	RtlInitializeExceptionChain [0x7757BDAB+107]
-	RtlClearBits [0x7757BD2F+191]
-
+ERROR: Error getting posts
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-facebook-3bbe5e70.png
 DEBUG: TREATMENT
 DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
@@ -1344,7 +132,7 @@ DEBUG: Observing follow_NBA_0 on YouTube
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-youtube-fb2c5694.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-youtube-819e97ef.png
 DEBUG: Waiting for 0 minutes
 DEBUG: OBSERVING: Platform: Reddit, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
@@ -1352,8 +140,7 @@ Loading browser for user: anastasia
 DEBUG: Observing follow_NBA_0 on Reddit
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
-DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-reddit-6ed02b28.png
+ERROR: no such table: posts
 DEBUG: Waiting for 0 minutes
 DEBUG: OBSERVING: Platform: Twitter, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
@@ -1361,9 +148,8 @@ Loading browser for user: anastasia
 DEBUG: Observing follow_NBA_0 on Twitter
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
-ERROR: Could not find text
 DEBUG: Taking screenshot
-DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\anastasia-once-twitter-112f26be.png
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-twitter-501bcc3e.png
 DEBUG: Waiting for 0 minutes
 DEBUG: OBSERVING: Platform: Facebook, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
@@ -1371,31 +157,44 @@ Loading browser for user: anastasia
 DEBUG: Observing follow_NBA_0 on Facebook
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
-ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role="feed"]"}
-  (Session info: chrome=123.0.6312.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00638D03+51395]
-	(No symbol) [0x005A5F61]
-	(No symbol) [0x0045E13A]
-	(No symbol) [0x004962BB]
-	(No symbol) [0x004963EB]
-	(No symbol) [0x004CC162]
-	(No symbol) [0x004B3ED4]
-	(No symbol) [0x004CA570]
-	(No symbol) [0x004B3C26]
-	(No symbol) [0x0048C629]
-	(No symbol) [0x0048D40D]
-	GetHandleVerifier [0x009B68D3+3712147]
-	GetHandleVerifier [0x009F5CBA+3971194]
-	GetHandleVerifier [0x009F0FA8+3951464]
-	GetHandleVerifier [0x006E9D09+776393]
-	(No symbol) [0x005B1734]
-	(No symbol) [0x005AC618]
-	(No symbol) [0x005AC7C9]
-	(No symbol) [0x0059DDF0]
-	BaseThreadInitThunk [0x762E7BA9+25]
-	RtlInitializeExceptionChain [0x7757BDAB+107]
-	RtlClearBits [0x7757BD2F+191]
-
+ERROR: Error getting posts
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-facebook-f91d35bb.png
 DEBUG: Waiting for 0 minutes
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: TREATING: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+ERROR: string indices must be integers, not 'str'
+DEBUG: Waiting for 0 minutes
+DEBUG: TREATING: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
 DEBUG: Google signed in: 1
