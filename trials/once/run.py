@@ -130,6 +130,7 @@ if __name__ == '__main__':
     debug("TREATMENT")
 
     for subject in subjects:
+        plt = subject.platform.lower()
         plt_obs = f"{plt}_treatment"
         treated = getItem(path, plt_obs)
         if treated:
