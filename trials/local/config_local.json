@@ -2,29 +2,24 @@
     "treatments": [
         {
             "action": "open",
-            "topic": "prolife"
+            "topic": "NBA"
         },
         {
             "action": "search",
-            "topic": "prolife"
+            "topic": "NBA"
         },
         {
             "action": "like",
-            "topic": "prolife"
+            "topic": "NBA"
         },
         {
             "action": "follow",
-            "topic": "prolife"
+            "topic": "NBA"
         },
         {
             "action": "join",
-            "topic": "prolife"
-        },
-        {
-            "action": "",
-            "topic": ""
+            "topic": "NBA"
         }
-
     ],
     "replication": 3,
     "days": 2,

@@ -217,4 +217,3 @@ ERROR: Error getting posts
 DEBUG: Taking screenshot
 DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-facebook-91e1ea58.png
 DEBUG: Waiting for 0 minutes
-DEBUG: Google signed in: 1
