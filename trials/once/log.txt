@@ -198,3 +198,76 @@ DEBUG: TREATING: Platform: Twitter, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
 DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: ALREADY TREATED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: TREATING: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Twitter\search-f3c5ec08.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: Error adding object: 'NoneType' object has no attribute 'replace'
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Twitter\follow-4b33959a.png
+DEBUG: Signal added: follow
+DEBUG: Waiting for 0 minutes
+DEBUG: TREATING: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Facebook\search-147b441c.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: list index out of range
+DEBUG: Waiting for 0 minutes
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Searchable: NBA
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="6bd1084487c04465231ecc64990d364c", element="f.A02D5EBDD1BD9B675A2DEC4242382365.d.FF1BCD0DAB6D1B40181009338EA3BE63.e.41")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\search-f970f759.png
+DEBUG: Signal added: search
+DEBUG: Term searched

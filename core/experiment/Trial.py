@@ -37,6 +37,7 @@ class Trial():
         debug('User loaded')
 
         searchable = topics[self.platform.name][self.action]
+        debug(f'Searchable: {searchable}')
 
         dump = 'No Treatment'
         if self.action == '':
