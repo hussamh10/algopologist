@@ -33,7 +33,7 @@ def basicSetup(path):
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    CLIENT_ID = '0'
+    CLIENT_ID = getId()
     config = json.load(open('config.json', 'r'))
     
     path = os.path.join(BASE_DIR, 'trials', config['experiment_id'], 'data')
