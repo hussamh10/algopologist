@@ -163,30 +163,34 @@ class Youtube(Platform):
         for channel in channels:
             position += 1
             # check if subscribed
-            channel_id = channel.find_element(By.XPATH, './/span[@id="subscribers"]')
-            channel_id = channel_id.text
+            try:
+                channel_id = channel.find_element(By.XPATH, './/span[@id="subscribers"]')
+                channel_id = channel_id.text
 
-            subscribe_button = channel.find_elements(By.XPATH, './/div[@id="subscribe-button"]')
-            debug(channel_id)
-            if len(subscribe_button) == 0:
-                error('No subscribe button found...: ' + channel_id)
-                continue
+                subscribe_button = channel.find_elements(By.XPATH, './/div[@id="subscribe-button"]')
+                debug(channel_id)
+                if len(subscribe_button) == 0:
+                    error('No subscribe button found...: ' + channel_id)
+                    continue
 
-            text = subscribe_button[0].text
-            if text == 'Subscribed':
-                debug('Already subscribed...: ' + channel_id)
-                continue
-            elif text == 'Subscribe':
-                subscribe_button[0].click()
-                channel = tube.getChannelInfo(channel_id)
-                channel['type'] = 'user'
-                channel['position'] = position
-                debug('Subscribed: ' + channel['name'])
-                wait(1)
-                channel = self.convertToSource(channel, 'search')
-                return channel
-            else:
-                error('Unknown subscribe button text...: ' + channel_id)
+                text = subscribe_button[0].text
+                if text == 'Subscribed':
+                    debug('Already subscribed...: ' + channel_id)
+                    continue
+                elif text == 'Subscribe':
+                    subscribe_button[0].click()
+                    channel = tube.getChannelInfo(channel_id)
+                    channel['type'] = 'user'
+                    channel['position'] = position
+                    debug('Subscribed: ' + channel['name'])
+                    wait(1)
+                    channel = self.convertToSource(channel, 'search')
+                    return channel
+                else:
+                    error('Unknown subscribe button text...: ' + channel_id)
+                    continue
+            except Exception as e:
+                error('Error')
                 continue
 
     def openChannelResults(self):
