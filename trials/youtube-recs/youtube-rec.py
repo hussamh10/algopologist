@@ -18,8 +18,9 @@ if __name__ == '__main__':
 
     config = json.load(open('config.json', 'r'))
 
-    email = f'xp0nba{i}@spartaaceap.com'
-    password = 'hehehahahoho'
+    id = f'inner{i}'
+    email = f'{id}@spartaaceap.com'
+    password = 'password'
 
     group = config[f"{i}"]
     training = config[group]
@@ -28,10 +29,10 @@ if __name__ == '__main__':
     print(f"Training: {training}")
     print(f"Seeds: {seeds}")
 
-    g = GoogleWorkspace()
-    g.initiateUser(email)
+    # g = GoogleWorkspace()
+    # g.initiateUser(email)
 
-    user = User(Youtube, f'xp0nba{i}', 'yt-recs')
+    user = User(Youtube, id, 'yt-recs')
     user.chromeSignUp()
 
     for video in training:
@@ -39,10 +40,23 @@ if __name__ == '__main__':
 
     user.platform.pauseHistory()
 
+    wait(30)
+
+    user.platform = user.Platform(id)
+    user.platform.loadBrowser()
+    user.platform.loadWebsite()
+
     recommendations = dict()
     for seed in seeds:
-        user.search(seed)
-        recommendations[seed] = user.platform.getRecommendations()
+        recommendations[seed] = user.platform.getRecommendations(seed)
+
+    homePage = user.platform.getHomePage()
+    homePage = user.platform.getPagePosts(20)
+
+    home = []
+    for post in homePage:
+        home.append(post['id'])
+    recommendations['home'] = home
 
     json.dump(recommendations, open(f'.\\data\\recommendations_{i}.json', 'w'))
 

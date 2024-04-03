@@ -24,6 +24,26 @@ class RedditPRAW():
         )
 
         self.db_path = os.path.join(constants.DATA_DIR, 'praw.db')
+
+        # create table if not exists
+        if not os.path.exists(self.db_path):
+            db = sql.connect(self.db_path)
+            query = '''CREATE TABLE IF NOT EXISTS "posts" (
+                "id"	TEXT,
+                "title"	TEXT,
+                "author"	TEXT,
+                "subreddit"	TEXT,
+                "num_comments"	INTEGER,
+                "score"	INTEGER,
+                "selftext"	TEXT,
+                "url"	TEXT,
+                "created_at"	TEXT
+            )'''
+            db.execute(query)
+            db.commit()
+            db.close()
+
+
         
     def isPostInDB(self, id):
         db = sql.connect(self.db_path)

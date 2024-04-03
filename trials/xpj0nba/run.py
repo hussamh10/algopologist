@@ -4,8 +4,6 @@ sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'algopolo
 sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
 sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')) # 317 win
 
-from core.constants import IP_DB_NAME
-from core.utils.IPManager import IPManager
 import json
 from core.browser.Selenium import BrowserFactory
 from core.utils.zookeeper import getId
