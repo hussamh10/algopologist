@@ -11,11 +11,16 @@ if LAB == 301:
 
     BASE_DIR = "H:\\Desktop\\algopologist"
     DATA_DIR = "H:\\Desktop\\algopologist\\data"
-    
+    C_DATA_DIR = "C:\\Users\\hbb\\Desktop"
+
+    # SESSIONS_PATH = os.path.join(BASE_DIR, 'data', 'sessions')
+    SESSIONS_PATH = os.path.join(C_DATA_DIR, 'sessions')
+
     CONTINUE_GOOGLE_X = 1800
     CONTINUE_GOOGLE_Y = 234
     GOT_IT_X = 1140
     GOT_IT_Y = 726
+
 
 
 if LAB == 317:  # Windows
@@ -32,6 +37,9 @@ if LAB == 317:  # Windows
     else: # Unix-like systems (Linux, macOS)
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
         DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
+    
+    SESSIONS_PATH = os.path.join(BASE_DIR, 'data', 'sessions')
+
 
 # Click positions
 CHROME_REMIND_X = 950
@@ -40,7 +48,6 @@ CHROME_REMIND_Y = 185
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')
 SCREENSHOTS_PATH = os.path.join(BASE_DIR, 'data', 'screenshots')
-SESSIONS_PATH = os.path.join(BASE_DIR, 'data', 'sessions')
 USERS_PATH = os.path.join(BASE_DIR, 'data', 'users')
 DATABASE = os.path.join(BASE_DIR, 'data', 'signals.db')
 

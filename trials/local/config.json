@@ -1,0 +1,163 @@
+{
+    "experiment_id": "local",
+    "database": "experiment.db",
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter",
+        "Facebook"
+    ],
+    "users":
+        {
+            "0": {
+                "action": "open",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "inner0@spartaaceap.com"
+            },
+            "1": {
+                "action": "search",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "inner1@spartaaceap.com"
+            },
+            "2": {
+                "action": "like",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "inner2@spartaaceap.com"
+            },
+            "3": {
+                "action": "follow",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "inner3@spartaaceap.com"
+            },
+            "4": {
+                "action": "join",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "inner4@spartaaceap.com"
+            },
+            "5": {
+                "action": "open",
+                "topic": "NBA",
+                "replication": 1,
+                "email": "inner5@spartaaceap.com"
+            },
+            "6": {
+                "action": "search",
+                "topic": "NBA",
+                "replication": 1,
+                "email": "inner6@spartaaceap.com"
+            },
+            "7": {
+                "action": "like",
+                "topic": "NBA",
+                "replication": 1,
+                "email": "inner7@spartaaceap.com"
+            },
+            "8": {
+                "action": "follow",
+                "topic": "NBA",
+                "replication": 1,
+                "email": "inner8@spartaaceap.com"
+            },
+            "9": {
+                "action": "join",
+                "topic": "NBA",
+                "replication": 1,
+                "email": "inner9@spartaaceap.com"
+            },
+            "10": {
+                "action": "open",
+                "topic": "NBA",
+                "replication": 2,
+                "email": "inner10@spartaaceap.com"
+            },
+            "11": {
+                "action": "search",
+                "topic": "NBA",
+                "replication": 2,
+                "email": "inner11@spartaaceap.com"
+            },
+            "12": {
+                "action": "like",
+                "topic": "NBA",
+                "replication": 2,
+                "email": "inner12@spartaaceap.com"
+            },
+            "13": {
+                "action": "follow",
+                "topic": "NBA",
+                "replication": 2,
+                "email": "inner13@spartaaceap.com"
+            },
+            "14": {
+                "action": "join",
+                "topic": "NBA",
+                "replication": 2,
+                "email": "inner14@spartaaceap.com"
+            },
+            "15": {
+                "action": "",
+                "topic": "",
+                "replication": 1,
+                "email": "inner15@spartaaceap.com"
+            },
+            "16": {
+                "action": "",
+                "topic": "",
+                "replication": 2,
+                "email": "inner16@spartaaceap.com"
+            },
+            "17": {
+                "action": "",
+                "topic": "",
+                "replication": 3,
+                "email": "inner17@spartaaceap.com"
+            },
+            "18": {
+                "action": "like",
+                "topic": "NFL",
+                "replication": 1,
+                "email": "inner18@spartaaceap.com"
+            },
+            "19": {
+                "action": "open",
+                "topic": "NFL",
+                "replication": 1,
+                "email": "inner19@spartaaceap.com"
+            }
+        },
+    "topics": {
+        "youtube": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "twitter": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "reddit": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        },
+        "facebook": {
+            "open":     "NBA",
+            "search":   "NBA",
+            "like":     "NBA",
+            "follow":   "NBA",
+            "join":     "NBA"
+        }
+    }
+}
