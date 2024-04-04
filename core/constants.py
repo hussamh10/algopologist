@@ -1,7 +1,7 @@
 import os
 import json
 
-LAB = 301
+LAB = 317
 # Determine the base directory based on the operating system
 
 #CHANGE TO TRY EXCEPT
@@ -19,6 +19,7 @@ if LAB == 301:
 
 
 if LAB == 317:  # Windows
+    print('LAB 317...')
     CONTINUE_GOOGLE_X = 2300
     CONTINUE_GOOGLE_Y = 233
     GOT_IT_X = 1140
