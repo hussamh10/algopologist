@@ -5,19 +5,28 @@ import pickle as pkl
 import streamlit as st
 
 def create_html(obs):
-    source = obs.get('source', 'Unknown')
-    secondary_source = obs.get('secondary_source', '')
-    if secondary_source == None:
-        secondary_source = ''
+    if 'text' in obs:
+        #twitter
+        source = obs.get('username', 'Unknown')
+        title = obs.get('text', 'No text')
+        description = ''
+        date = obs.get('created_at', 'No date')
+        secondary_source = obs.get('source', '')
+
     else:
-        secondary_source = f'• {secondary_source}'
-    title = obs.get('title', 'No title')
-    description = obs.get('description', 'No description')
-    description = description.replace('\n', ' ')
-    date = obs.get('created_at', 'No date')
-    # if date is a epoch time convert it to a human readable date
-    if isinstance(date, float):
-        date = pd.to_datetime(int(date), unit='s').strftime('%Y-%m-%d %H:%M:%S')
+        source = obs.get('source', 'Unknown')
+        secondary_source = obs.get('secondary_source', '')
+        if secondary_source == None:
+            secondary_source = ''
+        else:
+            secondary_source = f'• {secondary_source}'
+        title = obs.get('title', 'No title')
+        description = obs.get('description', 'No description')
+        description = description.replace('\n', ' ')
+        date = obs.get('created_at', 'No date')
+        # if date is a epoch time convert it to a human readable date
+        if isinstance(date, float):
+            date = pd.to_datetime(int(date), unit='s').strftime('%Y-%m-%d %H:%M:%S')
 
 
     likes = obs.get('likes', '')
@@ -55,11 +64,9 @@ def create_html(obs):
     return card
     
 
-
-
 st.set_page_config(layout="wide")
 
-observations = pd.read_pickle('observations.pkl')
+observations = pd.read_pickle('datasets/local/observations.pkl')
 observations.keys()
 
 cols = st.columns(8)

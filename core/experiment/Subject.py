@@ -147,12 +147,7 @@ class Subject():
     def platformSignIn(self):
         self.Platform = getPlatform(self.platform)
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)
-        # try:
         trial.signUpUser()
-        # except Exception as e:
-            # error(e)
-            # trial.closeDriver()
-            # return
         self.platform_signin = True
         trial.closeDriver()
         self.save()
@@ -208,26 +203,26 @@ class Subject():
         logger.log(self.id, self.platform, tick, 'observe', 'home', dump_path, screenshot)
         self.save()
         
-    def vanilla(self):
-        trial = Trial('vanilla', self.topic, self.chromeid, self.Platform, self.experiment_id)
-        trial.loadUser()
-        dump = trial.runExperiment()
-        trial.closeDriver()
-        dump_path = self.save_dump(dump, 'vanillas')
-        logger = Logger(self.path, self.platform, self.experiment_id)
-        logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
+    # def vanilla(self):
+    #     trial = Trial('vanilla', self.topic, self.chromeid, self.Platform, self.experiment_id)
+    #     trial.loadUser()
+    #     dump = trial.runExperiment()
+    #     trial.closeDriver()
+    #     dump_path = self.save_dump(dump, 'vanillas')
+    #     logger = Logger(self.path, self.platform, self.experiment_id)
+    #     logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
 
     def treatment(self, topics):
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)
         trial.loadUser()
         try:
-            dump = trial.runExperiment(topics)
+            signal = trial.runExperiment(topics)
         except Exception as e:
             error(e)
             trial.closeDriver()
             return
         trial.closeDriver()
-        dump_path = self.save_dump(dump, 'treatments')
+        dump_path = self.save_dump(signal, 'treatments')
         logger = Logger(self.path, self.platform, self.experiment_id)
         logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
 

@@ -1,3 +1,4 @@
+import inspect
 from time import sleep, time
 import pandas as pd
 import sqlite3
@@ -18,24 +19,26 @@ class User:
 
 
     def _addSource(self, source):
-        conn = sqlite3.connect(DATABASE)
         ouid = str(uid())[:8]
-        c = conn.cursor()
         source['description'] = source.get('description', '').replace("'", "")
         source['name'] = source.get('name', '').replace("'", "")
         source['url'] = source.get('url', '').replace("'", "")
         source['secondary_source'] = source.get('secondary_source', '').replace("'", "")
+        source['uid'] = ouid
+        source['type'] = 'source'
 
-        debug("INSERT INTO sources VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % ( ouid, source['id'], source['platform'], source['origin'], source['position'], source['type'], source['name'], source['secondary_source'], source['followers'], source['description'], source['engagement'], source['url']))
-        c.execute("INSERT INTO sources VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (
-            ouid, source['id'], source['platform'], source['origin'], source['position'], source['type'], source['name'], source['secondary_source'], source['followers'], source['description'], source['engagement'], source['url']
-        ))
-        conn.commit()
-        conn.close()
-        return ouid
+        return source
+
+        # conn = sqlite3.connect(DATABASE)
+        # c = conn.cursor()
+        # debug("INSERT INTO sources VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % ( ouid, source['id'], source['platform'], source['origin'], source['position'], source['type'], source['name'], source['secondary_source'], source['followers'], source['description'], source['engagement'], source['url']))
+        # c.execute("INSERT INTO sources VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (
+        #     ouid, source['id'], source['platform'], source['origin'], source['position'], source['type'], source['name'], source['secondary_source'], source['followers'], source['description'], source['engagement'], source['url']
+        # ))
+        # conn.commit()
+        # conn.close()
 
     def _addPost(self, obj):
-        conn = sqlite3.connect(DATABASE)
         ouid = str(uid())[:8]
         obj['description'] = obj.get('description', '').replace("'", "")
         obj['description'] = obj.get('description', '').replace('"', "")
@@ -43,20 +46,50 @@ class User:
         obj['name'] = obj.get('name', '').replace('"', "")
         obj['url'] = obj.get('url', '').replace("'", "")
         obj['source'] = obj.get('source', '').replace("'", "")
-        # info(f"INSERT INTO posts VALUES ('{ouid}', '{obj['id']}', '{obj['platform']}', '{obj['origin']}', '{obj['position']}', '{obj['type']}', '{obj['source']}', '{obj['secondary_source']}', '{obj['likes']}', '{obj['comments']}', '{obj['shares']}', '{obj['views']}', '{obj['created_at']}', '{obj['title']}', '{obj['description']}', '{obj['media']}', '{obj['url']}', '{obj['is_ad']}')")
-        insert = f"INSERT INTO posts VALUES ('{ouid}', '{obj['id']}', '{obj['platform']}', '{obj['origin']}', '{obj['position']}', '{obj['type']}', '{obj['source']}', '{obj['secondary_source']}', '{obj['likes']}', '{obj['comments']}', '{obj['shares']}', '{obj['views']}', '{obj['created_at']}', '{obj['title']}', '{obj['description']}', '{obj['media']}', '{obj['url']}', '{obj['is_ad']}')"
-        c = conn.cursor()
-        c.execute(insert)
-        conn.commit()
-        conn.close()
-        return ouid
+        obj['uid'] = ouid
+        obj['type'] = 'post'
+
+        return obj
+
+        # conn = sqlite3.connect(DATABASE)
+        # insert = f"INSERT INTO posts VALUES ('{ouid}', '{obj['id']}', '{obj['platform']}', '{obj['origin']}', '{obj['position']}', '{obj['type']}', '{obj['source']}', '{obj['secondary_source']}', '{obj['likes']}', '{obj['comments']}', '{obj['shares']}', '{obj['views']}', '{obj['created_at']}', '{obj['title']}', '{obj['description']}', '{obj['media']}', '{obj['url']}', '{obj['is_ad']}')"
+        # c = conn.cursor()
+        # c.execute(insert)
+        # conn.commit()
+        # conn.close()
+
 
     def addSignal(self, action, object, object_type, info=''):
         try:
             if object_type == 'source':
-                object_uid = self._addSource(object)
+                obj = self._addSource(object)
             elif object_type == 'post':
-                object_uid = self._addPost(object)
+                obj = self._addPost(object)
+            else:
+                obj = object
+        except Exception as e:
+            error(f'Error adding object: {e}')
+            obj = ''
+
+        signal_id = str(uid())[:8]
+
+        signal = dict()
+        signal['id'] = signal_id
+        signal['action'] = action
+        signal['object_id'] = obj
+        signal['time'] = int(time())
+        signal['user'] = self.chromeId
+        signal['platform'] = self.Platform.__name__
+        signal['info'] = info
+        signal['experiment_id'] = self.experiment_id
+        return signal
+
+    def addSignal_deprecated(self, action, object, object_type, info=''):
+        try:
+            if object_type == 'source':
+                object_uid = self._addSource(object)['uid']
+            elif object_type == 'post':
+                object_uid = self._addPost(object)['uid']
             else:
                 object_uid = object
         except Exception as e:
@@ -71,7 +104,6 @@ class User:
             os.makedirs(path)
         platform_name = self.Platform.__name__
         screenshot = os.path.join(path, self.chromeId, platform_name, screenshot)
-        self.takeScreenshot(screenshot)
 
         conn = sqlite3.connect(DATABASE)
         c = conn.cursor()
@@ -104,7 +136,7 @@ class User:
         wait(4)
         email = self.platform.chromeLogin()
         debug('Email: %s' % email)
-        self.addSignal('create', email, 'user', info=self.chromeId)
+        self.takeScreenshot()
         wait(7)
   
     def followUser(self, topic):
@@ -114,9 +146,10 @@ class User:
         self.search(topic)
         debug('Term searched')
         user = self.platform.followUser()
-        self.addSignal('follow', user, 'source', info=f'searched-{topic}')
+        self.takeScreenshot()
+        signal = self.addSignal('follow', user, 'source', info=f'searched-{topic}')
+        return signal
         wait(3)
-        pass
 
     def getOpenedPosts(self):
         conn = sqlite3.connect(DATABASE)
@@ -133,9 +166,10 @@ class User:
         self.search(topic)
         opened_posts = self.getOpenedPosts()
         post, opened = self.platform.openPost(already_opened=opened_posts)
-        self.addSignal('open', post, 'post', info=f'searched-{topic}')
+        self.takeScreenshot()
+        signal = self.addSignal('open', post, 'post', info=f'searched-{topic}')
         debug(f"OPENED POST: {post['id']}")
-        return post
+        return signal
 
     def likePost(self, topic):
         wait(2)
@@ -144,21 +178,19 @@ class User:
         self.search(topic)
         info('Term searched: %s' % topic)
         post, opened = self.platform.likePost()
-        path = f'{post["id"]}.png'
-
-        print(post)
 
         if post == None:
             error('No post found to like')
             raise Exception('No post found to like')
 
-        for open in opened:
-            self.addSignal('open', open, 'post', info=f'searched-{topic}')
+        # for open in opened:
+        #     self.takeScreenshot()
+        #     self.addSignal('open', open, 'post', info=f'searched-{topic}')
 
         if post != None:
-            self.addSignal('like', post, 'post', info=f'searched-{topic}')
+            signal = self.addSignal('like', post, 'post', info=f'searched-{topic}')
 
-        return post
+        return signal
   
     def joinCommunity(self, topic,):
         wait(2)
@@ -167,8 +199,9 @@ class User:
         self.search(topic)
         debug('Term searched')
         community = self.platform.joinCommunity()
-        self.addSignal('join', community, 'source', info=f'searched-{topic}')
-        pass
+        self.takeScreenshot()
+        signal = self.addSignal('join', community, 'source', info=f'searched-{topic}')
+        return signal
 
     def getPosts(self, scrolls, posts_n=10):
         posts = []
@@ -191,10 +224,8 @@ class User:
         self.goHome()
         sleep(2)
         posts = self.getPosts(scrolls)
-        uuid = str(uid())[:8]
-        image_name = f'{self.userId}-{self.experiment_id}-{self.platform.name}-{uuid}.png'
-        self.takeScreenshot(image_name)
-        return posts, image_name
+        image_path = self.takeScreenshot()
+        return posts, image_path
 
     def goHome(self):
         try:
@@ -205,15 +236,30 @@ class User:
 
     def search(self, key):
         self.platform.searchTerm(key)
-        self.addSignal('search', None, '', info=f'searched-{key}')
+        wait(4)
+        self.takeScreenshot()
+        signal = self.addSignal('search', None, '', info=f'searched-{key}')
+        return signal
+
+    def control(self):
+        self.goHome()
+        wait(3)
+        self.takeScreenshot()
+        signal = self.addSignal('control', None, '', info='control')
+        return signal
 
     def scrollDown(self, num=1):
         for i in range(num):
             self.platform.scrollDown()
 
-    def takeScreenshot(self, file):
-        path = os.path.join(SCREENSHOTS_PATH, file)
-        self.platform.screenshot(path)
+    def takeScreenshot(self):
+        uuid = str(uid())[:4]
+        action = inspect.stack()[1].function
+        image_path = os.path.join(SCREENSHOTS_PATH, self.experiment_id, self.userId, self.platform.name, action, f'{uuid}.png')
+        if not os.path.exists(os.path.dirname(image_path)):
+            os.makedirs(os.path.dirname(image_path))
+        self.platform.screenshot(image_path)
+        return image_path
 
     def closeDriver(self):
         self.platform.closeDriver()
