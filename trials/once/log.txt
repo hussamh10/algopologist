@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="10dea3629a9bac5fb4d498bfd9328045", element="f.01EBC17C8B169A534604F4C3AAADAF53.d.DF3F0CECB677E96E0BB534F74AF724FE.e.14")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\search-08ea7103.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[@id="subscribers"]"}
+  (Session info: chrome=123.0.6312.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x006C8D03+51395]
+	(No symbol) [0x00635F61]
+	(No symbol) [0x004EE13A]
+	(No symbol) [0x005262BB]
+	(No symbol) [0x005263EB]
+	(No symbol) [0x0051E001]
+	(No symbol) [0x00543ED4]
+	(No symbol) [0x0051DF7E]
+	(No symbol) [0x00544124]
+	(No symbol) [0x0055A570]
+	(No symbol) [0x00543C26]
+	(No symbol) [0x0051C629]
+	(No symbol) [0x0051D40D]
+	GetHandleVerifier [0x00A468D3+3712147]
+	GetHandleVerifier [0x00A85CBA+3971194]
+	GetHandleVerifier [0x00A80FA8+3951464]
+	GetHandleVerifier [0x00779D09+776393]
+	(No symbol) [0x00641734]
+	(No symbol) [0x0063C618]
+	(No symbol) [0x0063C7C9]
+	(No symbol) [0x0062DDF0]
+	BaseThreadInitThunk [0x762E7BA9+25]
+	RtlInitializeExceptionChain [0x7757BDAB+107]
+	RtlClearBits [0x7757BD2F+191]
+=======
 DEBUG: Google signed in: 1
 DEBUG: Chrome signed in: True
 DEBUG: SIGNIN
@@ -151,9 +185,16 @@ Stacktrace:
 	BaseThreadInitThunk [0x75E97BA9+25]
 	RtlInitializeExceptionChain [0x772FBDAB+107]
 	RtlClearBits [0x772FBD2F+191]
+>>>>>>> d6c0ec1891a4c58b95348695e5b9a59d40b32a07
 
 DEBUG: Waiting for 0 minutes
 DEBUG: OBSERVE
+<<<<<<< HEAD
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+=======
 DEBUG: OBSERVING: Platform: YouTube, Subject: follow_NBA_0
 DEBUG: SIGNING IN: anastasia
 Loading browser for user: anastasia
@@ -218,3 +259,173 @@ DEBUG: Taking screenshot
 DEBUG: Screenshot saved: H:\Desktop\algopologist\data\screenshots\anastasia-once-facebook-91e1ea58.png
 DEBUG: Waiting for 0 minutes
 DEBUG: Google signed in: 1
+>>>>>>> d6c0ec1891a4c58b95348695e5b9a59d40b32a07
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: ALREADY TREATED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: Google signed in: 1
+DEBUG: Chrome signed in: True
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Searchable: NBA
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="a439361a76ceedc32fee767934a199df", element="f.D781DAD6D041E4CDA204FC0709B4D8D3.d.D2CD61AA952A009B163DE8DD7EA7C6A1.e.34")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\search-6a20e204.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error
+ERROR: Error adding object: 'NoneType' object has no attribute 'get'
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\follow-70201684.png
+DEBUG: Signal added: follow
+DEBUG: Google signed in: 1
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Searchable: NBA
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="cd97b0c7643c68391f64466bcf499990", element="f.560192825B7F7D3A3CDCB728D8545875.d.15F7348E0BC91B318F4B32EF6378546D.e.34")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\search-2e26296b.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: cannot access local variable 'position' where it is not associated with a value
+DEBUG: Waiting for 0 minutes
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: Google signed in: 1
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: ALREADY TREATED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: Google signed in: 1
+DEBUG: SIGNIN
+DEBUG: SIGNED IN: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: SIGNED IN: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVING
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: TREATMENT
+DEBUG: TREATING: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: Checking if logged in
+DEBUG: Checking if logged in: https://www.youtube.com/account
+DEBUG: SIGNING IN: anastasia
+Loading browser for user: anastasia
+DEBUG: User loaded
+DEBUG: Searchable: NBA
+DEBUG: <undetected_chromedriver.webelement.WebElement (session="1304abc9c4852c66efc74121f94d198c", element="f.44546EDC3C991745395B18CC8E74A87D.d.B57D98F735BE6551B728F0801BF4D8AC.e.34")>
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\search-9fdaa4ba.png
+DEBUG: Signal added: search
+DEBUG: Term searched
+ERROR: Error adding object: 'platform'
+DEBUG: Taking screenshot
+DEBUG: Screenshot saved: C:\Users\hussa\Desktop\algopologist\data\screenshots\once\anastasia\Youtube\follow-6fad7f2e.png
+DEBUG: Signal added: follow
+DEBUG: Waiting for 0 minutes
+DEBUG: ALREADY TREATED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY TREATED: Platform: Facebook, Subject: follow_NBA_0
+DEBUG: OBSERVE
+DEBUG: ALREADY OBSERVED: Platform: YouTube, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Reddit, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Twitter, Subject: follow_NBA_0
+DEBUG: ALREADY OBSERVED: Platform: Facebook, Subject: follow_NBA_0

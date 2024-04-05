@@ -69,11 +69,11 @@ if __name__ == '__main__':
 
     chrome = subjects[0]
 
-    signed = chrome.checkChromeSignin()
-    debug(f'Chrome signed in: {signed}')
-    if not signed:
-        error(f'Chrome not signed in: {chrome.id}')
-        chrome.chromeSignIn()
+    # signed = chrome.checkChromeSignin()
+    # debug(f'Chrome signed in: {signed}')
+    # if not signed:
+    #     error(f'Chrome not signed in: {chrome.id}')
+    #     chrome.chromeSignIn()
 
 
     debug("SIGNIN")

@@ -25,6 +25,7 @@ if LAB == 301:
 
 
 if LAB == 317:  # Windows
+    print('LAB 317...')
     CONTINUE_GOOGLE_X = 2300
     CONTINUE_GOOGLE_Y = 233
     GOT_IT_X = 1140
