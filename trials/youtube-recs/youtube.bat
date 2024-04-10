@@ -1,1 +1,0 @@
-python youtube-rec.py 0 & python youtube-rec.py 1 & python youtube-rec.py 2 & python youtube-rec.py 3 & python youtube-rec.py 4 & python youtube-rec.py 5 & python youtube-rec.py 6 & python youtube-rec.py 7 & python youtube-rec.py 8 & python youtube-rec.py 9
