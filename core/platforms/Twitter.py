@@ -23,7 +23,6 @@ class Twitter(Platform):
     def __init__(self, user):
         super().__init__(Twitter.name, Twitter.url, user)
 
-
     def createUserGoogle(self, profile):
         self.loadPage(Twitter.creation_url)
         sleep(3)
@@ -38,7 +37,6 @@ class Twitter(Platform):
         monkey.enter()
         sleep(3000)
         error('Not implemented: createUserGoogle')
-
 
     def createUser(self, profile):
         # self.createUserGoogle(profile)
@@ -140,7 +138,6 @@ class Twitter(Platform):
         wait(3)
         self.driver.get('https://twitter.com/home')
         wait(30)
-
 
     def isAd(self, tweet):
         ads = tweet.find_elements(By.XPATH, './/span[text()="Ad"]')
@@ -414,14 +411,13 @@ class Twitter(Platform):
         for i, tweet in enumerate(tweets):
             try:
                 post = self.getPost(tweet)
+                post['position'] = i
+                post = self.convertToObject(post, 'home')
             except:
                 error('Could not get post')
                 continue
-            post['position'] = i
             posts.append(post)
-
         return posts
-
 
     def convertToObject(self, post, origin):
         obj = {
