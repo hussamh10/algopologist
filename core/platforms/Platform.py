@@ -124,10 +124,7 @@ class Platform(ABC):
         pass
 
     def TakeScreenshot(self, file):
-        debug("Taking screenshot")
-        self.driver.save_screenshot(file)
-        debug(f'Screenshot saved: {file}')
-        return True
+        return self.screenshot(file)
 
     
     def screenshot(self, file):

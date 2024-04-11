@@ -39,35 +39,30 @@ class Trial():
         searchable = topics[self.platform.name][self.action]
         debug(f'Searchable: {searchable}')
 
-        dump = 'No Treatment'
+        signal = dict()
         if self.action == '':
+            signal = self.user.control()
             pass
 
         if self.action == 'search':
-            self.user.search(searchable)
+            signal = self.user.search(searchable)
 
         if self.action == 'open':
-            dump = self.user.openPost(searchable)
+            signal = self.user.openPost(searchable)
 
         if self.action == 'dislike':
             self.user.dislikePost(searchable)
 
         if self.action == 'like':
-            dump = self.user.likePost(searchable)
+            signal = self.user.likePost(searchable)
 
         if self.action == 'join':
-            self.user.joinCommunity(searchable)
+            signal = self.user.joinCommunity(searchable)
 
         if self.action == 'follow':
-            self.user.followUser(searchable)
-
-        if self.action == 'vanilla':
-            if self.platform.name == 'reddit':
-                self.user.joinCommunity(self.topic) 
-            else:
-                self.user.followUser(self.topic)
+            signal = self.user.followUser(searchable)
 
         sleep(2)
         self.user.goHome()
         wait(3)
-        return dump
+        return signal

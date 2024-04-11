@@ -1,10 +1,11 @@
 import os
 import json
 
-LAB = 301
-# Determine the base directory based on the operating system
-
-#CHANGE TO TRY EXCEPT
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if 'H:' in BASE_DIR:
+    LAB = 301
+else:
+    LAB = 317
 
 if LAB == 301:
     print('LAB 301...')
@@ -24,21 +25,24 @@ if LAB == 301:
 
 
 if LAB == 317:  # Windows
+    print('LAB 317...')
     CONTINUE_GOOGLE_X = 2300
     CONTINUE_GOOGLE_Y = 233
     GOT_IT_X = 1140
     GOT_IT_Y = 726
 
     if os.name == 'posix':        
-        BASE_DIR = '/Users/hussam/Desktop/Projects/Platform behavior'
-        DATA_DIR = '/Users/hussam/Desktop/Projects/Platforms behavior/data'
+        BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
+        DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
 
-    else: # Unix-like systems (Linux, macOS)
+    else:
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
         DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
     
     SESSIONS_PATH = os.path.join(BASE_DIR, 'data', 'sessions')
 
+
+print(f'BASE_DIR: {BASE_DIR}')
 
 # Click positions
 CHROME_REMIND_X = 950
