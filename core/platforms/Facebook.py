@@ -93,7 +93,7 @@ class Facebook(Platform):
         phone = self.getPhone()
         monkey.type(self.getPhone())
         monkey.next()
-        monkey.type(constants.BASIC_PASSWORD)
+        monkey.type(constants.COMPLEX_PASSWORD)
         monkey.enter()
 
     def createUserMobile(self, info):
