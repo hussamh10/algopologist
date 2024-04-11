@@ -39,7 +39,7 @@ if __name__ == '__main__':
     config_path = os.path.join(BASE_DIR, 'trials', 'data', EXPERIMENT_ID, 'config.json')
     config = json.load(open(config_path, 'r'))
     
-    path = os.path.join(BASE_DIR, 'trials', 'data', config['experiment_id'], 'data')
+    path = os.path.join(BASE_DIR, 'trials', 'data', config['experiment_id'], CLIENT_ID,'data')
     if not os.path.exists(path):
         os.makedirs(path)
 
