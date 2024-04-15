@@ -1,0 +1,200 @@
+{
+    "experiment_id": "compound",
+    "email_template": "compound",
+    "actions": [
+        "like",
+        "follow",
+        "join",
+        "open",
+        "search",
+        ""
+    ],
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Facebook",
+        "Twitter"
+    ],
+    "topic": "NBA",
+    "replications": 4,
+    "topics": {
+        "youtube": {
+            "like": "NBA",
+            "follow": "NBA",
+            "join": "NBA",
+            "open": "NBA",
+            "search": "NBA",
+            "": "NBA"
+        },
+        "reddit": {
+            "like": "NBA",
+            "follow": "NBA",
+            "join": "NBA",
+            "open": "NBA",
+            "search": "NBA",
+            "": "NBA"
+        },
+        "facebook": {
+            "like": "NBA",
+            "follow": "NBA",
+            "join": "NBA",
+            "open": "NBA",
+            "search": "NBA",
+            "": "NBA"
+        },
+        "twitter": {
+            "like": "NBA",
+            "follow": "NBA",
+            "join": "NBA",
+            "open": "NBA",
+            "search": "NBA",
+            "": "NBA"
+        }
+    },
+    "users": {
+        "0": {
+            "action": "like",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound0@spartaaceap.com"
+        },
+        "1": {
+            "action": "follow",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound1@spartaaceap.com"
+        },
+        "2": {
+            "action": "join",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound2@spartaaceap.com"
+        },
+        "3": {
+            "action": "open",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound3@spartaaceap.com"
+        },
+        "4": {
+            "action": "search",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound4@spartaaceap.com"
+        },
+        "5": {
+            "action": "",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound5@spartaaceap.com"
+        },
+        "6": {
+            "action": "like",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound6@spartaaceap.com"
+        },
+        "7": {
+            "action": "follow",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound7@spartaaceap.com"
+        },
+        "8": {
+            "action": "join",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound8@spartaaceap.com"
+        },
+        "9": {
+            "action": "open",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound9@spartaaceap.com"
+        },
+        "10": {
+            "action": "search",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound10@spartaaceap.com"
+        },
+        "11": {
+            "action": "",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound11@spartaaceap.com"
+        },
+        "12": {
+            "action": "like",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound12@spartaaceap.com"
+        },
+        "13": {
+            "action": "follow",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound13@spartaaceap.com"
+        },
+        "14": {
+            "action": "join",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound14@spartaaceap.com"
+        },
+        "15": {
+            "action": "open",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound15@spartaaceap.com"
+        },
+        "16": {
+            "action": "search",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound16@spartaaceap.com"
+        },
+        "17": {
+            "action": "",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound17@spartaaceap.com"
+        },
+        "18": {
+            "action": "like",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound18@spartaaceap.com"
+        },
+        "19": {
+            "action": "follow",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound19@spartaaceap.com"
+        },
+        "20": {
+            "action": "join",
+            "topic": "NBA",
+            "replication": 0,
+            "email": "compound20@spartaaceap.com"
+        },
+        "21": {
+            "action": "open",
+            "topic": "NBA",
+            "replication": 1,
+            "email": "compound21@spartaaceap.com"
+        },
+        "22": {
+            "action": "search",
+            "topic": "NBA",
+            "replication": 2,
+            "email": "compound22@spartaaceap.com"
+        },
+        "23": {
+            "action": "",
+            "topic": "NBA",
+            "replication": 3,
+            "email": "compound23@spartaaceap.com"
+        }
+    }
+}

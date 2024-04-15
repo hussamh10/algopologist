@@ -1,7 +1,6 @@
 from colorama import Fore, Back, Style
 import inspect
 from datetime import datetime
-from core.experiment.Experiment import Experiment
 
 def error(e):
     # get caller funciton name  
@@ -33,6 +32,7 @@ def logging(e):
     f.close()
 
 def log(e, p=False, caller=False):
+    from core.experiment.Experiment import Experiment
     filename = Experiment().log_file()
     f = open(filename, 'a')
 

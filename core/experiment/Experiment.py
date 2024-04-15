@@ -1,19 +1,10 @@
 import json
 import os
-import pickle as pkl
-from core.utils.log import debug, error, info
-from core.account_creation.GoogleWorkspace import GoogleWorkspace
-from core.utils import shuffleIP as IP
-from core.utils.util import wait
-from core.constants import BASE_DIR, getPlatform
-from core.experiment.Subject import Subject
-from trials.post import EXPERIMENT_ID
-
-# make Experiment class singleton
+from core.constants import BASE_DIR
 
 class Experiment(): 
     _instance = None
-    def __new__(cls, client_id, experiment_id):
+    def __new__(cls, client_id="", experiment_id=""):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
             cls._instance.init_variables(client_id, experiment_id)
@@ -22,8 +13,8 @@ class Experiment():
     def init_variables(self, client_id, experiment_id):
         self.client_id = client_id
         self.experiment_id = experiment_id
-        self.config = open(self.config_path(), 'r')
         self.path = self.user_path()
+        self.config = json.load(open(self.config_path(), 'r'))
         self.basicSetup()
     
     def screenshot_path(self):
@@ -36,13 +27,19 @@ class Experiment():
         file = os.path.join(self.path, 'log.txt')
         return file 
 
+    def experiment_path(self):
+        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id)
+        return path
+
     def config_path(self):
         path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, 'config.json')
-        self.config = json.load(open(path, 'r'))
         return path
     
     def user_path(self):
-        path = os.path.join(BASE_DIR, 'trials', 'data', self.client_id, 'data')
+        if self.client_id == 'admin':
+            path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id)
+            return path
+        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, self.client_id, 'data')
         if not os.path.exists(path):
             os.makedirs(path)
         return path

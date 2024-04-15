@@ -139,7 +139,7 @@ class GoogleWorkspace():
         user = dict()
         user['fname'] = names.get_first_name()
         user['lname'] = names.get_last_name()
-        user['email'] = f"{eid}@spartaaceap.com"
+        user['email'] = eid
         user['id'] = eid
         user['exp'] = experiment_id
         user['google_account_setup'] = False
@@ -158,6 +158,18 @@ class GoogleWorkspace():
         users = users.to_dict('records')
         return users
 
+    def uploadUsers(self, users, xp_id, path):
+        header = 'First Name [Required],Last Name [Required],Email Address [Required],Password [Required],Password Hash Function [UPLOAD ONLY],Org Unit Path [Required],New Primary Email [UPLOAD ONLY],Recovery Email,Home Secondary Email,Work Secondary Email,Recovery Phone [MUST BE IN THE E.164 FORMAT],Work Phone,Home Phone,Mobile Phone,Work Address,Home Address,Employee ID,Employee Type,Employee Title,Manager Email,Department,Cost Center,Building ID,Floor Name,Floor Section,Change Password at Next Sign-In,New Status [UPLOAD ONLY],Advanced Protection Program enrollment'
+        lines = []
+        for user in users:
+            user = users[user]
+            u = self.createUser(user['email'], xp_id)
+            line = self.createUserLine(u)
+            lines.append(line)
+        
+        path = os.path.join(path, 'google_users.csv')
+        with open(path, 'w') as f:
+            f.write('\n'.join([header] + lines))
         
     def signUp(self, N, email_template, experiment_id, path):
         header = 'First Name [Required],Last Name [Required],Email Address [Required],Password [Required],Password Hash Function [UPLOAD ONLY],Org Unit Path [Required],New Primary Email [UPLOAD ONLY],Recovery Email,Home Secondary Email,Work Secondary Email,Recovery Phone [MUST BE IN THE E.164 FORMAT],Work Phone,Home Phone,Mobile Phone,Work Address,Home Address,Employee ID,Employee Type,Employee Title,Manager Email,Department,Cost Center,Building ID,Floor Name,Floor Section,Change Password at Next Sign-In,New Status [UPLOAD ONLY],Advanced Protection Program enrollment'
