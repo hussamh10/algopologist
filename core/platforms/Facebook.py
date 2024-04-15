@@ -90,7 +90,6 @@ class Facebook(Platform):
     def signIn(self):
         self.loadPage(Facebook.login_url)
         wait(2)
-        phone = self.getPhone()
         monkey.type(self.getPhone())
         monkey.next()
         monkey.type(constants.COMPLEX_PASSWORD)
