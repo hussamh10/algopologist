@@ -1,7 +1,7 @@
 from colorama import Fore, Back, Style
 import inspect
 from datetime import datetime
-# from utils.logBot import chatBot
+from core.experiment.Experiment import Experiment
 
 def error(e):
     # get caller funciton name  
@@ -25,7 +25,6 @@ def debug(e):
     print(Fore.YELLOW + f"{f}:" + Fore.WHITE + f"\t {e}")
     log(f"DEBUG: {e}", p=False, caller=inspect.stack())
 
-
 def logging(e):
     filename = 'log.txt'
     f = open(filename, 'a')
@@ -33,9 +32,8 @@ def logging(e):
     f.write(e)
     f.close()
 
-
 def log(e, p=False, caller=False):
-    filename = 'log.txt'
+    filename = Experiment().log_file()
     f = open(filename, 'a')
 
     try:

@@ -8,6 +8,7 @@ import pandas as pd
 import sqlite3 as sql
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
 from core.constants import getPlatform
+from core.experiment.Experiment import Experiment
 from core.experiment.Trial import Trial
 from core.utils.log import debug, error, info, log
 from core.utils import shuffleIP as IP
@@ -104,8 +105,8 @@ class Subject():
         file = os.path.join(self.path, self.platform, self.id)
         pkl.dump(self, open(file, 'wb'))
 
-    def create(self, path, platform, name, action, topic, replicate, experiment_id, email):
-        self.path = path
+    def create(self, platform, name, action, topic, replicate, experiment_id, email):
+        self.path = Experiment().user_path()
         self.platform = platform
         self.id = name
         self.action = action

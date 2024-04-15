@@ -5,6 +5,7 @@ import sqlite3
 from uuid import uuid4 as uid
 import os
 from core.constants import *
+from core.experiment.Experiment import Experiment
 from core.utils.util import wait; 
 from core.utils.log import debug, info, error
 
@@ -255,7 +256,8 @@ class User:
     def takeScreenshot(self):
         uuid = str(uid())[:4]
         action = inspect.stack()[1].function
-        image_path = os.path.join(SCREENSHOTS_PATH, self.experiment_id, self.userId, self.platform.name, action, f'{uuid}.png')
+        screenshot_path = Experiment().screenshot_path
+        image_path = os.path.join(screenshot_path, self.platform.name, action, f'{uuid}.png')
         if not os.path.exists(os.path.dirname(image_path)):
             os.makedirs(os.path.dirname(image_path))
         self.platform.screenshot(image_path)

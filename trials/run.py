@@ -1,5 +1,7 @@
 import sys
 import os
+
+from core.experiment.Experiment import Experiment
 sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'algopologist')) # 317 win
 sys.path.append('../')
 sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
@@ -17,33 +19,16 @@ from core.utils.log import debug, error, logging
 from core.constants import PRAW
 
 
-def getItem(path, item):
-    items = json.load(open(os.path.join(path, 'items.json'), 'r'))
-    return items[f'{item}']
-
-def updateItem(path, item, value):
-    items = json.load(open(os.path.join(path, 'items.json'), 'r'))
-    items[f'{item}'] = value
-    json.dump(items, open(os.path.join(path, 'items.json'), 'w'))
-
-def basicSetup(path):
-    items = ['google', 'youtube', 'reddit', 'twitter', 'facebook', 'youtube_pre', 'reddit_pre', 'twitter_pre', 'facebook_pre', 'youtube_treatment', 'reddit_treatment', 'twitter_treatment', 'facebook_treatment', 'youtube_post', 'reddit_post', 'twitter_post', 'facebook_post']
-    if not os.path.exists(os.path.join(path, 'items.json')):
-        items = {item: 0 for item in items}
-        json.dump(items, open(os.path.join(path, 'items.json'), 'w'))
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
     CLIENT_ID = "1"
     EXPERIMENT_ID = sys.argv[1]
-    config_path = os.path.join(BASE_DIR, 'trials', 'data', EXPERIMENT_ID, 'config.json')
-    config = json.load(open(config_path, 'r'))
-    
-    path = os.path.join(BASE_DIR, 'trials', 'data', config['experiment_id'], CLIENT_ID,'data')
-    if not os.path.exists(path):
-        os.makedirs(path)
 
-    basicSetup(path)
+    experiment = Experiment(CLIENT_ID, EXPERIMENT_ID)
+    config = experiment.config
+    
+    experiment.basicSetup()
 
     platforms = config['platforms']
     experiment_id = config['experiment_id']
@@ -54,20 +39,20 @@ if __name__ == '__main__':
     topic = config['users'][CLIENT_ID]['topic']
     replicate = config['users'][CLIENT_ID]['replication']
     
-    google_signed = getItem(path, 'google')
+    google_signed = experiment.getItem('google')
     if not google_signed:
         g = GoogleWorkspace()
         g.initiateUser(email)
-        updateItem(path, 'google', 1)
+        experiment.updateItem('google', 1)
 
     debug(f'Google signed in: {google_signed}')
-    waiting = int(CLIENT_ID)
+    waiting = 3
 
     name = f'{action}_{topic}_{replicate}' 
     subjects = []
     for platform in platforms:
         subject = Subject()
-        subject.create(path, platform, name, action, topic, replicate, experiment_id, email)
+        subject.create(platform, name, action, topic, replicate, experiment_id, email)
         subjects.append(subject)
 
     chrome = subjects[0]
@@ -82,7 +67,7 @@ if __name__ == '__main__':
     debug("SIGNIN")
     for subject in subjects:
         plt = subject.platform.lower()
-        signed_in = getItem(path, plt)
+        signed_in = experiment.getItem(plt)
         if signed_in:
             debug(f'SIGNED IN: Platform: {subject.platform}, Subject: {subject.id}')
             continue
@@ -90,7 +75,7 @@ if __name__ == '__main__':
         debug(f'Platform: {subject.platform}, Subject: {subject.id}')
         try:
             signed = subject.platformSignIn()
-            updateItem(path, plt, 1)
+            experiment.updateItem(plt, 1)
         except Exception as e:
             error(f'\t Error signing in {subject.id} on {subject.platform}')
             error(f'\t {e}')
@@ -102,7 +87,7 @@ if __name__ == '__main__':
     for subject in subjects:
         plt = subject.platform.lower()
         plt_obs = f"{plt}_pre"
-        observed = getItem(path, plt_obs)
+        observed = experiment.getItem(plt_obs)
         if observed:
             debug(f'ALREADY OBSERVED: Platform: {subject.platform}, Subject: {subject.id}')
             continue
@@ -123,18 +108,18 @@ if __name__ == '__main__':
         wait(3)
         try:
             subject.observe(pre=True)
-            updateItem(path, plt_obs, 1)
+            experiment.updateItem(plt_obs, 1)
         except Exception as e:
             error(f'Error observing {subject.id} on {platform}')
             error(e)
-        # bigWait(waiting)
+        bigWait(waiting)
         
     debug("TREATMENT")
 
     for subject in subjects:
         plt = subject.platform.lower()
         plt_obs = f"{plt}_treatment"
-        treated = getItem(path, plt_obs)
+        treated = experiment.getItem(plt_obs)
         if treated:
             debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
             continue
@@ -154,7 +139,7 @@ if __name__ == '__main__':
 
         try:
             subject.treatment(topics)
-            updateItem(path, plt_obs, 1)
+            experiment.updateItem(plt_obs, 1)
         except Exception as e:
             error(f'Error observing {subject.id} on {platform}')
             error(e)
@@ -165,7 +150,7 @@ if __name__ == '__main__':
     for subject in subjects:
         plt = subject.platform.lower()
         plt_obs = f"{plt}_post"
-        observed = getItem(path, plt_obs)
+        observed = experiment.getItem(plt_obs)
         if observed:
             debug(f'ALREADY OBSERVED: Platform: {subject.platform}, Subject: {subject.id}')
             continue
@@ -185,7 +170,7 @@ if __name__ == '__main__':
             
         try:
             subject.observe(pre=False)
-            updateItem(path, plt_obs, 1)
+            experiment.updateItem(plt_obs, 1)
         except Exception as e:
             error(f'Error observing {subject.id} on {platform}')
             error(e)
