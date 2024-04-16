@@ -15,7 +15,6 @@ import praw
 import core.constants as core
 
 class RedditPRAW():
-
     def __init__(self):
         self.reddit_client = praw.Reddit(
             client_id=constants.PRAW['client_id'],
@@ -373,6 +372,7 @@ class Reddit(Platform):
         return post
 
     def getPagePosts(self, n=10):
+        debug('Getting homepage post')
         wait(1)
         posts = self.driver.find_elements(By.XPATH, '//div[@data-testid="post-container"]')
 
@@ -382,16 +382,19 @@ class Reddit(Platform):
             try:
                 url = post.find_element(By.XPATH, './/a[@data-click-id="body"]').get_attribute('href')           
                 posts_urls.append(url)
-            except:
+            except Exception as e:
+                error(e)
                 pass
 
         posts_ids = self._getPostId(posts_urls)
         posts = []
+        debug('post_urls')
 
         api = RedditPRAW()
 
         i = 0
         for post in tqdm(posts_ids):
+            debug(f'Getting post: {post}')
             post = api.getPost(post)
             post['position'] = i
             post = self.convertToObject(post, 'home')

@@ -101,7 +101,7 @@ class Facebook(Platform):
 
         areas = {'USA': '+1', 'NL': '+31' , 'UK': '+44'}
         sms = juicy()
-
+        
         self.loadPage(Facebook.creation_url)
         sleep(3)
         monkey.click()

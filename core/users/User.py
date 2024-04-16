@@ -256,7 +256,7 @@ class User:
     def takeScreenshot(self):
         uuid = str(uid())[:4]
         action = inspect.stack()[1].function
-        screenshot_path = Experiment().screenshot_path
+        screenshot_path = Experiment().screenshot_path()
         image_path = os.path.join(screenshot_path, self.platform.name, action, f'{uuid}.png')
         if not os.path.exists(os.path.dirname(image_path)):
             os.makedirs(os.path.dirname(image_path))

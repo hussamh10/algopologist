@@ -1,12 +1,12 @@
 import sys
 import os
 
-from core.experiment.Experiment import Experiment
 sys.path.append(os.path.join('Users', 'hussam', 'Desktop', 'Projects', 'algopologist')) # 317 win
 sys.path.append('../')
 sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
 sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')) # 317 win
 
+from core.experiment.Experiment import Experiment
 from core.constants import IP_DB_NAME, BASE_DIR
 from core.utils.IPManager import IPManager
 import json
@@ -22,7 +22,7 @@ from core.constants import PRAW
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    CLIENT_ID = "1"
+    CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
 
     experiment = Experiment(CLIENT_ID, EXPERIMENT_ID)
@@ -32,12 +32,12 @@ if __name__ == '__main__':
 
     platforms = config['platforms']
     experiment_id = config['experiment_id']
-    topics = config['topics']
 
     email = config['users'][CLIENT_ID]['email']
     action = config['users'][CLIENT_ID]['action']
     topic = config['users'][CLIENT_ID]['topic']
     replicate = config['users'][CLIENT_ID]['replication']
+    topics = config['topics'][topic]
     
     google_signed = experiment.getItem('google')
     if not google_signed:
@@ -46,7 +46,7 @@ if __name__ == '__main__':
         experiment.updateItem('google', 1)
 
     debug(f'Google signed in: {google_signed}')
-    waiting = 3
+    waiting = 0
 
     name = f'{action}_{topic}_{replicate}' 
     subjects = []
