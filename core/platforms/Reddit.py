@@ -374,10 +374,14 @@ class Reddit(Platform):
     def getPagePosts(self, n=10):
         debug('Getting homepage post')
         wait(1)
+
+        self.driver.get(Reddit.url)
+        wait(5)
+        self.driver.get(Reddit.url)
+        wait(5)
+
         posts = self.driver.find_elements(By.XPATH, '//div[@data-testid="post-container"]')
-
         posts_urls = []
-
         for post in posts:
             try:
                 url = post.find_element(By.XPATH, './/a[@data-click-id="body"]').get_attribute('href')           
@@ -388,7 +392,6 @@ class Reddit(Platform):
 
         posts_ids = self._getPostId(posts_urls)
         posts = []
-        debug('post_urls')
 
         api = RedditPRAW()
 
