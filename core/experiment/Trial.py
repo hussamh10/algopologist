@@ -35,7 +35,6 @@ class Trial():
 
     def runExperiment(self, topics):
         debug('User loaded')
-
         searchable = topics[self.platform.name][self.action]
         debug(f'Searchable: {searchable}')
 

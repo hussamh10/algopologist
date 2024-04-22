@@ -1,6 +1,6 @@
 {
-    "experiment_id": "compound",
-    "email_template": "compound",
+    "experiment_id": "compound-post",
+    "email_template": "compound-post",
     "actions": [
         "like",
         "follow",
@@ -14,42 +14,8 @@
         "Facebook",
         "Twitter"
     ],
-    "topic": [
-        "NBA",
-        "Elections"
-    ],
     "replications": 2,
     "topics": {
-        "NBA": {
-            "youtube": {
-                "like": "NBA",
-                "follow": "NBA",
-                "join": "NBA",
-                "open": "NBA",
-                "": "NBA"
-            },
-            "reddit": {
-                "like": "NBA",
-                "follow": "NBA",
-                "join": "NBA",
-                "open": "NBA",
-                "": "NBA"
-            },
-            "facebook": {
-                "like": "NBA",
-                "follow": "NBA",
-                "join": "NBA",
-                "open": "NBA",
-                "": "NBA"
-            },
-            "twitter": {
-                "like": "NBA",
-                "follow": "NBA",
-                "join": "NBA",
-                "open": "NBA",
-                "": "NBA"
-            }
-        },
         "Elections": {
             "youtube": {
                 "like": "Elections",
@@ -79,128 +45,158 @@
                 "open": "Elections",
                 "": "Elections"
             }
+        },
+        "NBA": {
+            "youtube": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "reddit": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "facebook": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "twitter": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            }
         }
     },
     "users": {
         "0": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "like",
             "replication": 0,
-            "email": "compound0@spartaaceap.com"
+            "email": "compound-post0@spartaaceap.com"
         },
         "1": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "like",
             "replication": 1,
-            "email": "compound1@spartaaceap.com"
+            "email": "compound-post1@spartaaceap.com"
         },
         "2": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "follow",
             "replication": 0,
-            "email": "compound2@spartaaceap.com"
+            "email": "compound-post2@spartaaceap.com"
         },
         "3": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "follow",
             "replication": 1,
-            "email": "compound3@spartaaceap.com"
+            "email": "compound-post3@spartaaceap.com"
         },
         "4": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "join",
             "replication": 0,
-            "email": "compound4@spartaaceap.com"
+            "email": "compound-post4@spartaaceap.com"
         },
         "5": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "join",
             "replication": 1,
-            "email": "compound5@spartaaceap.com"
+            "email": "compound-post5@spartaaceap.com"
         },
         "6": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "open",
             "replication": 0,
-            "email": "compound6@spartaaceap.com"
+            "email": "compound-post6@spartaaceap.com"
         },
         "7": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "open",
             "replication": 1,
-            "email": "compound7@spartaaceap.com"
+            "email": "compound-post7@spartaaceap.com"
         },
         "8": {
-            "topic": "NBA",
+            "topic": "Elections",
             "action": "",
             "replication": 0,
-            "email": "compound8@spartaaceap.com"
+            "email": "compound-post8@spartaaceap.com"
         },
         "9": {
+            "topic": "Elections",
+            "action": "",
+            "replication": 1,
+            "email": "compound-post9@spartaaceap.com"
+        },
+        "10": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 0,
+            "email": "compound-post10@spartaaceap.com"
+        },
+        "11": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 1,
+            "email": "compound-post11@spartaaceap.com"
+        },
+        "12": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 0,
+            "email": "compound-post12@spartaaceap.com"
+        },
+        "13": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 1,
+            "email": "compound-post13@spartaaceap.com"
+        },
+        "14": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 0,
+            "email": "compound-post14@spartaaceap.com"
+        },
+        "15": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 1,
+            "email": "compound-post15@spartaaceap.com"
+        },
+        "16": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 0,
+            "email": "compound-post16@spartaaceap.com"
+        },
+        "17": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 1,
+            "email": "compound-post17@spartaaceap.com"
+        },
+        "18": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 0,
+            "email": "compound-post18@spartaaceap.com"
+        },
+        "19": {
             "topic": "NBA",
             "action": "",
             "replication": 1,
-            "email": "compound9@spartaaceap.com"
-        },
-        "10": {
-            "topic": "Elections",
-            "action": "like",
-            "replication": 0,
-            "email": "compound10@spartaaceap.com"
-        },
-        "11": {
-            "topic": "Elections",
-            "action": "like",
-            "replication": 1,
-            "email": "compound11@spartaaceap.com"
-        },
-        "12": {
-            "topic": "Elections",
-            "action": "follow",
-            "replication": 0,
-            "email": "compound12@spartaaceap.com"
-        },
-        "13": {
-            "topic": "Elections",
-            "action": "follow",
-            "replication": 1,
-            "email": "compound13@spartaaceap.com"
-        },
-        "14": {
-            "topic": "Elections",
-            "action": "join",
-            "replication": 0,
-            "email": "compound14@spartaaceap.com"
-        },
-        "15": {
-            "topic": "Elections",
-            "action": "join",
-            "replication": 1,
-            "email": "compound15@spartaaceap.com"
-        },
-        "16": {
-            "topic": "Elections",
-            "action": "open",
-            "replication": 0,
-            "email": "compound16@spartaaceap.com"
-        },
-        "17": {
-            "topic": "Elections",
-            "action": "open",
-            "replication": 1,
-            "email": "compound17@spartaaceap.com"
-        },
-        "18": {
-            "topic": "Elections",
-            "action": "",
-            "replication": 0,
-            "email": "compound18@spartaaceap.com"
-        },
-        "19": {
-            "topic": "Elections",
-            "action": "",
-            "replication": 1,
-            "email": "compound19@spartaaceap.com"
+            "email": "compound-post19@spartaaceap.com"
         },
         "20": {
             "topic": "NFL",
