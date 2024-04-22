@@ -1,30 +1,30 @@
-python google-blocked.py 0
-python google-blocked.py 1
-python google-blocked.py 2
-python google-blocked.py 3
+@REM python google-blocked.py kitkat 0
+@REM python google-blocked.py kitkat 1
+@REM python google-blocked.py kitkat 2
+@REM python google-blocked.py kitkat 3
+@REM taskkill /F /IM chrome.exe
+@REM python google-blocked.py kitkat 4
+@REM python google-blocked.py kitkat 5
+@REM python google-blocked.py kitkat 6
+@REM python google-blocked.py kitkat 7
+@REM taskkill /F /IM chrome.exe
+@REM python google-blocked.py kitkat 8
+@REM python google-blocked.py kitkat 9
+@REM python google-blocked.py kitkat 10
+@REM python google-blocked.py kitkat 11
+@REM python google-blocked.py kitkat 12
+@REM taskkill /F /IM chrome.exe
+@REM python google-blocked.py kitkat 13
+@REM python google-blocked.py kitkat 14
+@REM python google-blocked.py kitkat 15
+@REM python google-blocked.py kitkat 16
+@REM taskkill /F /IM chrome.exe
+@REM python google-blocked.py kitkat 17
+@REM python google-blocked.py kitkat 18
+@REM python google-blocked.py kitkat 19
+@REM python google-blocked.py kitkat 20
 taskkill /F /IM chrome.exe
-python google-blocked.py 4
-python google-blocked.py 5
-python google-blocked.py 6
-python google-blocked.py 7
-taskkill /F /IM chrome.exe
-python google-blocked.py 8
-python google-blocked.py 9
-python google-blocked.py 10
-python google-blocked.py 11
-python google-blocked.py 12
-taskkill /F /IM chrome.exe
-python google-blocked.py 13
-python google-blocked.py 14
-python google-blocked.py 15
-python google-blocked.py 16
-taskkill /F /IM chrome.exe
-python google-blocked.py 17
-python google-blocked.py 18
-python google-blocked.py 19
-python google-blocked.py 20
-taskkill /F /IM chrome.exe
-python google-blocked.py 21
-python google-blocked.py 22
-python google-blocked.py 23
-python google-blocked.py 24
+python google-blocked.py kitkat 21
+python google-blocked.py kitkat 22
+python google-blocked.py kitkat 23
+python google-blocked.py kitkat 24

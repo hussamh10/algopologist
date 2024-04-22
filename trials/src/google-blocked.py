@@ -22,7 +22,7 @@ if __name__ == '__main__':
     BrowserFactory('uc_single')
     CLIENT_ID = str(sys.argv[2])
     EXPERIMENT_ID = sys.argv[1]
-    Experiment(client_id='admin', experiment_id='compound')
+    Experiment(client_id='admin', experiment_id=EXPERIMENT_ID)
     config_path = os.path.join(BASE_DIR, 'trials', 'data', EXPERIMENT_ID, 'config.json')
     config = json.load(open(config_path, 'r'))
     print(config['users'])
