@@ -33,10 +33,10 @@ def logging(e):
 
 def log(e, p=False, caller=False):
     from core.experiment.Experiment import Experiment
-    filename = Experiment().log_file()
-    f = open(filename, 'a')
 
     try:
+        filename = Experiment().log_file()
+        f = open(filename, 'a')
         if not caller:
             caller = inspect.stack()
 
@@ -47,12 +47,10 @@ def log(e, p=False, caller=False):
         
         line += f" => {e} \n"
         f.write(line)
-    except:
-        f.write(f'{e}\n')
-    
-    finally:
         f.close()
-
+    except:
+        pass
+    
 
 def pprint(e):
     print(e)

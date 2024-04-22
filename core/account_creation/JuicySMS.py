@@ -71,6 +71,10 @@ class juicy():
         else:
             raise Exception('Service not supported')
         output = self.get_phone_number(service_id=service_id)
+        if output == 'already open':
+            if service.lower() == 'facebook':
+                return -1, -1
+
         while output == 'already open':
             debug('already open')
             self.skip_number()

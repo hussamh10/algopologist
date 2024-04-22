@@ -111,6 +111,14 @@ class Facebook(Platform):
         monkey.type(info["lastname"])
         monkey.next()
         area, phone = sms.get_number('facebook')
+        waits = 100
+        while area == -1:
+            area, phone = sms.get_number('facebook')
+            wait(10)
+            waits -= 1
+            if waits == 0:
+                raise Exception('Could not get phone number')
+
         debug(area)
         debug(phone)
         monkey.type(f'{areas[area]}{phone}')
