@@ -12,7 +12,7 @@ from core.utils import monkey
 # REQUIRED CAPTCHA!
 # https://piprogramming.org/articles/How-to-make-Selenium-undetectable-and-stealth--7-Ways-to-hide-your-Bot-Automation-from-Detection-0000000017.html
 
-import constants
+import core.constants as constants
 
 class TikTok(Platform):
     name = 'tiktok'
@@ -39,57 +39,125 @@ class TikTok(Platform):
         search = self.driver.find_element(By.XPATH, '//input[@aria-label="Search"]')
         return search
     
-    def _searchTermBar(self, term):
-        pass
-
     def _searchTermUrl(self, term):
         pass
 
+    # TODO - Implement this
+    def convertToObject(self, post, origin):
+        obj = {
+            'id': post.get('id'),
+            'platform': "tiktok",
+            'origin': origin,
+            'position': post['position'],
+            'type': 'post',
+            'source': post.get('source'),
+            'secondary_source': post.get('secondary_source'),
+            # 'likes': post.get('likes'),
+            # 'comments': post.get('comments'),
+            # 'shares': None,
+            # 'views': None,
+            # 'created_at': None,
+            # 'title': None,
+            # 'description': post['selftext'],
+            # 'media': None,
+            # 'url': post['url'],
+            # 'is_ad': None
+        }
+        return obj
 
     def chromeLogin(self):
-        info('TikTok login')
-        self.driver.get(self.signin_url)
-        wait(2)
+        self.loadPage(TikTok.signin_url)
+        sleep(5)
 
-        # select signin with Google
-
-        btn = self.driver.find_element(By.XPATH, "//p[contains(text(), 'Continue with Google')]")
+        main_window = self.driver.current_window_handle
+        driver = self.driver
+        btn = driver.find_element(By.XPATH, "//div[contains(text(), 'Continue with Google')]")
+        sleep(4)
         btn.click()
-        wait(3)
-        monkey.next()
-        monkey.next()
-        monkey.enter()
-        wait(2)
+        sleep(2)
+        handle = driver.window_handles
 
-        # enter date of birth
+        main_window = driver.current_window_handle
 
-        monkey.next()
-        monkey.type('jan')
-        monkey.enter()
+        # Switch to new window
+        windows = driver.window_handles
+        print(windows)
+        for window in windows:
+            if window != main_window:
+                driver.switch_to.window(window)
 
-        monkey.next()
-        monkey.type('22')
-        monkey.enter()
+        btn = driver.find_element(By.XPATH, "//div[contains(@data-identifier, 'spartaaceap.com')]")
+        btn.click()
+        sleep(2)
+        btn = driver.find_element(By.XPATH, "//span[contains(text(), 'Continue')]")
+        btn.click()
+        sleep(2)
+        driver.switch_to.window(main_window)       
 
-        monkey.next()
-        monkey.enter()
-        monkey.type('1995')
-        monkey.enter()
+    def followUser(self):
+        #TODO add user followed.
+        tab = self.driver.find_element(By.ID, "tabs-0-tab-search_account")
+        tab.click()
+        sleep(5)
+        # data-e2e="search-user-container"
+        users = self.driver.find_elements(By.XPATH, '//*[@data-e2e="search-user-container"]')
+        user = users[0]
+        user.click()
+        sleep(5)
+        follow = self.driver.find_element(By.XPATH, '//*[@data-e2e="follow-button"]')
+        follow.click()
+        sleep(5)
 
-        monkey.next()
-        monkey.enter()
+    def openPost(self):
+        tab = self.driver.find_element(By.ID, "tabs-0-tab-search_video")
+        tab.click()
+        sleep(4)
+        results = self.driver.find_element(By.XPATH, '//*[@data-e2e="search_video-item-list"]')
+        result = results.find_elements(By.TAG_NAME, 'div')[0]
+        caption = result.find_element(By.XPATH, '//*[@data-e2e="search-card-video-caption"]').get_attribute('innerText')
+        userlink = result.find_element(By.XPATH, '//*[@data-e2e="search-card-user-link"]').get_attribute('href')
+        name = result.find_element(By.XPATH, '//*[@data-e2e="search-card-user-unique-id"]').text
+        result.click()
+        sleep(10)
+        sleep(4)
+        post = {
+            'caption': caption,
+            'userlink': userlink,
+            'name': name
+        }
+        self.getHomePage()
+        return post
 
-
-
-
+    def likePost(self):
+        tab = self.driver.find_element(By.ID, "tabs-0-tab-search_video")
+        tab.click()
+        sleep(4)
+        results = self.driver.find_element(By.XPATH, '//*[@data-e2e="search_video-item-list"]')
+        result = results.find_elements(By.TAG_NAME, 'div')[0]
+        caption = result.find_element(By.XPATH, '//*[@data-e2e="search-card-video-caption"]').get_attribute('innerText')
+        userlink = result.find_element(By.XPATH, '//*[@data-e2e="search-card-user-link"]').get_attribute('href')
+        name = result.find_element(By.XPATH, '//*[@data-e2e="search-card-user-unique-id"]').text
+        result.click()
+        sleep(10)
+        self.driver.find_element(By.TAG_NAME, 'body').send_keys('l')
+        sleep(4)
+        post = {
+            'caption': caption,
+            'userlink': userlink,
+            'name': name
+        }
+        self.getHomePage()
+        return post
 
 # Navigate Platform   
-
     def createUser(self):
         pass
 
     def getHomePage(self):
-        self.driver.get("https://www.tiktok.com/foryou?lang=en")
+        self.driver.get("https://www.tiktok.com/en/")
+        pass
+
+    def loggedIn(self):
         pass
     
 # Interaction
@@ -116,8 +184,6 @@ class TikTok(Platform):
     # @abstractclassmethod
     def dislikePost(self):
         pass
-
-
 
 # Record Observaions
 

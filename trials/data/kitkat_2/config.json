@@ -1,0 +1,201 @@
+{
+    "experiment_id": "kitkat",
+    "email_template": "kitkat",
+    "actions": [
+        "like",
+        "follow",
+        "join",
+        "open",
+        ""
+    ],
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter"
+    ],
+    "replications": 5,
+    "topics": {
+        "NBA": {
+            "youtube": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "reddit": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "facebook": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            },
+            "twitter": {
+                "like": "NBA",
+                "follow": "NBA",
+                "join": "NBA",
+                "open": "NBA",
+                "": "NBA"
+            }
+        }
+    },
+    "users": {
+        "0": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 0,
+            "email": "kitkat0@spartaaceap.com"
+        },
+        "1": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 1,
+            "email": "kitkat1@spartaaceap.com"
+        },
+        "2": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 2,
+            "email": "kitkat2@spartaaceap.com"
+        },
+        "3": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 3,
+            "email": "kitkat3@spartaaceap.com"
+        },
+        "4": {
+            "topic": "NBA",
+            "action": "like",
+            "replication": 4,
+            "email": "kitkat4@spartaaceap.com"
+        },
+        "5": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 0,
+            "email": "kitkat5@spartaaceap.com"
+        },
+        "6": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 1,
+            "email": "kitkat6@spartaaceap.com"
+        },
+        "7": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 2,
+            "email": "kitkat7@spartaaceap.com"
+        },
+        "8": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 3,
+            "email": "kitkat8@spartaaceap.com"
+        },
+        "9": {
+            "topic": "NBA",
+            "action": "follow",
+            "replication": 4,
+            "email": "kitkat9@spartaaceap.com"
+        },
+        "10": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 0,
+            "email": "kitkat10@spartaaceap.com"
+        },
+        "11": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 1,
+            "email": "kitkat11@spartaaceap.com"
+        },
+        "12": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 2,
+            "email": "kitkat12@spartaaceap.com"
+        },
+        "13": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 3,
+            "email": "kitkat13@spartaaceap.com"
+        },
+        "14": {
+            "topic": "NBA",
+            "action": "join",
+            "replication": 4,
+            "email": "kitkat14@spartaaceap.com"
+        },
+        "15": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 0,
+            "email": "kitkat15@spartaaceap.com"
+        },
+        "16": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 1,
+            "email": "kitkat16@spartaaceap.com"
+        },
+        "17": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 2,
+            "email": "kitkat17@spartaaceap.com"
+        },
+        "18": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 3,
+            "email": "kitkat18@spartaaceap.com"
+        },
+        "19": {
+            "topic": "NBA",
+            "action": "open",
+            "replication": 4,
+            "email": "kitkat19@spartaaceap.com"
+        },
+        "20": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 0,
+            "email": "kitkat20@spartaaceap.com"
+        },
+        "21": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 1,
+            "email": "kitkat21@spartaaceap.com"
+        },
+        "22": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 2,
+            "email": "kitkat22@spartaaceap.com"
+        },
+        "23": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 3,
+            "email": "kitkat23@spartaaceap.com"
+        },
+        "24": {
+            "topic": "NBA",
+            "action": "",
+            "replication": 4,
+            "email": "kitkat24@spartaaceap.com"
+        }
+    }
+}

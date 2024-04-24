@@ -8,15 +8,9 @@ sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')
 from core.experiment.Experiment import Experiment
 
 from core.constants import IP_DB_NAME, BASE_DIR
-from core.utils.IPManager import IPManager
 import json
 from core.browser.Selenium import BrowserFactory
-from core.utils.zookeeper import getId
-from core.experiment.Subject import Subject
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
-from core.utils.util import wait, bigWait
-from core.utils.log import debug, error, logging
-from core.constants import PRAW
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')

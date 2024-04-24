@@ -1,0 +1,52 @@
+{
+    "experiment_id": "local-one",
+    "database": "experiment.db",
+    "platforms": [
+        "Facebook",
+        "YouTube",
+        "Reddit",
+        "Twitter",
+        "TikTok"
+    ],
+    "users":
+        {
+            "0": {
+                "action": "like",
+                "topic": "NBA",
+                "replication": 0,
+                "email": "ahmeds2@spartaaceap.com"
+            }
+        },
+    "topics": {
+        "NBA": {
+            "youtube": {
+                "open":     "NBA",
+                "search":   "NBA",
+                "like":     "NBA",
+                "follow":   "NBA",
+                "join":     "NBA"
+            },
+            "twitter": {
+                "open":     "NBA",
+                "search":   "NBA",
+                "like":     "NBA",
+                "follow":   "NBA",
+                "join":     "NBA"
+            },
+            "reddit": {
+                "open":     "NBA",
+                "search":   "NBA",
+                "like":     "NBA",
+                "follow":   "NBA",
+                "join":     "NBA"
+            },
+            "facebook": {
+                "open":     "NBA",
+                "search":   "NBA",
+                "like":     "NBA",
+                "follow":   "NBA",
+                "join":     "NBA"
+            }
+        }
+    }
+}

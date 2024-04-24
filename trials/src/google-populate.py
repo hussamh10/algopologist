@@ -76,16 +76,21 @@ def getEmails(xp):
     return emails
 
 if __name__ == "__main__":
-    experiment = sys.argv[1]
-    service = signin()
-    getUsers(service)
-    emails = getEmails(experiment)
-    print(emails)
-
-    # user = {'primaryEmail':,
-    # 'password': constants.BASIC_PASSWORD,
-    # 'name': {
-    #     'givenName': names.get_first_name,
-    #     'familyName': names.get_last_name
-    # }}
-    # addUser(service, user)
+  experiment = sys.argv[1]
+  service = signin()
+  getUsers(service)
+  emails = getEmails(experiment)
+  print(emails)
+  for email in emails:
+      try:
+        user = {
+          "name": {
+            "familyName": names.get_last_name(),
+            "givenName": names.get_first_name(),
+          },
+          "password": constants.BASIC_PASSWORD,
+          "primaryEmail": email,
+        }
+        addUser(service, user)
+      except Exception as e:
+         pass
