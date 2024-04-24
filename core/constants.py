@@ -35,7 +35,7 @@ if LAB == 317:  # Windows
     if os.name == 'posix':        
         BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
         DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
-        CHROME_VERSION = 122
+        CHROME_VERSION = 124
 
     else:
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"

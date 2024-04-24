@@ -405,6 +405,16 @@ class Twitter(Platform):
         else:
             return True
 
+    def getReason(self, tweet):
+        try:
+            divs = tweet.find_elements(By.XPATH, './/div')
+            r = divs[3].text
+            if r == '':
+                r = 'none'
+        except:
+            r = 'none'
+        return r
+
     def getPagePosts(self, n):
         tweets = self.driver.find_elements(By.XPATH, '//article[@data-testid="tweet"]')
         posts = []
@@ -412,6 +422,7 @@ class Twitter(Platform):
             try:
                 post = self.getPost(tweet)
                 post['position'] = i
+                post['reason'] = self.getReason(tweet)
                 post = self.convertToObject(post, 'home')
             except:
                 error('Could not get post')
@@ -419,7 +430,7 @@ class Twitter(Platform):
             posts.append(post)
         return posts
 
-def convertToObject(self, post, origin):
+    def convertToObject(self, post, origin):
         obj = {
             'id': post['id'],
             'platform': "twitter",
@@ -436,8 +447,8 @@ def convertToObject(self, post, origin):
             'title': post.get('text', ''),
             'description': post.get('description', ''),
             'media': post.get('attachment', None),
-            'url': post.get('id', None),
             'reason': post.get('reason', 'none'),
+            'url': post.get('id', None),
             'is_ad': post.get('isAd', False)
         }
         return obj

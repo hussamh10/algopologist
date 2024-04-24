@@ -159,7 +159,7 @@ class RedditPRAW():
 
 class Reddit(Platform):
     name = 'reddit'
-    url='https://new.reddit.com'
+    url='https://new.reddit.com/?feed=home'
     search_url='https://new.reddit.com/search/?q=%s'
     creation_url='https://new.reddit.com/register/'
 
@@ -177,7 +177,7 @@ class Reddit(Platform):
             self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
 
     def loggedIn(self):
-        self.loadPage('https://www.reddit.com/settings/')
+        self.loadPage('https://new.reddit.com/settings/')
         wait(4)
         # get url of the page
         url = self.driver.current_url
@@ -371,21 +371,41 @@ class Reddit(Platform):
             post = {'id': id, 'title': '', 'author': '', 'subreddit': '', 'num_comments': '', 'score': '', 'selftext': '', 'url': ''}
         return post
 
+    def getReason(self, post):
+        post = post.find_element(By.XPATH, './/div[@data-click-id="background"]')
+        divs = post.find_elements(By.XPATH, './/div')
+        r = divs[0].text
+        if 'promoted' in r.lower():
+            r = ' '.join(r.split('\n')[:2])
+        else:
+            r = r.split('\n')[0]
+        return r
+
     def getPagePosts(self, n=10):
         debug('Getting homepage post')
         wait(1)
 
-        self.driver.get(Reddit.url)
+        self.loadPage('https://new.reddit.com/settings/')
         wait(5)
-        self.driver.get(Reddit.url)
+        self.getHomePage()
         wait(5)
+        # self.driver.get(Reddit.url)
+        # wait(5)
+        # self.driver.get(Reddit.url)
+        # wait(5)
 
         posts = self.driver.find_elements(By.XPATH, '//div[@data-testid="post-container"]')
         posts_urls = []
+        post_reasons = dict()
         for post in posts:
             try:
                 url = post.find_element(By.XPATH, './/a[@data-click-id="body"]').get_attribute('href')           
                 posts_urls.append(url)
+                try:
+                    reason = self.getReason(post)
+                    post_reasons[url] = reason
+                except:
+                    post_reasons[url] = 'none'
             except Exception as e:
                 error(e)
                 pass
@@ -396,10 +416,11 @@ class Reddit(Platform):
         api = RedditPRAW()
 
         i = 0
-        for post in tqdm(posts_ids):
+        for post, url in zip(posts_ids, posts_urls):
             debug(f'Getting post: {post}')
             post = api.getPost(post)
             post['position'] = i
+            post['reason'] = post_reasons[url]
             post = self.convertToObject(post, 'home')
             posts.append(post)
             i += 1
