@@ -477,6 +477,7 @@ class Facebook(Platform):
             'description': None,
             'media': '',
             'url': post['id'],
+            'reason': post.get('reason', 'none'),
             'is_ad': post['is_ad']
         }
         return obj

@@ -412,6 +412,7 @@ class Youtube(Platform):
             'description': post.get('description', ''),
             'media': None,
             'url': post.get('url', ''),
+            'reason': post.get('reason', 'none'),
             'is_ad': None,
         }
         

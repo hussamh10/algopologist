@@ -500,6 +500,7 @@ class Reddit(Platform):
             'description': post['selftext'],
             'media': None,
             'url': post['url'],
+            'reason': post.get('reason', 'none'),
             'is_ad': None
         }
         return obj

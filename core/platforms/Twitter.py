@@ -419,7 +419,7 @@ class Twitter(Platform):
             posts.append(post)
         return posts
 
-    def convertToObject(self, post, origin):
+def convertToObject(self, post, origin):
         obj = {
             'id': post['id'],
             'platform': "twitter",
@@ -437,6 +437,7 @@ class Twitter(Platform):
             'description': post.get('description', ''),
             'media': post.get('attachment', None),
             'url': post.get('id', None),
+            'reason': post.get('reason', 'none'),
             'is_ad': post.get('isAd', False)
         }
         return obj
