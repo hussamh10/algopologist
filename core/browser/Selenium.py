@@ -13,6 +13,7 @@ import pickle as pkl
 import core.utils.monkey as monkey
 from core.utils.IPManager import IPManager
 from core.utils.log import debug, error, info, log
+from core.constants import CHROME_VERSION
 
 class BrowserFactory:
     _instance = None
@@ -83,7 +84,7 @@ class UC_IP_Browser(Browser):
                 'https': f'https://{ip}'
             }
         }
-        instance.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options, version_main=122)
+        instance.driver = seleniumwire_uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, seleniumwire_options=sw_options, version_main=CHROME_VERSION)
         sleep(4)
         monkey.GotIt()
         sleep(2)
@@ -116,7 +117,7 @@ class UC_single_Browser(Browser):
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-infobars")
         
-        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=122)
+        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=CHROME_VERSION)
         sleep(4)
         monkey.GotIt()
         # sleep(2)

@@ -21,6 +21,7 @@ if LAB == 301:
     CONTINUE_GOOGLE_Y = 234
     GOT_IT_X = 1140
     GOT_IT_Y = 726
+    CHROME_VERSION = 122
 
 
 
@@ -34,10 +35,12 @@ if LAB == 317:  # Windows
     if os.name == 'posix':        
         BASE_DIR = '/Users/hussam/Desktop/Projects/algopologist'
         DATA_DIR = '/Users/hussam/Desktop/Projects/algopologist/data'
+        CHROME_VERSION = 122
 
     else:
         BASE_DIR = "C:\\Users\\hussa\\Desktop\\algopologist"
         DATA_DIR = "C:\\Users\\hussa\\Desktop\\algopologist\\data"
+        CHROME_VERSION = 124
     
     SESSIONS_PATH = os.path.join(BASE_DIR, 'data', 'sessions')
 
