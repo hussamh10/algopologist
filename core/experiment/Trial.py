@@ -1,9 +1,10 @@
 import pandas as pd
-from core.utils.log import debug
-from core.utils.util import wait
+from core.utils.log import debug, error
+from core.utils.util import bigWait, wait
 from time import sleep
 from core.users.User import User
 from core.platforms.Reddit import Reddit
+from core.constants import WAIT_TIME
 
 class Trial():
     def __init__(self, action, topic, userid, platform, experiment_id):
@@ -33,7 +34,45 @@ class Trial():
     def closeDriver(self):
         self.user.closeDriver()
 
-    def runExperiment(self, topics):
+    def makeNoise(self, actions, topics):
+        debug('User loaded')
+        signals = dict()
+
+        for action in actions:
+            try:
+                searchable = topics[self.platform.name][action]
+                if action == 'search':
+                    debug(f'Searching: {searchable}')
+                    signals[action] = self.user.search(searchable)
+
+                if action == 'open':
+                    debug(f'Opening: {searchable}')
+                    signals[action] = self.user.openPost(searchable)
+
+                if action == 'like':
+                    debug(f'Liking: {searchable}')
+                    signals[action] = self.user.likePost(searchable)
+
+                if action == 'join':
+                    debug(f'Joining: {searchable}')
+                    signals[action] = self.user.joinCommunity(searchable)
+
+                if action == 'follow':
+                    debug(f'Following: {searchable}')
+                    signals[action] = self.user.followUser(searchable)
+            except Exception as e:
+                error(e)
+
+            sleep(2)
+            self.user.goHome()
+            bigWait(WAIT_TIME)
+
+        return signals
+
+
+
+    def runExperiment(self, topics, dose):
+        #TODO: Add dose to the experiment
         debug('User loaded')
         searchable = topics[self.platform.name][self.action]
         debug(f'Searchable: {searchable}')

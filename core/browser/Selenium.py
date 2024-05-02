@@ -120,13 +120,13 @@ class UC_single_Browser(Browser):
         instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=CHROME_VERSION)
         sleep(4)
         monkey.GotIt()
-        # sleep(2)
-        # monkey.GotIt()
-        # sleep(1)
-        # monkey.remindMeLater()
-        # sleep(3)
-        # gui.hotkey('win', 'up')
-        # sleep(5)
+        sleep(2)
+        monkey.GotIt()
+        sleep(1)
+        monkey.remindMeLater()
+        sleep(3)
+        gui.hotkey('win', 'up')
+        sleep(5)
 
     def closeDriver(self):
         pass

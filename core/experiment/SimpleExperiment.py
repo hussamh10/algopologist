@@ -2,16 +2,15 @@ import json
 import os
 from core.constants import BASE_DIR
 
-class Experiment(): 
+class SimpleExperiment(): 
     _instance = None
-    def __new__(cls, client_id="", experiment_id="", crossover=0):
+    def __new__(cls, client_id="", experiment_id=""):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
-            cls._instance.init_variables(client_id, experiment_id, crossover)
+            cls._instance.init_variables(client_id, experiment_id)
         return cls._instance
     
-    def init_variables(self, client_id, experiment_id, crossover):
-        self.crossover = crossover
+    def init_variables(self, client_id, experiment_id):
         self.client_id = client_id
         self.experiment_id = experiment_id
         self.path = self.user_path()
@@ -40,7 +39,7 @@ class Experiment():
         if self.client_id == 'admin':
             path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id)
             return path
-        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, 'data', self.client_id, self.crossover)
+        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, self.client_id, 'data')
         if not os.path.exists(path):
             os.makedirs(path)
         return path
@@ -52,27 +51,8 @@ class Experiment():
                     yield y
             else:
                 yield x
-
     def basicSetup(self):
-        crossovers = self.config['crossovers']
-        dosage = self.config['dosage']
-
-        platforms = self.config['platforms']
-
-        items = ['google']
-        items += [f'{platform.lower()}' for platform in platforms]
-        for chunk in range(crossovers):
-            items.append(f'NOISE_{chunk}')
-            items += [f'noise_{p.lower()}_{chunk}' for p in platforms]
-            for platform in platforms:
-                items.append(f'observations_{platform.lower()}_{chunk}_{0}')
-            for dose in range(dosage):
-                items.append(f'TREAMENT_CROSS_{chunk}_DOSE_{dose}')
-                for platform in platforms:
-                    items.append(f'treatments_{platform.lower()}_{chunk}_{dose}')
-                for platform in platforms:
-                    items.append(f'observations_{platform.lower()}_{chunk}_{dose+1}')
-
+        items = ['google', 'youtube', 'reddit', 'twitter', 'facebook', 'youtube_pre', 'reddit_pre', 'twitter_pre', 'facebook_pre', 'youtube_treatment', 'reddit_treatment', 'twitter_treatment', 'facebook_treatment', 'youtube_post', 'reddit_post', 'twitter_post', 'facebook_post']
         if not os.path.exists(os.path.join(self.path, 'items.json')):
             items = {item: 0 for item in items}
             json.dump(items, open(os.path.join(self.path, 'items.json'), 'w'))

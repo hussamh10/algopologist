@@ -159,7 +159,7 @@ class RedditPRAW():
 
 class Reddit(Platform):
     name = 'reddit'
-    url='https://new.reddit.com/?feed=home'
+    url='https://new.reddit.com/?redirect=disable'
     search_url='https://new.reddit.com/search/?q=%s'
     creation_url='https://new.reddit.com/register/'
 
@@ -385,11 +385,8 @@ class Reddit(Platform):
         debug('Getting homepage post')
         wait(1)
 
-        self.loadPage('https://new.reddit.com/settings/')
         wait(5)
-        self.getHomePage()
-        wait(5)
-        # self.driver.get(Reddit.url)
+        self.driver.get(Reddit.url)
         # wait(5)
         # self.driver.get(Reddit.url)
         # wait(5)

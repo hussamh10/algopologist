@@ -181,7 +181,7 @@ class Subject():
         pkl.dump(d, open(dump_path, 'wb'))
         return dump_path
 
-    def observe(self, pre=False):
+    def observe(self, dose):
         debug(f'Observing {self.id} on {self.platform}')
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)
         trial.loadUser()
@@ -195,23 +195,32 @@ class Subject():
         trial.closeDriver()
         dump_path = self.save_dump(dump, 'observations')
         # random id
-        if pre:
-            tick = self.tick - 0.25
-        else:
-            tick = self.tick + 0.25
+        tick = dose - 0.5
 
         logger = Logger(self.path, self.platform, self.experiment_id)
         logger.log(self.id, self.platform, tick, 'observe', 'home', dump_path, screenshot)
         self.save()
         
-    # def vanilla(self):
-    #     trial = Trial('vanilla', self.topic, self.chromeid, self.Platform, self.experiment_id)
-    #     trial.loadUser()
-    #     dump = trial.runExperiment()
-    #     trial.closeDriver()
-    #     dump_path = self.save_dump(dump, 'vanillas')
-    #     logger = Logger(self.path, self.platform, self.experiment_id)
-    #     logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
+    def sendNoise(self, actions, topics):
+        trial = Trial('vanilla', self.topic, self.chromeid, self.Platform, self.experiment_id)
+        trial.loadUser()
+        try:
+            dumps = trial.makeNoise(actions, topics)
+        except Exception as e:
+            error(e)
+            trial.closeDriver()
+            return
+        trial.closeDriver()
+        for action in actions:
+            try:
+                dump = dumps[action]
+                dump_path = self.save_dump(dump, 'vanillas')
+                logger = Logger(self.path, self.platform, self.experiment_id)
+                logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
+            except Exception as e:
+                error(e)
+                continue
+
 
     def treatment(self, topics):
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)

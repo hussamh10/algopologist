@@ -104,6 +104,8 @@ class Youtube(Platform):
         debug(search_bar)
         search_bar.send_keys('')
         wait(1)
+        search_bar.clear()
+        wait(1)
         search_bar.send_keys(term)
         wait(1)
         search_bar.send_keys(Keys.ENTER)
@@ -341,8 +343,8 @@ class Youtube(Platform):
         wait(3)
         if self.isAd():
             self._handleAd()
-        debug('Watching video for 30 seconds')
-        wait(30)
+        debug('Watching video for 120 seconds')
+        wait(120)
         return video_info
 
     def likeable(self):
@@ -382,8 +384,8 @@ class Youtube(Platform):
                 like_buttons = self.driver.find_elements(By.TAG_NAME, "ytd-video-renderer")
                 like_button = like_buttons[0]
                 like = like_button.find_elements(By.XPATH, '//button[@title="I like this"]')[0]
-                debug('Watching video for 30 seconds')
-                wait(30)
+                debug('Watching video for 120 seconds')
+                wait(120)
                 like.click()
                 wait(3)
                 return video, opened

@@ -166,7 +166,7 @@ class User:
         sleep(2)
         self.search(topic)
         opened_posts = self.getOpenedPosts()
-        post, opened = self.platform.openPost(already_opened=opened_posts)
+        post = self.platform.openPost(already_opened=opened_posts)
         self.takeScreenshot()
         signal = self.addSignal('open', post, 'post', info=f'searched-{topic}')
         debug(f"OPENED POST: {post['id']}")
