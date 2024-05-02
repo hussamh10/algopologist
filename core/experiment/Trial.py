@@ -71,8 +71,7 @@ class Trial():
 
 
 
-    def runExperiment(self, topics, dose):
-        #TODO: Add dose to the experiment
+    def runExperiment(self, topics):
         debug('User loaded')
         searchable = topics[self.platform.name][self.action]
         debug(f'Searchable: {searchable}')
@@ -87,9 +86,6 @@ class Trial():
 
         if self.action == 'open':
             signal = self.user.openPost(searchable)
-
-        if self.action == 'dislike':
-            self.user.dislikePost(searchable)
 
         if self.action == 'like':
             signal = self.user.likePost(searchable)

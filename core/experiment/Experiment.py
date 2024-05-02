@@ -1,5 +1,6 @@
 import json
 import os
+import sqlite3
 from core.constants import BASE_DIR
 
 class Experiment(): 
@@ -76,6 +77,14 @@ class Experiment():
         if not os.path.exists(os.path.join(self.path, 'items.json')):
             items = {item: 0 for item in items}
             json.dump(items, open(os.path.join(self.path, 'items.json'), 'w'))
+
+        if not os.path.exists(os.path.join(self.path, 'posts_opened.db')):
+            conn = sqlite3.connect(os.path.join(self.path, 'posts_opened.db'))
+            cursor = conn.cursor()
+            cursor.execute('CREATE TABLE posts (post_id STRING PRIMARY KEY, platform TEXT)')
+            conn.commit()
+            conn.close()
+
 
     def getItem(self, item):
         items = json.load(open(os.path.join(self.path, 'items.json'), 'r'))

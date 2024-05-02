@@ -462,7 +462,7 @@ class Reddit(Platform):
             error('ERROR GETTING POST FROM PRAW')
             return False
         
-    def likePost(self):
+    def likePost(self, already_opened=[]):
         posts = self.driver.find_element(By.XPATH, '//button[text()="Posts"]')
         posts.click()
         wait(1)

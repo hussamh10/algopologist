@@ -153,7 +153,7 @@ def treatment(experiment, topics, subjects, platform, cross, dose):
             wait(3)
 
         try:
-            subject.treatment(topics, dose)
+            subject.treatment(topics)
             experiment.updateItem(plt_obs, 1)
         except Exception as e:
             error(f'Error observing {subject.id} on {platform}')
