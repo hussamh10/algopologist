@@ -181,7 +181,7 @@ if __name__ == '__main__':
 
     topic = config['cross'][CROSSOVER]['topic']
     topics = config['topics'][topic]
-    noise_topics = config['noise_topics']
+    noise_topics = config['noise_topics'][CROSSOVER]
     noise_actions = config['noise_actions']
     dosage = config['dosage']
     
@@ -191,6 +191,9 @@ if __name__ == '__main__':
 
     signinPlatforms(experiment, subjects)
     
+    if CROSSOVER > 0:
+        observe(experiment, subjects, platform, CROSSOVER, -1)
+
     noise(experiment, noise_topics, noise_actions, subjects, platform, CROSSOVER)
     observe(experiment, subjects, platform, CROSSOVER, 0)
 

@@ -296,11 +296,14 @@ class Reddit(Platform):
                     community = i.get_attribute('href')[:-1].split('/')[-1]
                     join = i.find_element(By.XPATH, '//button[text()="Join"]')
                     debug(community)
-                    join.click()
+                    api = RedditPRAW()
+                    subreddit = api.getSubreddit(community)
+                    if subreddit['members'] > constants.MIN_MEMBERS:
+                        join.click()
+                    else:
+                        continue
                     break
             position += 1
-        api = RedditPRAW()
-        subreddit = api.getSubreddit(community)
         subreddit['position'] = position
         subreddit['type'] = 'community'
         subreddit = self.convertToSource(subreddit, 'search')

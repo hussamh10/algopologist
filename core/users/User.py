@@ -121,7 +121,7 @@ class User:
         return signal
 
     def getOpenedPosts(self):
-        database = os.path.join(Experiment.user_path(), 'posts_opened.db')
+        database = os.path.join(Experiment().user_path(), 'posts_opened.db')
         conn = sqlite3.connect(database)
         sql = "SELECT post_id FROM posts WHERE platform = '%s'" % self.platform.name
         df = pd.read_sql_query(sql, conn)
@@ -131,7 +131,7 @@ class User:
         return posts
     
     def addOpenedPost(self, posts):
-        database = os.path.join(Experiment.user_path(), 'posts_opened.db')
+        database = os.path.join(Experiment().user_path(), 'posts_opened.db')
         conn = sqlite3.connect(database)
         c = conn.cursor()
         for post in posts:
@@ -150,6 +150,7 @@ class User:
         self.takeScreenshot()
         signal = self.addSignal('open', post, 'post', info=f'searched-{topic}')
         debug(f"OPENED POST: {post['id']}")
+        self.addOpenedPost([post])
         return signal
 
     def likePost(self, topic):

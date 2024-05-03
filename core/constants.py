@@ -93,6 +93,7 @@ except:
     print("praw file not found")
     
 
+MIN_MEMBERS = 5000
 
 def getPlatform(platform_name):
     platform_name = platform_name.lower()

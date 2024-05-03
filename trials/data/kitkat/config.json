@@ -4,11 +4,11 @@
     "experiment_id": "kitkat",
     "email_template": "kitkat",
     "noise_actions": [
-        "search",
-        "open",
         "like",
-        "follow",
-        "join"
+        "like",
+        "like",
+        "like",
+        "like"
     ],
     "actions": [
         "search",
@@ -25,7 +25,7 @@
     ],
     "cross":{
         "0": {
-            "topic": "NBA"
+            "topic": "NFL"
         },
         "1":{
             "topic": "Fitness"
@@ -36,29 +36,43 @@
     },
     "replications": 5,
     "noise_topics": {
-        "youtube": { "search": "Oscars", "like": "Oscars", "follow": "Oscars", "join": "Oscars", "open": "Oscars", "": "Oscars" },
-        "reddit": { "search": "Oscars", "like": "Oscars", "follow": "Oscars", "join": "Oscars", "open": "Oscars", "": "Oscars" },
-        "facebook": { "search": "Oscars", "like": "Oscars", "follow": "Oscars", "join": "Oscars", "open": "Oscars", "": "Oscars" },
-        "twitter": { "search": "Oscars", "like": "Oscars", "follow": "Oscars", "join": "Oscars", "open": "Oscars", "": "Oscars" }
+        "0": {
+            "youtube": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "reddit": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "twitter": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" }
+        },
+        "1": {
+            "youtube": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "reddit": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "twitter": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" }
+        },
+        "2": {
+            "youtube": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "reddit": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "twitter": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" }
+        }
     },
     "topics": {
-        "NBA": {
-            "youtube": { "like": "NBA", "follow": "NBA", "join": "NBA", "open": "NBA", "": "NBA" },
-            "reddit": { "like": "NBA", "follow": "NBA", "join": "NBA", "open": "NBA", "": "NBA" },
-            "facebook": { "like": "NBA", "follow": "NBA", "join": "NBA", "open": "NBA", "": "NBA" },
-            "twitter": { "like": "NBA", "follow": "NBA", "join": "NBA", "open": "NBA", "": "NBA" }
+        "NFL": {
+            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
+            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
+            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
         },
         "Fitness": {
-            "youtube": { "like": "Fitness", "follow": "Fitness", "join": "Fitness", "open": "Fitness", "": "Fitness" },
-            "reddit": { "like": "Fitness", "follow": "Fitness", "join": "Fitness", "open": "Fitness", "": "Fitness" },
-            "facebook": { "like": "Fitness", "follow": "Fitness", "join": "Fitness", "open": "Fitness", "": "Fitness" },
-            "twitter": { "like": "Fitness", "follow": "Fitness", "join": "Fitness", "open": "Fitness", "": "Fitness" }
+            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" },
+            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" },
+            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" }
         },
         "Elections": {
-            "youtube": { "like": "US Elections", "follow": "US Elections", "join": "US Elections", "open": "US Elections", "": "US Elections" },
-            "reddit": { "like": "US Elections", "follow": "US Elections", "join": "US Elections", "open": "US Elections", "": "US Elections" },
-            "facebook": { "like": "US Elections", "follow": "US Elections", "join": "US Elections", "open": "US Elections", "": "US Elections" },
-            "twitter": { "like": "US Elections", "follow": "US Elections", "join": "US Elections", "open": "US Elections", "": "US Elections" }
+            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
+            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
+            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" }
+        },
+        "":{
+
+            "youtube": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "reddit": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "twitter": { "like": "", "follow": "", "join": "", "open": "", "": "" }
         }
     },
     "users": {
