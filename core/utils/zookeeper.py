@@ -23,6 +23,11 @@ def getId():
     print(f"Assigned ID: {id}")
     return id
 
+def getStatus():
+    SERVER_ADDRESS = 'toutatis.cs.uiowa.edu' 
+    SERVER_PORT = constants.SERVER_PORT
+    get_status(SERVER_ADDRESS, SERVER_PORT)
+
 def releaseId(id):
     SERVER_ADDRESS = 'toutatis.cs.uiowa.edu' 
     SERVER_PORT = constants.SERVER_PORT
@@ -45,6 +50,16 @@ def request_id_mac(server_address, server_port):
         client_socket.close()
 
     return assigned_id
+
+def get_status(server_address, server_port):
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        client_socket.connect((server_address, server_port))
+        client_socket.send(f"STATUS".encode())
+    except Exception as e:
+        print(f"Error releasing ID: {e}")
+    finally:
+        client_socket.close()
 
 def release_id(server_address, server_port, client_id):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
