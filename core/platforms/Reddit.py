@@ -496,7 +496,7 @@ class Reddit(Platform):
                 close = self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
                 close.click()
             else:
-                if self.likable(post['id']):
+                if self.likable(post['id'], already_opened):
                     like.click()
                     debug(f"liked post {post['id']}")
                     post_info = self.convertToObject(post_info, 'search')

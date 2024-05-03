@@ -162,7 +162,7 @@ def treatment(experiment, topics, subjects, platform, cross, dose):
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    # CLIENT_ID = getId() #hot to make this static
+    # CLIENT_ID = getId() #how to make this static
     CLIENT_ID = '25'
     EXPERIMENT_ID = sys.argv[1]
     CROSSOVER = sys.argv[2]
@@ -191,8 +191,8 @@ if __name__ == '__main__':
 
     # signinPlatforms(experiment, subjects)
     
-    if int(CROSSOVER) > 0:
-        observe(experiment, subjects, platform, CROSSOVER, -1)
+    # if int(CROSSOVER) > 0:
+    #     observe(experiment, subjects, platform, CROSSOVER, -1)
 
     noise(experiment, noise_topics, noise_actions, subjects, platform, CROSSOVER)
     observe(experiment, subjects, platform, CROSSOVER, 0)
