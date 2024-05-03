@@ -453,9 +453,13 @@ class Reddit(Platform):
         post_info['position'] = post['position']
         return post_info
 
-    def likable(self, id):
+    def likable(self, id, already_opened):
         api = RedditPRAW()
+        if id in already_opened:
+            return False
         id = id.split('_')[-1]
+        if id in already_opened:
+            return False
         try:
             if api.isArchived(id):
                 return False
@@ -474,7 +478,7 @@ class Reddit(Platform):
         
         for i, post in enumerate(posts):
             wait(2)
-            if not self.likable(post['id']):
+            if not self.likable(post['id'], already_opened):
                 continue
             post['elem'].click()
             post_info = self._getPostInfo(post['id'])

@@ -330,7 +330,7 @@ class Youtube(Platform):
         return True
 
 
-    def likePost(self):
+    def likePost(self, already_opened=[]):
         videos = self._getPostsResults()
         tube = MyTube()
         wait(2)
@@ -339,9 +339,12 @@ class Youtube(Platform):
         for v in range(len(videos)):
             position += 1
             video = videos[v]
-            video['elem'].click()
             video_info = tube.getVideoInfo(video['id'])
             video_info['position'] = position
+            if video['id'] in already_opened:
+                continue
+            
+            video['elem'].click()
             video = self.convertToObject(video_info, 'search')
             opened.append(video)
             wait(3)

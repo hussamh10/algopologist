@@ -187,11 +187,11 @@ if __name__ == '__main__':
     
     isGoogleSigned(experiment, email)
     subjects, platform, chrome = setupSubjects(platforms, experiment_id, email, action, topic, replicate)
-    isChromeSigned(chrome)
+    # isChromeSigned(chrome)
 
-    signinPlatforms(experiment, subjects)
+    # signinPlatforms(experiment, subjects)
     
-    if CROSSOVER > 0:
+    if int(CROSSOVER) > 0:
         observe(experiment, subjects, platform, CROSSOVER, -1)
 
     noise(experiment, noise_topics, noise_actions, subjects, platform, CROSSOVER)

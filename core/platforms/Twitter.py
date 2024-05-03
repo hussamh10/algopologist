@@ -202,7 +202,7 @@ class Twitter(Platform):
         return tweets[-1]
 
 
-    def likePost(self):
+    def likePost(self, already_opened=[]):
         sleep(3)
         tweets = self.driver.find_elements(By.XPATH, '//article[@data-testid="tweet"]')
         num_tweets = len(tweets)
