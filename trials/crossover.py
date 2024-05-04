@@ -207,11 +207,6 @@ if __name__ == '__main__':
         observe(experiment, subjects, CROSSOVER, dose+1)
 
     try:
-        BrowserFactory().getBrowser('').closeDriver()
-    except Exception as e:
-        error(f'Error closing driver: {e}')
-
-    try:
         #close all chrome instances
         os.system("taskkill /f /im chrome.exe")
     except Exception as e:
