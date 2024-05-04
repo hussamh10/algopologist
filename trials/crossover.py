@@ -7,7 +7,7 @@ sys.path.append(os.path.join('H:/', 'Desktop', 'algopologist')) # 301 lab
 sys.path.append(os.path.join('C:/', 'Users', 'hussa', 'Desktop', 'algopologist')) # 317 win
 
 from core.experiment.Experiment import Experiment
-from core.constants import WAIT_TIME
+from core.constants import SMALL_WAIT_TIME, WAIT_TIME
 from core.utils.IPManager import IPManager
 import json
 from core.browser.Selenium import BrowserFactory
@@ -61,7 +61,7 @@ def signinPlatforms(experiment, subjects):
             error(f'\t Error signing in {subject.id} on {subject.platform}')
             error(f'\t {e}')
         debug(f'Signed in {subject.id} on {subject.platform}')
-        bigWait(WAIT_TIME)
+        bigWait(SMALL_WAIT_TIME)
 
 def observe(experiment, subjects, cross, dose):
     debug("OBSERVING")
@@ -93,7 +93,7 @@ def observe(experiment, subjects, cross, dose):
         except Exception as e:
             error(f'Error observing {subject.id} on {plt}')
             error(e)
-        bigWait(WAIT_TIME)
+        bigWait(SMALL_WAIT_TIME)
 
 def noise(experiment, topics, actions, subjects, cross):
     debug("NOISE")
@@ -126,7 +126,7 @@ def noise(experiment, topics, actions, subjects, cross):
         except Exception as e:
             error(f'Error noising {subject.id} on {plt}')
             error(e)
-        bigWait(WAIT_TIME)
+        bigWait(SMALL_WAIT_TIME)
 
 def treatment(experiment, topics, subjects, cross, dose):
     debug("TREATMENT")
@@ -158,7 +158,7 @@ def treatment(experiment, topics, subjects, cross, dose):
         except Exception as e:
             error(f'Error treating {subject.id} on {plt}')
             error(e)
-        bigWait(WAIT_TIME)
+        bigWait(SMALL_WAIT_TIME)
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
@@ -197,8 +197,22 @@ if __name__ == '__main__':
         observe(experiment, subjects, CROSSOVER, -1)
 
     noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
+    wait(WAIT_TIME)
     observe(experiment, subjects, CROSSOVER, 0)
 
     for dose in range(dosage):
+        wait(WAIT_TIME)
         treatment(experiment, topics, subjects, CROSSOVER, dose)
+        wait(WAIT_TIME)
         observe(experiment, subjects, CROSSOVER, dose+1)
+
+    try:
+        BrowserFactory().getBrowser('').closeDriver()
+    except Exception as e:
+        error(f'Error closing driver: {e}')
+
+    try:
+        #close all chrome instances
+        os.system("taskkill /f /im chrome.exe")
+    except Exception as e:
+        error(f'Error closing chrome: {e}')

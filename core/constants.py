@@ -51,6 +51,7 @@ print(f'BASE_DIR: {BASE_DIR}')
 CHROME_REMIND_X = 950
 CHROME_REMIND_Y = 185
 WAIT_TIME = 10
+SMALL_WAIT_TIME = 1
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')

@@ -129,4 +129,4 @@ class UC_single_Browser(Browser):
         sleep(5)
 
     def closeDriver(self):
-        pass
+        self.driver.quit()
