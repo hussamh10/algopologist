@@ -128,5 +128,5 @@ class UC_single_Browser(Browser):
         gui.hotkey('win', 'up')
         sleep(5)
 
-    def closeDriver(self):
-        pass
+    def _closeDriver(self):
+        self.driver.quit()

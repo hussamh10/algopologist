@@ -202,3 +202,14 @@ if __name__ == '__main__':
     for dose in range(dosage):
         treatment(experiment, topics, subjects, CROSSOVER, dose)
         observe(experiment, subjects, CROSSOVER, dose+1)
+    try:
+        BrowserFactory().getBrowser()._closeDriver()
+    except Exception as e:
+        error(e)
+        pass
+
+    try:
+        os.system("taskkill /f /im chrome.exe")
+    except Exception as e:
+        error(e)
+        pass
