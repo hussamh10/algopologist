@@ -18,7 +18,6 @@ class User:
         self.info = {'platform': self.Platform.__name__, 'id': self.chromeId}
         pass
 
-
     def _addSource(self, source):
         ouid = str(uid())[:8]
         source['description'] = source.get('description', '').replace("'", "")
@@ -85,36 +84,6 @@ class User:
         signal['experiment_id'] = self.experiment_id
         return signal
 
-    def addSignal_deprecated(self, action, object, object_type, info=''):
-        try:
-            if object_type == 'source':
-                object_uid = self._addSource(object)['uid']
-            elif object_type == 'post':
-                object_uid = self._addPost(object)['uid']
-            else:
-                object_uid = object
-        except Exception as e:
-            error(f'Error adding object: {e}')
-            object_uid = ''
-
-        signal_id = str(uid())[:8]
-        screenshot = f'{action}-{signal_id}.png'
-        print(SCREENSHOTS_PATH, self.experiment_id, self.chromeId, self.Platform.__name__, action, signal_id)
-        path = os.path.join(SCREENSHOTS_PATH, self.experiment_id)
-        if not os.path.exists(path):
-            os.makedirs(path)
-        platform_name = self.Platform.__name__
-        screenshot = os.path.join(path, self.chromeId, platform_name, screenshot)
-
-        conn = sqlite3.connect(DATABASE)
-        c = conn.cursor()
-        c.execute("INSERT INTO signals VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (
-            signal_id, action, object_uid, screenshot, int(time()), self.chromeId, self.Platform.__name__, info, self.experiment_id 
-        ))
-        conn.commit()
-        conn.close()
-        debug('Signal added: %s' % action)
-
     def checkSignin(self):
         debug(f'SIGNING IN: {self.chromeId}')
         self.platform = self.Platform(self.chromeId)
@@ -150,26 +119,38 @@ class User:
         self.takeScreenshot()
         signal = self.addSignal('follow', user, 'source', info=f'searched-{topic}')
         return signal
-        wait(3)
 
     def getOpenedPosts(self):
-        conn = sqlite3.connect(DATABASE)
-        signals = pd.read_sql_query("SELECT * FROM signals WHERE action = 'open' AND user = '%s'" % (self.info['id']), conn)
-        posts = pd.read_sql_query("SELECT * FROM posts WHERE platform = '%s'" % (self.info['platform']), conn)
-        df = pd.merge(signals, posts, left_on='object_id', right_on='id')
+        database = os.path.join(Experiment().user_path(), 'posts_opened.db')
+        conn = sqlite3.connect(database)
+        sql = "SELECT post_id FROM posts WHERE platform = '%s'" % self.platform.name
+        df = pd.read_sql_query(sql, conn)
+        posts = df['post_id'].tolist()
+        debug(f"Opened posts: {posts}")
         conn.close()
-        posts = list(df['post_id'])
         return posts
+    
+    def addOpenedPost(self, posts):
+        database = os.path.join(Experiment().user_path(), 'posts_opened.db')
+        conn = sqlite3.connect(database)
+        c = conn.cursor()
+        for post in posts:
+            post_id = post['id']
+            c.execute(f"INSERT INTO posts VALUES ('{post_id}', '{self.platform.name}')")
+        conn.commit()
+        conn.close()
+
 
     def openPost(self, topic):
         info(f"Opeining post for {topic}")
         sleep(2)
         self.search(topic)
         opened_posts = self.getOpenedPosts()
-        post, opened = self.platform.openPost(already_opened=opened_posts)
+        post = self.platform.openPost(already_opened=opened_posts)
         self.takeScreenshot()
         signal = self.addSignal('open', post, 'post', info=f'searched-{topic}')
         debug(f"OPENED POST: {post['id']}")
+        self.addOpenedPost([post])
         return signal
 
     def likePost(self, topic):
@@ -178,15 +159,12 @@ class User:
         wait(2)
         self.search(topic)
         info('Term searched: %s' % topic)
-        post, opened = self.platform.likePost()
+        post, opened = self.platform.likePost(already_opened=self.getOpenedPosts())
+        self.addOpenedPost(opened)
 
         if post == None:
             error('No post found to like')
             raise Exception('No post found to like')
-
-        # for open in opened:
-        #     self.takeScreenshot()
-        #     self.addSignal('open', open, 'post', info=f'searched-{topic}')
 
         if post != None:
             signal = self.addSignal('like', post, 'post', info=f'searched-{topic}')
@@ -214,6 +192,9 @@ class User:
             self.platform.scrollTop()
             posts = self.platform.getPagePosts(posts_n+5)
             return posts
+        
+        if self.platform.name == 'twitter':
+            scrolls = scrolls * 2
         
         for i in range(scrolls):
             self.platform.scrollDown()

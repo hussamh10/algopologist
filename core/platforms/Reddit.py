@@ -159,7 +159,7 @@ class RedditPRAW():
 
 class Reddit(Platform):
     name = 'reddit'
-    url='https://new.reddit.com/?feed=home'
+    url='https://new.reddit.com/?redirect=false'
     search_url='https://new.reddit.com/search/?q=%s'
     creation_url='https://new.reddit.com/register/'
 
@@ -294,13 +294,16 @@ class Reddit(Platform):
             if 'Joined' not in i.text:
                 if 'Join' in i.text:
                     community = i.get_attribute('href')[:-1].split('/')[-1]
-                    join = i.find_element(By.XPATH, '//button[text()="Join"]')
+                    join = i.find_element(By.XPATH, './/button[text()="Join"]')
                     debug(community)
-                    join.click()
+                    api = RedditPRAW()
+                    subreddit = api.getSubreddit(community)
+                    if subreddit['members'] > constants.MIN_MEMBERS:
+                        join.click()
+                    else:
+                        continue
                     break
             position += 1
-        api = RedditPRAW()
-        subreddit = api.getSubreddit(community)
         subreddit['position'] = position
         subreddit['type'] = 'community'
         subreddit = self.convertToSource(subreddit, 'search')
@@ -385,11 +388,8 @@ class Reddit(Platform):
         debug('Getting homepage post')
         wait(1)
 
-        self.loadPage('https://new.reddit.com/settings/')
         wait(5)
-        self.getHomePage()
-        wait(5)
-        # self.driver.get(Reddit.url)
+        self.driver.get(Reddit.url)
         # wait(5)
         # self.driver.get(Reddit.url)
         # wait(5)
@@ -417,7 +417,6 @@ class Reddit(Platform):
 
         i = 0
         for post, url in zip(posts_ids, posts_urls):
-            debug(f'Getting post: {post}')
             post = api.getPost(post)
             post['position'] = i
             post['reason'] = post_reasons[url]
@@ -453,9 +452,13 @@ class Reddit(Platform):
         post_info['position'] = post['position']
         return post_info
 
-    def likable(self, id):
+    def likable(self, id, already_opened):
         api = RedditPRAW()
+        if id in already_opened:
+            return False
         id = id.split('_')[-1]
+        if id in already_opened:
+            return False
         try:
             if api.isArchived(id):
                 return False
@@ -465,7 +468,7 @@ class Reddit(Platform):
             error('ERROR GETTING POST FROM PRAW')
             return False
         
-    def likePost(self):
+    def likePost(self, already_opened=[]):
         posts = self.driver.find_element(By.XPATH, '//button[text()="Posts"]')
         posts.click()
         wait(1)
@@ -474,7 +477,7 @@ class Reddit(Platform):
         
         for i, post in enumerate(posts):
             wait(2)
-            if not self.likable(post['id']):
+            if not self.likable(post['id'], already_opened):
                 continue
             post['elem'].click()
             post_info = self._getPostInfo(post['id'])
@@ -492,7 +495,7 @@ class Reddit(Platform):
                 close = self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
                 close.click()
             else:
-                if self.likable(post['id']):
+                if self.likable(post['id'], already_opened):
                     like.click()
                     debug(f"liked post {post['id']}")
                     post_info = self.convertToObject(post_info, 'search')

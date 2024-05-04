@@ -37,16 +37,7 @@ def log(e, p=False, caller=False):
     try:
         filename = Experiment().log_file()
         f = open(filename, 'a')
-        if not caller:
-            caller = inspect.stack()
-
-        line = ''
-        for call in caller[::-1]:
-            call = f"{call[1].split('/')[-1]} • {call[3]} • {call[2]} • {call[4][0].strip()}"
-            line += call + ' ► '
-        
-        line += f" => {e} \n"
-        f.write(line)
+        f.write(e)
         f.close()
     except:
         pass

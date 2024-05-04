@@ -1,0 +1,82 @@
+{
+    "crossovers": 3,
+    "dosage": 3,
+    "experiment_id": "twix",
+    "email_template": "kitkat",
+    "noise_actions": [
+        "like",
+        "like"
+    ],
+    "actions": [
+        "search",
+        "like",
+        "follow",
+        "join",
+        "open",
+        ""
+    ],
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter"
+    ],
+    "cross":{
+        "0": {
+            "topic": "NFL"
+        },
+        "1":{
+            "topic": "Fitness"
+        },
+        "2":{
+            "topic": "Elections"
+        }
+    },
+    "replications": 5,
+    "noise_topics": {
+        "0": {
+            "youtube": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "reddit": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "twitter": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" }
+        },
+        "1": {
+            "youtube": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "reddit": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "twitter": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" }
+        },
+        "2": {
+            "youtube": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "reddit": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "twitter": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" }
+        }
+    },
+    "topics": {
+        "NFL": {
+            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
+            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
+            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" }
+        },
+        "Fitness": {
+            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" },
+            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" },
+            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" }
+        },
+        "Elections": {
+            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
+            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
+            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" }
+        },
+        "":{
+
+            "youtube": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "reddit": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "twitter": { "like": "", "follow": "", "join": "", "open": "", "": "" }
+        }
+    },
+    "users": {
+        "25": {
+            "action": "like",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        }
+    }
+}

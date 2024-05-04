@@ -21,7 +21,7 @@ if LAB == 301:
     CONTINUE_GOOGLE_Y = 234
     GOT_IT_X = 1140
     GOT_IT_Y = 726
-    CHROME_VERSION = 122
+    CHROME_VERSION = 124
 
 
 
@@ -50,6 +50,7 @@ print(f'BASE_DIR: {BASE_DIR}')
 # Click positions
 CHROME_REMIND_X = 950
 CHROME_REMIND_Y = 185
+WAIT_TIME = 10
 
 # Set the paths using os.path.join for OS compatibility
 LOGGING_PATH = os.path.join(BASE_DIR, 'data', 'logging')
@@ -92,6 +93,7 @@ except:
     print("praw file not found")
     
 
+MIN_MEMBERS = 5000
 
 def getPlatform(platform_name):
     platform_name = platform_name.lower()

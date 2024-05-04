@@ -1,5 +1,6 @@
 import sys
 
+import core.constants as constants
 from core.utils.util import convertStringToNumber, wait;
 from core.platforms.Platform import Platform
 from core.utils.log import *
@@ -104,6 +105,8 @@ class Youtube(Platform):
         debug(search_bar)
         search_bar.send_keys('')
         wait(1)
+        search_bar.clear()
+        wait(1)
         search_bar.send_keys(term)
         wait(1)
         search_bar.send_keys(Keys.ENTER)
@@ -184,6 +187,9 @@ class Youtube(Platform):
             subscribed = False
             for button in buttons:
                 if 'Subscribe' in button.text:
+                    channel = tube.getChannelInfo(channel_id)
+                    if channel['subscribers'] < constants.MIN_MEMBERS:
+                        break
                     button.click()
                     print('subscribed')
                     subscribed = True
@@ -197,42 +203,6 @@ class Youtube(Platform):
                 return channel           
 
             position += 1
-
-
-        # channels = self.driver.find_elements(By.XPATH, '//div[@id="content-section"]')
-        # position = -1
-        # for channel in channels:
-        #     position += 1
-        #     # check if subscribed
-        #     try:
-        #         channel_id = channel.find_element(By.XPATH, './/span[@id="subscribers"]')
-        #         channel_id = channel_id.text
-
-        #         subscribe_button = channel.find_elements(By.XPATH, './/div[@id="subscribe-button"]')
-        #         debug(channel_id)
-        #         if len(subscribe_button) == 0:
-        #             error('No subscribe button found...: ' + channel_id)
-        #             continue
-
-        #         text = subscribe_button[0].text
-        #         if text == 'Subscribed':
-        #             debug('Already subscribed...: ' + channel_id)
-        #             continue
-        #         elif text == 'Subscribe':
-        #             subscribe_button[0].click()
-        #             channel = tube.getChannelInfo(channel_id)
-        #             channel['type'] = 'user'
-        #             channel['position'] = position
-        #             debug('Subscribed: ' + channel['name'])
-        #             wait(1)
-        #             channel = self.convertToSource(channel, 'search')
-        #             return channel
-        #         else:
-        #             error('Unknown subscribe button text...: ' + channel_id)
-        #             continue
-        #     except Exception as e:
-        #         error('Error')
-        #         continue
 
     def openChannelResults(self):
         wait(1)
@@ -341,8 +311,8 @@ class Youtube(Platform):
         wait(3)
         if self.isAd():
             self._handleAd()
-        debug('Watching video for 30 seconds')
-        wait(30)
+        debug('Watching video for 120 seconds')
+        wait(120)
         return video_info
 
     def likeable(self):
@@ -360,7 +330,7 @@ class Youtube(Platform):
         return True
 
 
-    def likePost(self):
+    def likePost(self, already_opened=[]):
         videos = self._getPostsResults()
         tube = MyTube()
         wait(2)
@@ -369,9 +339,12 @@ class Youtube(Platform):
         for v in range(len(videos)):
             position += 1
             video = videos[v]
-            video['elem'].click()
             video_info = tube.getVideoInfo(video['id'])
             video_info['position'] = position
+            if video['id'] in already_opened:
+                continue
+            
+            video['elem'].click()
             video = self.convertToObject(video_info, 'search')
             opened.append(video)
             wait(3)
@@ -382,8 +355,8 @@ class Youtube(Platform):
                 like_buttons = self.driver.find_elements(By.TAG_NAME, "ytd-video-renderer")
                 like_button = like_buttons[0]
                 like = like_button.find_elements(By.XPATH, '//button[@title="I like this"]')[0]
-                debug('Watching video for 30 seconds')
-                wait(30)
+                debug('Watching video for 120 seconds')
+                wait(120)
                 like.click()
                 wait(3)
                 return video, opened

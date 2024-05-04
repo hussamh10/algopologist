@@ -1,18 +1,16 @@
 import json
 import os
-import sqlite3
 from core.constants import BASE_DIR
 
-class Experiment(): 
+class SimpleExperiment(): 
     _instance = None
-    def __new__(cls, client_id="", experiment_id="", crossover=0):
+    def __new__(cls, client_id="", experiment_id=""):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
-            cls._instance.init_variables(client_id, experiment_id, crossover)
+            cls._instance.init_variables(client_id, experiment_id)
         return cls._instance
     
-    def init_variables(self, client_id, experiment_id, crossover):
-        self.crossover = crossover
+    def init_variables(self, client_id, experiment_id):
         self.client_id = client_id
         self.experiment_id = experiment_id
         self.path = self.user_path()
@@ -41,7 +39,7 @@ class Experiment():
         if self.client_id == 'admin':
             path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id)
             return path
-        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, 'data', self.client_id, self.crossover)
+        path = os.path.join(BASE_DIR, 'trials', 'data', self.experiment_id, self.client_id, 'data')
         if not os.path.exists(path):
             os.makedirs(path)
         return path
@@ -53,36 +51,11 @@ class Experiment():
                     yield y
             else:
                 yield x
-
     def basicSetup(self):
-        dosage = self.config['dosage']
-
-        platforms = self.config['platforms']
-
-        items = ['google']
-        items += [f'{platform.lower()}' for platform in platforms]
-        items += [f'noise_{p.lower()}' for p in platforms]
-        for platform in platforms:
-            items.append(f'observations_{platform.lower()}_{-1}')
-        for platform in platforms:
-            items.append(f'observations_{platform.lower()}_{0}')
-        for dose in range(dosage):
-            for platform in platforms:
-                items.append(f'treatments_{platform.lower()}_{dose}')
-            for platform in platforms:
-                items.append(f'observations_{platform.lower()}_{dose+1}')
-
+        items = ['google', 'youtube', 'reddit', 'twitter', 'facebook', 'youtube_pre', 'reddit_pre', 'twitter_pre', 'facebook_pre', 'youtube_treatment', 'reddit_treatment', 'twitter_treatment', 'facebook_treatment', 'youtube_post', 'reddit_post', 'twitter_post', 'facebook_post']
         if not os.path.exists(os.path.join(self.path, 'items.json')):
             items = {item: 0 for item in items}
             json.dump(items, open(os.path.join(self.path, 'items.json'), 'w'))
-
-        if not os.path.exists(os.path.join(self.path, 'posts_opened.db')):
-            conn = sqlite3.connect(os.path.join(self.path, 'posts_opened.db'))
-            cursor = conn.cursor()
-            cursor.execute('CREATE TABLE posts (post_id STRING PRIMARY KEY, platform TEXT)')
-            conn.commit()
-            conn.close()
-
 
     def getItem(self, item):
         items = json.load(open(os.path.join(self.path, 'items.json'), 'r'))

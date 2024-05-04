@@ -4,6 +4,7 @@ data/users/
 data/*.db
 res/
 trials/*/data/
+trials/data/*/data/
 
 __pycache__/
 *.py[cod]
