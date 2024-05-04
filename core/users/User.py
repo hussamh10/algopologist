@@ -193,6 +193,9 @@ class User:
             posts = self.platform.getPagePosts(posts_n+5)
             return posts
         
+        if self.platform.name == 'twitter':
+            scrolls = scrolls * 2
+        
         for i in range(scrolls):
             self.platform.scrollDown()
             posts += self.platform.getPagePosts(posts_n)

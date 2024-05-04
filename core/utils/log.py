@@ -40,12 +40,12 @@ def log(e, p=False, caller=False):
         if not caller:
             caller = inspect.stack()
 
-        line = ''
+        line = '···'
         for call in caller[::-1]:
             call = f"{call[1].split('/')[-1]} • {call[3]} • {call[2]} • {call[4][0].strip()}"
             line += call + ' ► '
         
-        line += f" => {e} \n"
+        line += f" \n {e} \n"
         f.write(line)
         f.close()
     except:

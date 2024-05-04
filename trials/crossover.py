@@ -35,7 +35,7 @@ def setupSubjects(platforms, experiment_id, email, action, topic, replicate):
         subjects.append(subject)
 
     chrome = subjects[0]
-    return subjects,platform,chrome
+    return subjects,chrome
 
 def isChromeSigned(chrome):
     signed = chrome.checkChromeSignin()
@@ -63,11 +63,11 @@ def signinPlatforms(experiment, subjects):
         debug(f'Signed in {subject.id} on {subject.platform}')
         bigWait(WAIT_TIME)
 
-def observe(experiment, subjects, platform, cross, dose):
+def observe(experiment, subjects, cross, dose):
     debug("OBSERVING")
     for subject in subjects:
         plt = subject.platform.lower()
-        plt_obs = f"observations_{plt}_{cross}_{dose}"
+        plt_obs = f"observations_{plt}_{dose}"
         observed = experiment.getItem(plt_obs)
         if observed:
             debug(f'ALREADY OBSERVED: Platform: {subject.platform}, Subject: {subject.id}')
@@ -76,13 +76,13 @@ def observe(experiment, subjects, platform, cross, dose):
         debug(f'OBSERVING: Platform: {subject.platform}, Subject: {subject.id}')
 
         if not subject.checkSignin():
-            error(f'{subject.id} not signed in on {platform}')
-            error(f'Attempting to sign in {subject.id} on {platform}')
+            error(f'{subject.id} not signed in on {plt}')
+            error(f'Attempting to sign in {subject.id} on {plt}')
             wait(3)
             try:
                 subject.platformSignIn()
             except Exception as e:
-                error(f'Error signing in {subject.id} on {platform}')
+                error(f'Error signing in {subject.id} on {plt}')
                 error(e)
                 continue
         
@@ -91,16 +91,16 @@ def observe(experiment, subjects, platform, cross, dose):
             subject.observe(dose)
             experiment.updateItem(plt_obs, 1)
         except Exception as e:
-            error(f'Error observing {subject.id} on {platform}')
+            error(f'Error observing {subject.id} on {plt}')
             error(e)
         bigWait(WAIT_TIME)
 
-def noise(experiment, topics, actions, subjects, platform, cross):
+def noise(experiment, topics, actions, subjects, cross):
     debug("NOISE")
 
     for subject in subjects:
         plt = subject.platform.lower()
-        plt_obs = f"noise_{plt}_{cross}"
+        plt_obs = f"noise_{plt}"
         treated = experiment.getItem(plt_obs)
         if treated:
             debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
@@ -109,13 +109,13 @@ def noise(experiment, topics, actions, subjects, platform, cross):
 
         debug(f'NOISING: Platform: {subject.platform}, Subject: {subject.id}')
         if not subject.checkSignin():
-            error(f'{subject.id} not signed in on {platform}')
-            error(f'Attempting to sign in {subject.id} on {platform}')
+            error(f'{subject.id} not signed in on {plt}')
+            error(f'Attempting to sign in {subject.id} on {plt}')
             wait(3)
             try:
                 subject.platformSignIn()
             except Exception as e:
-                error(f'Error signing in {subject.id} on {platform}')
+                error(f'Error signing in {subject.id} on {plt}')
                 error(e)
                 continue
             wait(3)
@@ -124,16 +124,16 @@ def noise(experiment, topics, actions, subjects, platform, cross):
             subject.sendNoise(actions, topics)
             experiment.updateItem(plt_obs, 1)
         except Exception as e:
-            error(f'Error noising {subject.id} on {platform}')
+            error(f'Error noising {subject.id} on {plt}')
             error(e)
         bigWait(WAIT_TIME)
 
-def treatment(experiment, topics, subjects, platform, cross, dose):
+def treatment(experiment, topics, subjects, cross, dose):
     debug("TREATMENT")
 
     for subject in subjects:
         plt = subject.platform.lower()
-        plt_obs = f"treatments_{plt}_{cross}_{dose}"
+        plt_obs = f"treatments_{plt}_{dose}"
         treated = experiment.getItem(plt_obs)
         if treated:
             debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
@@ -141,13 +141,13 @@ def treatment(experiment, topics, subjects, platform, cross, dose):
         wait(3)
         debug(f'TREATING: Platform: {subject.platform}, Subject: {subject.id}')
         if not subject.checkSignin():
-            error(f'{subject.id} not signed in on {platform}')
-            error(f'Attempting to sign in {subject.id} on {platform}')
+            error(f'{subject.id} not signed in on {plt}')
+            error(f'Attempting to sign in {subject.id} on {plt}')
             wait(3)
             try:
                 subject.platformSignIn()
             except Exception as e:
-                error(f'Error signing in {subject.id} on {platform}')
+                error(f'Error signing in {subject.id} on {plt}')
                 error(e)
                 continue
             wait(3)
@@ -156,7 +156,7 @@ def treatment(experiment, topics, subjects, platform, cross, dose):
             subject.treatment(topics)
             experiment.updateItem(plt_obs, 1)
         except Exception as e:
-            error(f'Error observing {subject.id} on {platform}')
+            error(f'Error treating {subject.id} on {plt}')
             error(e)
         bigWait(WAIT_TIME)
 
@@ -186,17 +186,18 @@ if __name__ == '__main__':
     dosage = config['dosage']
     
     isGoogleSigned(experiment, email)
-    subjects, platform, chrome = setupSubjects(platforms, experiment_id, email, action, topic, replicate)
-    # isChromeSigned(chrome)
+    subjects, chrome = setupSubjects(platforms, experiment_id, email, action, topic, replicate)
 
-    # signinPlatforms(experiment, subjects)
+    isChromeSigned(chrome)
+
+    signinPlatforms(experiment, subjects)
     
-    # if int(CROSSOVER) > 0:
-    #     observe(experiment, subjects, platform, CROSSOVER, -1)
+    if int(CROSSOVER) > 0:
+        observe(experiment, subjects, CROSSOVER, -1)
 
-    noise(experiment, noise_topics, noise_actions, subjects, platform, CROSSOVER)
-    observe(experiment, subjects, platform, CROSSOVER, 0)
+    noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
+    observe(experiment, subjects, CROSSOVER, 0)
 
     for dose in range(dosage):
-        treatment(experiment, topics, subjects, platform, CROSSOVER, dose)
-        observe(experiment, subjects, platform, CROSSOVER, dose)
+        treatment(experiment, topics, subjects, CROSSOVER, dose)
+        observe(experiment, subjects, CROSSOVER, dose+1)

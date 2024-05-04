@@ -190,12 +190,14 @@ class Subject():
         except Exception as e:
             error(e)
             trial.closeDriver()
+            logger = Logger(self.path, self.platform, self.experiment_id)
+            logger.log(self.id, self.platform, tick, 'observe', 'home', '', '')
             return
 
         trial.closeDriver()
         dump_path = self.save_dump(dump, 'observations')
         # random id
-        tick = dose - 0.5
+        tick = dose
 
         logger = Logger(self.path, self.platform, self.experiment_id)
         logger.log(self.id, self.platform, tick, 'observe', 'home', dump_path, screenshot)
@@ -209,6 +211,8 @@ class Subject():
         except Exception as e:
             error(e)
             trial.closeDriver()
+            logger = Logger(self.path, self.platform, self.experiment_id)
+            logger.log(self.id, self.platform, self.tick, self.action, topics[self.Platform.name][self.action], '')
             return
         trial.closeDriver()
         for action in actions:
@@ -216,7 +220,7 @@ class Subject():
                 dump = dumps[action]
                 dump_path = self.save_dump(dump, 'vanillas')
                 logger = Logger(self.path, self.platform, self.experiment_id)
-                logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
+                logger.log(self.id, self.platform, self.tick, self.action, topics[self.Platform.name][self.action], dump_path)
             except Exception as e:
                 error(e)
                 continue
@@ -230,11 +234,14 @@ class Subject():
         except Exception as e:
             error(e)
             trial.closeDriver()
+            logger = Logger(self.path, self.platform, self.experiment_id)
+            logger.log(self.id, self.platform, self.tick, self.action, searchable, '')
             return
         trial.closeDriver()
         dump_path = self.save_dump(signal, 'treatments')
         logger = Logger(self.path, self.platform, self.experiment_id)
-        logger.log(self.id, self.platform, self.tick, self.action, self.topic, dump_path)
+        searchable = topics[self.Platform.name][self.action]
+        logger.log(self.id, self.platform, self.tick, self.action, searchable, dump_path)
 
 
     def incrementTick(self):

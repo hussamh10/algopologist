@@ -417,7 +417,6 @@ class Reddit(Platform):
 
         i = 0
         for post, url in zip(posts_ids, posts_urls):
-            debug(f'Getting post: {post}')
             post = api.getPost(post)
             post['position'] = i
             post['reason'] = post_reasons[url]

@@ -55,24 +55,22 @@ class Experiment():
                 yield x
 
     def basicSetup(self):
-        crossovers = self.config['crossovers']
         dosage = self.config['dosage']
 
         platforms = self.config['platforms']
 
         items = ['google']
         items += [f'{platform.lower()}' for platform in platforms]
-        for chunk in range(crossovers):
-            items.append(f'NOISE_{chunk}')
-            items += [f'noise_{p.lower()}_{chunk}' for p in platforms]
+        items += [f'noise_{p.lower()}' for p in platforms]
+        for platform in platforms:
+            items.append(f'observations_{platform.lower()}_{-1}')
+        for platform in platforms:
+            items.append(f'observations_{platform.lower()}_{0}')
+        for dose in range(dosage):
             for platform in platforms:
-                items.append(f'observations_{platform.lower()}_{chunk}_{0}')
-            for dose in range(dosage):
-                items.append(f'TREAMENT_CROSS_{chunk}_DOSE_{dose}')
-                for platform in platforms:
-                    items.append(f'treatments_{platform.lower()}_{chunk}_{dose}')
-                for platform in platforms:
-                    items.append(f'observations_{platform.lower()}_{chunk}_{dose+1}')
+                items.append(f'treatments_{platform.lower()}_{dose}')
+            for platform in platforms:
+                items.append(f'observations_{platform.lower()}_{dose+1}')
 
         if not os.path.exists(os.path.join(self.path, 'items.json')):
             items = {item: 0 for item in items}
