@@ -37,6 +37,7 @@ def log(e, p=False, caller=False):
     try:
         filename = Experiment().log_file()
         f = open(filename, 'a')
+        e = f"{e}\n"
         f.write(e)
         f.close()
     except:
