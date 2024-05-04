@@ -159,7 +159,7 @@ class RedditPRAW():
 
 class Reddit(Platform):
     name = 'reddit'
-    url='https://new.reddit.com/?redirect=disable'
+    url='https://new.reddit.com/?redirect=false'
     search_url='https://new.reddit.com/search/?q=%s'
     creation_url='https://new.reddit.com/register/'
 
@@ -294,7 +294,7 @@ class Reddit(Platform):
             if 'Joined' not in i.text:
                 if 'Join' in i.text:
                     community = i.get_attribute('href')[:-1].split('/')[-1]
-                    join = i.find_element(By.XPATH, '//button[text()="Join"]')
+                    join = i.find_element(By.XPATH, './/button[text()="Join"]')
                     debug(community)
                     api = RedditPRAW()
                     subreddit = api.getSubreddit(community)

@@ -162,10 +162,11 @@ def treatment(experiment, topics, subjects, cross, dose):
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
-    # CLIENT_ID = getId() #how to make this static
-    CLIENT_ID = '25'
+    CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
     CROSSOVER = sys.argv[2]
+
+    print(f'CLIENT_ID: {CLIENT_ID}, EXPERIMENT_ID: {EXPERIMENT_ID}, CROSSOVER: {CROSSOVER}')
 
     experiment = Experiment(CLIENT_ID, EXPERIMENT_ID, CROSSOVER)
     config = experiment.config

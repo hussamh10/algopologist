@@ -6,8 +6,6 @@
     "noise_actions": [
         "like",
         "like",
-        "like",
-        "like",
         "like"
     ],
     "actions": [
@@ -97,83 +95,83 @@
             "email": "kitkat3@spartaaceap.com"
         },
         "4": {
-            "action": "like",
-            "replication": 4,
+            "action": "follow",
+            "replication": 0,
             "email": "kitkat4@spartaaceap.com"
         },
         "5": {
             "action": "follow",
-            "replication": 0,
+            "replication": 1,
             "email": "kitkat5@spartaaceap.com"
         },
         "6": {
             "action": "follow",
-            "replication": 1,
+            "replication": 2,
             "email": "kitkat6@spartaaceap.com"
         },
         "7": {
             "action": "follow",
-            "replication": 2,
+            "replication": 3,
             "email": "kitkat7@spartaaceap.com"
         },
         "8": {
-            "action": "follow",
-            "replication": 3,
+            "action": "join",
+            "replication": 0,
             "email": "kitkat8@spartaaceap.com"
         },
         "9": {
-            "action": "follow",
-            "replication": 4,
+            "action": "join",
+            "replication": 1,
             "email": "kitkat9@spartaaceap.com"
         },
         "10": {
             "action": "join",
-            "replication": 0,
+            "replication": 2,
             "email": "kitkat10@spartaaceap.com"
         },
         "11": {
             "action": "join",
-            "replication": 1,
+            "replication": 3,
             "email": "kitkat11@spartaaceap.com"
         },
         "12": {
-            "action": "join",
-            "replication": 2,
+            "action": "open",
+            "replication": 0,
             "email": "kitkat12@spartaaceap.com"
         },
         "13": {
-            "action": "join",
-            "replication": 3,
+            "action": "open",
+            "replication": 1,
             "email": "kitkat13@spartaaceap.com"
         },
         "14": {
-            "action": "join",
-            "replication": 4,
+            "action": "open",
+            "replication": 2,
             "email": "kitkat14@spartaaceap.com"
         },
         "15": {
             "action": "open",
-            "replication": 0,
+            "replication": 3,
             "email": "kitkat15@spartaaceap.com"
         },
         "16": {
-            "action": "open",
-            "replication": 1,
+            "action": "search",
+            "replication": 0,
             "email": "kitkat16@spartaaceap.com"
         },
         "17": {
-            "action": "open",
-            "replication": 2,
+            "action": "search",
+            "replication": 1,
             "email": "kitkat17@spartaaceap.com"
         },
         "18": {
-            "action": "open",
-            "replication": 3,
+            "action": "search",
+            "replication": 2,
             "email": "kitkat18@spartaaceap.com"
         },
         "19": {
-            "action": "open",
-            "replication": 4,
+            "action": "search",
+            "replication": 3,
             "email": "kitkat19@spartaaceap.com"
         },
         "20": {
@@ -200,11 +198,6 @@
             "action": "",
             "replication": 4,
             "email": "kitkat24@spartaaceap.com"
-        },
-        "25": {
-            "action": "like",
-            "replication": 4,
-            "email": "testing12@spartaaceap.com"
         }
     }
 }
