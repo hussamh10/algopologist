@@ -2,7 +2,7 @@ import sys
 from core.account_creation.JuicySMS import juicy
 
 from core.constants import CONTINUE_GOOGLE_X, CONTINUE_GOOGLE_Y
-from core.utils.util import convertStringToNumber;
+from core.utils.util import convertStringToNumber, waitMinute;
 from core.utils.log import debug
 from core.utils.util import wait
 from core.platforms.Platform import Platform
@@ -235,6 +235,7 @@ class Twitter(Platform):
                 like.click()
                 liked = post.copy()
                 debug('liked')
+                waitMinute()
                 return liked, opened
 
             back = self.driver.find_elements(By.XPATH, '//div[@aria-label="Back"]')

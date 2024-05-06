@@ -26,8 +26,6 @@ def wait(sec):
     sleep(sec)
     sleep(6)
 
-def bigWait(minutes=5):
-    debug(f"Waiting for {minutes} minutes")
-    seconds = minutes * 60
-    for i in tqdm(list(range(seconds))):
+def waitMinute():
+    for i in tqdm(range(60)):
         sleep(1)

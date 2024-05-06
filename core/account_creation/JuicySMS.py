@@ -2,7 +2,7 @@ import random
 import requests
 import os
 from core.utils.log import debug, info, error, log
-from core.utils.util import bigWait, wait
+from core.utils.util import wait
 from core.constants import KEY_DIR
 
 class juicy():
@@ -64,7 +64,6 @@ class juicy():
             service_id = self.GOOGLE
         elif service.lower() == 'facebook':
             random_minutes = random.randint(5, 25)
-            bigWait(random_minutes)
             service_id = self.FACEBOOK
         elif service.lower() == 'twitter':
             service_id = self.TWITTER

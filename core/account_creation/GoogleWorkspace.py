@@ -7,7 +7,7 @@ from core.account_creation.GoogleAccounts import GoogleAccount
 import pandas as pd
 
 from core.utils.log import debug, error
-from core.utils.util import wait, bigWait
+from core.utils.util import wait
 
 class GoogleWorkspace():
     def __init__(self):
@@ -248,7 +248,6 @@ class GoogleWorkspace():
             # IP.shuffle()
             self.createAccount(user)
             self.updateChromeSignIn(user)
-            bigWait()
             
     def getUser(self, platform, experiment_id):
         platform = platform.lower()

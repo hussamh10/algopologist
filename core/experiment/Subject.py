@@ -6,12 +6,16 @@ import pandas as pd
 
 
 import sqlite3 as sql
+
+from tqdm import tqdm
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
+from core.browser.Selenium import BrowserFactory
 from core.constants import getPlatform
 from core.experiment.Experiment import Experiment
 from core.experiment.Trial import Trial
 from core.utils.log import debug, error, info, log
 from core.utils import shuffleIP as IP
+from core.utils.util import waitMinute
 
 class Logger():
     def __init__(self, path, platform, experiment_id):
@@ -145,6 +149,16 @@ class Subject():
         return
 
 
+    def wait(self, minutes):
+        debug(f"Waiting: {minutes} minute(s)...")
+        for i in tqdm(range(minutes)):
+            waitMinute()
+            driver = BrowserFactory().getBrowser(self.chromeid).getDriver()
+            driver.get('https://www.google.com')
+
+    def loadWebsite(self):
+        self.driver.get(self.url)
+
     def platformSignIn(self):
         self.Platform = getPlatform(self.platform)
         trial = Trial(self.action, self.topic, self.chromeid, self.Platform, self.experiment_id)
@@ -232,9 +246,10 @@ class Subject():
         try:
             signal = trial.runExperiment(topics)
         except Exception as e:
-            error(e)
+            error(f"Subject.treatment: {e}")
             trial.closeDriver()
             logger = Logger(self.path, self.platform, self.experiment_id)
+            searchable = topics[self.platform.name][self.action]
             logger.log(self.id, self.platform, self.tick, self.action, searchable, '')
             return
         trial.closeDriver()

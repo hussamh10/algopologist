@@ -14,7 +14,7 @@ from core.browser.Selenium import BrowserFactory
 from core.utils.zookeeper import getId
 from core.experiment.Subject import Subject
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
-from core.utils.util import wait, bigWait
+from core.utils.util import wait, waitMinute
 from core.utils.log import debug, error, logging
 from core.constants import PRAW
 
@@ -61,7 +61,7 @@ def signinPlatforms(experiment, subjects):
             error(f'\t Error signing in {subject.id} on {subject.platform}')
             error(f'\t {e}')
         debug(f'Signed in {subject.id} on {subject.platform}')
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 def observe(experiment, subjects, cross, dose):
     debug("OBSERVING")
@@ -93,7 +93,7 @@ def observe(experiment, subjects, cross, dose):
         except Exception as e:
             error(f'Error observing {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 def noise(experiment, topics, actions, subjects, cross):
     debug("NOISE")
@@ -103,7 +103,7 @@ def noise(experiment, topics, actions, subjects, cross):
         plt_obs = f"noise_{plt}"
         treated = experiment.getItem(plt_obs)
         if treated:
-            debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
+            debug(f'ALREADY NOISED: Platform: {subject.platform}, Subject: {subject.id}')
             continue
         wait(3)
 
@@ -126,7 +126,7 @@ def noise(experiment, topics, actions, subjects, cross):
         except Exception as e:
             error(f'Error noising {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 def treatment(experiment, topics, subjects, cross, dose):
     debug("TREATMENT")
@@ -158,7 +158,7 @@ def treatment(experiment, topics, subjects, cross, dose):
         except Exception as e:
             error(f'Error treating {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 if __name__ == '__main__':
     BrowserFactory('uc_single')
@@ -197,13 +197,13 @@ if __name__ == '__main__':
         observe(experiment, subjects, CROSSOVER, -1)
 
     noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
-    wait(WAIT_TIME)
+    chrome.wait(1)
     observe(experiment, subjects, CROSSOVER, 0)
 
     for dose in range(dosage):
-        wait(WAIT_TIME)
+        # bigWait(WAIT_TIME)
         treatment(experiment, topics, subjects, CROSSOVER, dose)
-        wait(WAIT_TIME)
+        # bigWait(WAIT_TIME)
         observe(experiment, subjects, CROSSOVER, dose+1)
 
     try:

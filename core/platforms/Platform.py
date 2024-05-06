@@ -79,7 +79,8 @@ class Platform(ABC):
             self._searchTermUrl(term)
 
     def closeDriver(self):
-        self.browser.closeDriver()
+        # self.browser.closeDriver()
+        pass
 
     @abstractclassmethod
     def loggedIn(self):

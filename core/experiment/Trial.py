@@ -1,10 +1,10 @@
 import pandas as pd
 from core.utils.log import debug, error
-from core.utils.util import bigWait, wait
+from core.utils.util import wait, waitMinute
 from time import sleep
 from core.users.User import User
 from core.platforms.Reddit import Reddit
-from core.constants import WAIT_TIME
+from core.constants import SMALL_WAIT_TIME, WAIT_TIME
 
 class Trial():
     def __init__(self, action, topic, userid, platform, experiment_id):
@@ -65,7 +65,7 @@ class Trial():
 
             sleep(2)
             self.user.goHome()
-            bigWait(WAIT_TIME)
+            waitMinute()
 
         return signals
 

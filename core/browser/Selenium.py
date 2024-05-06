@@ -104,6 +104,7 @@ class UC_single_Browser(Browser):
 
     def __new__(cls, session):
         if cls._instance is None:
+            debug('Making new browser.....')
             cls._instance = super().__new__(cls)
             cls._init_once(cls._instance, session)
         return cls._instance
@@ -130,6 +131,3 @@ class UC_single_Browser(Browser):
 
     def closeDriver(self):
         pass
-
-    def _closeDriver(self):
-        self.driver.quit()

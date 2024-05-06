@@ -79,7 +79,7 @@ class Experiment():
         if not os.path.exists(os.path.join(self.path, 'posts_opened.db')):
             conn = sqlite3.connect(os.path.join(self.path, 'posts_opened.db'))
             cursor = conn.cursor()
-            cursor.execute('CREATE TABLE posts (post_id STRING PRIMARY KEY, platform TEXT)')
+            cursor.execute('CREATE TABLE posts (post_id STRING, platform TEXT)')
             conn.commit()
             conn.close()
 
