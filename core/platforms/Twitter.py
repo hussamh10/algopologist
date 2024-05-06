@@ -337,7 +337,14 @@ class Twitter(Platform):
             follow_button.click()
             debug(f'Cliked follow button!')
             wait(10)
-            user = self.getUserInfo(username)
+            try:
+                user = self.getUserInfo(username)
+            except:
+                error('Could not get user info')
+                user = dict()
+                user['id'] = username
+                user['url'] = f'https://twitter.com/{username}'
+                user['name'] = username
             user['position'] = position
             user['type'] = 'user'
             user = self.convertToSource(user, 'search')
