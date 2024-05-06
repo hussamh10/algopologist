@@ -212,8 +212,8 @@ class Youtube(Platform):
         wait(1)
         filters = self.driver.find_element(By.XPATH, '//button[@aria-label="Search filters"]')
         filters.click()
-        wait(1)
-        channels = self.driver.find_element(By.XPATH, '//yt-formatted-string[text()="Channel"]')
+        wait(14)
+        channels = self.driver.find_element(By.XPATH, '//span[text()="Channel"]')
         channels.click()
 
     def joinCommunity(self):
