@@ -230,6 +230,10 @@ class Twitter(Platform):
                 debug('is ad')
                 continue
 
+            if post['id'] in already_opened:
+                debug('Already opened: %s' % post['id'])
+                continue
+
             if self.likable():
                 like = self.driver.find_element(By.XPATH, '//div[@data-testid="like"]')
                 like.click()
@@ -310,6 +314,7 @@ class Twitter(Platform):
         position = -1
         for user in users:
             position += 1
+            debug("Position: %s" % position)
             username = ''
             links = user.find_elements(By.XPATH, './/a[@role="link"]')
             for link in links:
@@ -317,8 +322,8 @@ class Twitter(Platform):
                 twitter_header = 'https://twitter.com'
                 if twitter_header in link:
                     link = link.replace(twitter_header, '')
-                print(link)
-                if link.count('/') == 1:
+                debug(f"Link: {link}")
+                if link.count('/') == 1 and '?' not in link:
                     username = link.replace('/', '')
 
             if self.isFollowed(user):
@@ -326,8 +331,12 @@ class Twitter(Platform):
                 continue
 
             wait(2)
+            debug(f'Following {username}...')
+            debug(f'Looking for follow button...')
             follow_button = user.find_element(By.XPATH, './/span[text()="Follow"]')
             follow_button.click()
+            debug(f'Cliked follow button!')
+            wait(10)
             user = self.getUserInfo(username)
             user['position'] = position
             user['type'] = 'user'

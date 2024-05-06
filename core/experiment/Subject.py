@@ -2,6 +2,7 @@ import json
 import os
 import pickle as pkl
 from time import time
+import traceback
 import pandas as pd
 
 
@@ -246,6 +247,7 @@ class Subject():
         try:
             signal = trial.runExperiment(topics)
         except Exception as e:
+            error(traceback.format_exc())
             error(f"Subject.treatment: {e}")
             trial.closeDriver()
             logger = Logger(self.path, self.platform, self.experiment_id)

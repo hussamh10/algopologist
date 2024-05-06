@@ -52,19 +52,19 @@
     },
     "topics": {
         "NFL": {
-            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
-            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
-            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" }
+            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"}
         },
         "Fitness": {
-            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" },
-            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" },
-            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" }
+            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" , "search": "chest workout"},
+            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" , "search": "chest workout"},
+            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" , "search": "chest workout"}
         },
         "Elections": {
-            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
-            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
-            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" }
+            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"}
         },
         "":{
 

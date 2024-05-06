@@ -165,6 +165,8 @@ class Youtube(Platform):
         wait(2)
         tube = MyTube()
 
+        self.scrollDown()
+
         tag = 'ytd-channel-renderer'
         channels = self.driver.find_elements(By.XPATH, f'//{tag}')
         position = -1
@@ -185,6 +187,7 @@ class Youtube(Platform):
             buttons = channel.find_elements(By.XPATH, f'.//{tag}')
 
             subscribed = False
+            subscribed_channel = None
             for button in buttons:
                 if 'Subscribe' in button.text:
                     channel = tube.getChannelInfo(channel_id)
@@ -192,14 +195,15 @@ class Youtube(Platform):
                         break
                     button.click()
                     print('subscribed')
+                    subscribed_channel = channel
                     subscribed = True
                     break
 
             if subscribed:
-                channel = dict()
-                channel = tube.getChannelInfo(channel_id)
+                channel = subscribed_channel
                 channel['type'] = 'user'
                 channel['position'] = position
+                debug("returning channel")
                 return channel           
 
             position += 1

@@ -407,7 +407,7 @@ class Reddit(Platform):
                 except:
                     post_reasons[url] = 'none'
             except Exception as e:
-                error(e)
+                error("Error getting post url")
                 pass
 
         posts_ids = self._getPostId(posts_urls)

@@ -1,6 +1,6 @@
 {
     "crossovers": 3,
-    "dosage": 3,
+    "dosage": 5,
     "experiment_id": "twix",
     "email_template": "kitkat",
     "noise_actions": [
@@ -16,9 +16,9 @@
         ""
     ],
     "platforms": [
-        "YouTube",
+        "Twitter",
         "Reddit",
-        "Twitter"
+        "Youtube"
     ],
     "cross":{
         "0": {
@@ -51,19 +51,19 @@
     },
     "topics": {
         "NFL": {
-            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
-            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" },
-            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" }
+            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"}
         },
         "Fitness": {
-            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" },
-            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" },
-            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" }
+            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" , "search": "chest workout"},
+            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" , "search": "chest workout"},
+            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" , "search": "chest workout"}
         },
         "Elections": {
-            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
-            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" },
-            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" }
+            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"}
         },
         "":{
 
@@ -73,8 +73,33 @@
         }
     },
     "users": {
-        "25": {
+        "20": {
+            "action": "",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        },
+        "21": {
+            "action": "search",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        },
+        "22": {
+            "action": "open",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        },
+        "23": {
             "action": "like",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        },
+        "24": {
+            "action": "join",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
+        },
+        "25": {
+            "action": "follow",
             "replication": 4,
             "email": "testing12@spartaaceap.com"
         }
