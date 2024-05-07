@@ -153,12 +153,14 @@ class Subject():
         debug("Saving profile....")
         SimpleBrowser(self.chromeid).saveProfile()
 
+    def refreshBrowser(self, clean=False):
+        debug("Refreshing profile....")
+        SimpleBrowser(self.chromeid).refreshBrowser(clean)
+
     def wait(self, minutes):
         debug(f"Waiting: {minutes} minute(s)...")
         for i in tqdm(range(minutes)):
             waitMinute()
-            # driver = BrowserFactory().getBrowser(self.chromeid).getDriver()
-            # driver.get('https://www.google.com')
 
     def loadWebsite(self):
         self.driver.get(self.url)
