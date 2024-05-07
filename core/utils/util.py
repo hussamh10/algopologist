@@ -2,6 +2,7 @@ from core.utils.log import debug
 from time import sleep
 import random
 import re
+import pyautogui
 from tqdm import tqdm
 
 def convertStringToNumber(number):
@@ -29,3 +30,11 @@ def wait(sec):
 def waitMinute():
     for i in tqdm(range(60)):
         sleep(1)
+
+def bigWait(i=0):
+    waitMinute()
+
+def take_screenshot(file_path):
+    screenshot = pyautogui.screenshot()
+    screenshot.save(file_path)
+    print(f"Screenshot saved as {file_path}")

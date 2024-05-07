@@ -1,4 +1,4 @@
-from core.browser.Selenium import BrowserFactory
+from core.browser.Selenium import BrowserFactory, SimpleBrowser
 from core.utils.util import wait; 
 from core.utils.log import debug, info
 import core.utils.monkey as monkey
@@ -16,7 +16,8 @@ class GoogleAccount():
 
     def loadBrowser(self):
         session = f'{self.id}'
-        self.browser = BrowserFactory().getBrowser(session)
+        # self.browser = BrowserFactory().getBrowser(session)
+        self.browser = SimpleBrowser(session)
         self.driver = self.browser.getDriver()
 
     def phoneNumberIncorrect(self):

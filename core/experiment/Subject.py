@@ -10,7 +10,7 @@ import sqlite3 as sql
 
 from tqdm import tqdm
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
-from core.browser.Selenium import BrowserFactory
+from core.browser.Selenium import BrowserFactory, SimpleBrowser
 from core.constants import getPlatform
 from core.experiment.Experiment import Experiment
 from core.experiment.Trial import Trial
@@ -148,14 +148,17 @@ class Subject():
         self.chrome_assigned = True
         self.save()
         return
-
+    
+    def saveBrowser(self):
+        debug("Saving profile....")
+        SimpleBrowser(self.chromeid).saveProfile()
 
     def wait(self, minutes):
         debug(f"Waiting: {minutes} minute(s)...")
         for i in tqdm(range(minutes)):
             waitMinute()
-            driver = BrowserFactory().getBrowser(self.chromeid).getDriver()
-            driver.get('https://www.google.com')
+            # driver = BrowserFactory().getBrowser(self.chromeid).getDriver()
+            # driver.get('https://www.google.com')
 
     def loadWebsite(self):
         self.driver.get(self.url)

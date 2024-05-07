@@ -15,7 +15,7 @@ from core.utils.zookeeper import getId
 from core.experiment.Subject import Subject
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
 from core.utils.util import wait, waitMinute
-from core.utils.log import debug, error, logging
+from core.utils.log import clearLog, debug, error, logging
 from core.constants import PRAW
 
 def isGoogleSigned(experiment, email):
@@ -161,11 +161,12 @@ def treatment(experiment, topics, subjects, cross, dose):
         waitMinute()
 
 if __name__ == '__main__':
+    clearLog()
     BrowserFactory('uc_single')
     # CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
     CROSSOVER = sys.argv[2]
-    CLIENT_ID = str(sys.argv[3])
+    CLIENT_ID = getId()
 
     print(f'CLIENT_ID: {CLIENT_ID}, EXPERIMENT_ID: {EXPERIMENT_ID}, CROSSOVER: {CROSSOVER}')
 

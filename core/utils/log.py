@@ -31,6 +31,19 @@ def logging(e):
     f.write(e)
     f.close()
 
+def clearLog():
+    from core.experiment.Experiment import Experiment
+
+    try:
+        filename = Experiment().log_file()
+        f = open(filename, 'w')
+        e = f"New file: \n"
+        f.write(e)
+        f.close()
+    except:
+        pass
+    
+
 def log(e, p=False, caller=False):
     from core.experiment.Experiment import Experiment
 

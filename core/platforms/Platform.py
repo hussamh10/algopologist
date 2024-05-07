@@ -2,8 +2,8 @@ import os
 import sys
 
 from core.utils.log import pprint, error, log
-from core.utils.util import wait
-from core.browser.Selenium import BrowserFactory
+from core.utils.util import take_screenshot, wait
+from core.browser.Selenium import BrowserFactory, SimpleBrowser
 from core.utils.log import debug, info, error
 from core.utils import monkey
 
@@ -35,14 +35,17 @@ class Platform(ABC):
             os.mkdir(path)
 
         try:
-            self.browser = BrowserFactory().getBrowser(id)
+            # self.browser = BrowserFactory().getBrowser(id)
+            self.browser = SimpleBrowser(id)
         except Exception as e:
             error(e)
             error('Could not load browser')
+            SimpleBrowser(id).refreshBrowser(clean=True)
             debug('Trying again...')
             try:
                 wait(3)
-                self.browser = BrowserFactory().getBrowser(id)
+                self.browser = SimpleBrowser(id)
+                # self.browser = BrowserFactory().getBrowser(id)
             except Exception as e:
                 error('Could not load browser again')
                 raise e
@@ -125,14 +128,23 @@ class Platform(ABC):
         pass
 
     def TakeScreenshot(self, file):
-        return self.screenshot(file)
+        # return self.screenshot(file)
+        try:
+            take_screenshot(file)
+            return True
+        except:
+            error('screenshot failed...')
+            return False
 
-    
     def screenshot(self, file):
-        debug("Taking screenshot")
-        self.driver.save_screenshot(file)
-        debug(f'Screenshot saved: {file}')
-        return True
+        try:
+            debug("Taking screenshot")
+            self.driver.save_screenshot(file)
+            debug(f'Screenshot saved: {file}')
+            return True
+        except:
+            error('screenshot failed...')
+            return False
 
     def fullScreenshot(self, file):
         debug("Taking screenshot")
