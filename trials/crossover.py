@@ -161,7 +161,6 @@ def treatment(experiment, topics, subjects, cross, dose):
         waitMinute()
 
 if __name__ == '__main__':
-    clearLog()
     BrowserFactory('uc_single')
     # CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
@@ -172,8 +171,12 @@ if __name__ == '__main__':
 
     experiment = Experiment(CLIENT_ID, EXPERIMENT_ID, CROSSOVER)
     config = experiment.config
+
     
     experiment.basicSetup()
+
+    clearLog()
+
 
     platforms = config['platforms']
     experiment_id = config['experiment_id']
@@ -194,6 +197,8 @@ if __name__ == '__main__':
     isChromeSigned(chrome)
 
     signinPlatforms(experiment, subjects)
+    chrome.saveBrowser()
+
     
     if int(CROSSOVER) > 0:
         observe(experiment, subjects, CROSSOVER, -1)
@@ -201,19 +206,12 @@ if __name__ == '__main__':
     noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
     chrome.wait(1)
     observe(experiment, subjects, CROSSOVER, 0)
+    chrome.refreshBrowser(clean=False)
+
 
     for dose in range(dosage):
         chrome.wait(1)
         treatment(experiment, topics, subjects, CROSSOVER, dose)
         chrome.wait(1)
         observe(experiment, subjects, CROSSOVER, dose+1)
-
-    try:
-        os.system("taskkill /f /im chrome.exe")
-    except Exception as e:
-        error(f'Error closing chrome: {e}')
-
-    try:
-        os.system("killall -9 'Google Chrome'")
-    except Exception as e:
-        error(f'Error closing chrome: {e}')
+        chrome.refreshBrowser(clean=False)
