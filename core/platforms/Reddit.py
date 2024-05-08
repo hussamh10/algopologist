@@ -470,6 +470,9 @@ class Reddit(Platform):
         return posts
     
     def openPost(self, already_opened=[]):
+        url = self.driver.current_url
+        url = url.replace('www.', 'new.')
+        self.driver.get(url)
         wait(2)
         posts = self.driver.find_element(By.XPATH, '//button[text()="Posts"]')
         posts.click()
@@ -512,6 +515,9 @@ class Reddit(Platform):
             return False
         
     def likePost(self, already_opened=[]):
+        url = self.driver.current_url
+        url = url.replace('www.', 'new.')
+        self.driver.get(url)
         posts = self.driver.find_element(By.XPATH, '//button[text()="Posts"]')
         posts.click()
         wait(1)

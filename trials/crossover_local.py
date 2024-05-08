@@ -128,24 +128,44 @@ def noise(experiment, topics, actions, subjects, cross):
             error(e)
         waitMinute()
 
-def treatment(topics, subjects, cross, dose):
+def treatment(experiment, topics, subjects, cross, dose):
     debug("TREATMENT")
 
     for subject in subjects:
+        plt = subject.platform.lower()
+        plt_obs = f"treatments_{plt}_{dose}"
+        treated = experiment.getItem(plt_obs)
+        if treated:
+            debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
+            continue
+        wait(3)
+        debug(f'TREATING: Platform: {subject.platform}, Subject: {subject.id}')
+        if not subject.checkSignin():
+            error(f'{subject.id} not signed in on {plt}')
+            error(f'Attempting to sign in {subject.id} on {plt}')
+            wait(3)
+            try:
+                subject.platformSignIn()
+            except Exception as e:
+                error(f'Error signing in {subject.id} on {plt}')
+                error(e)
+                continue
+            wait(3)
+
         try:
             subject.treatment(topics)
-            # experiment.updateItem(plt_obs, 1)
+            experiment.updateItem(plt_obs, 1)
         except Exception as e:
+            error(f'Error treating {subject.id} on {plt}')
             error(e)
-        # waitMinute()
+        waitMinute()
 
 if __name__ == '__main__':
-    # clearLog()
+    clearLog()
     BrowserFactory('uc_single')
-    # CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
     CROSSOVER = sys.argv[2]
-    CLIENT_ID = '26'
+    CLIENT_ID = sys.argv[3]
 
     print(f'CLIENT_ID: {CLIENT_ID}, EXPERIMENT_ID: {EXPERIMENT_ID}, CROSSOVER: {CROSSOVER}')
 
@@ -155,7 +175,6 @@ if __name__ == '__main__':
     experiment.basicSetup()
 
     platforms = config['platforms']
-    platforms = ['reddit']
     experiment_id = config['experiment_id']
 
     email = config['users'][CLIENT_ID]['email']
@@ -174,27 +193,21 @@ if __name__ == '__main__':
     isChromeSigned(chrome)
 
     signinPlatforms(experiment, subjects)
-    treatment(topics, subjects, CROSSOVER, 0)
     
-    # if int(CROSSOVER) > 0:
-    #     observe(experiment, subjects, CROSSOVER, -1)
+    if int(CROSSOVER) > 0:
+        observe(experiment, subjects, CROSSOVER, -1)
 
-    # noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
-    # chrome.wait(1)
-    # observe(experiment, subjects, CROSSOVER, 0)
+    noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
+    chrome.wait(1)
+    observe(experiment, subjects, CROSSOVER, 0)
 
-    # for dose in range(dosage):
-    #     chrome.wait(1)
-    #     treatment(experiment, topics, subjects, CROSSOVER, dose)
-    #     chrome.wait(1)
-    #     observe(experiment, subjects, CROSSOVER, dose+1)
+    for dose in range(dosage):
+        chrome.wait(1)
+        treatment(experiment, topics, subjects, CROSSOVER, dose)
+        chrome.wait(1)
+        observe(experiment, subjects, CROSSOVER, dose+1)
 
-    # try:
-    #     os.system("taskkill /f /im chrome.exe")
-    # except Exception as e:
-    #     error(f'Error closing chrome: {e}')
-
-    # try:
-    #     os.system("killall -9 'Google Chrome'")
-    # except Exception as e:
-    #     error(f'Error closing chrome: {e}')
+    try:
+        os.system("killall -9 'Google Chrome'")
+    except Exception as e:
+        error(f'Error closing chrome: {e}')

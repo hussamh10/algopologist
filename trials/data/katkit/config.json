@@ -1,7 +1,7 @@
 {
     "crossovers": 3,
     "dosage": 5,
-    "experiment_id": "kitkat",
+    "experiment_id": "katkit",
     "email_template": "kitkat",
     "noise_actions": [
         "like",
@@ -23,7 +23,7 @@
     ],
     "cross":{
         "0": {
-            "topic": "NFL"
+            "topic": "NBA"
         },
         "1":{
             "topic": "Fitness"
@@ -51,10 +51,10 @@
         }
     },
     "topics": {
-        "NFL": {
-            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
-            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
-            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"}
+        "NBA": {
+            "youtube": { "like": "Manchester United", "follow": "Manchester United", "join": "Manchester United", "open": "Manchester United", "": "" , "search": "Manchester United"},
+            "reddit": { "like": "Manchester United", "follow": "Manchester United", "join": "Manchester United", "open": "Manchester United", "": "" , "search": "Manchester United"},
+            "twitter": { "like": "Manchester United", "follow": "Manchester United", "join": "Manchester United", "open": "Manchester United", "": "" , "search": "Manchester United"}
         },
         "Fitness": {
             "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" , "search": "chest workout"},
@@ -74,137 +74,6 @@
         }
     },
     "users": {
-        "0": {
-            "action": "like",
-            "replication": 0,
-            "email": "kitkat0@spartaaceap.com"
-        },
-        "1": {
-            "action": "like",
-            "replication": 1,
-            "email": "kitkat1@spartaaceap.com"
-        },
-        "2": {
-            "action": "like",
-            "replication": 2,
-            "email": "kitkat2@spartaaceap.com"
-        },
-        "3": {
-            "action": "like",
-            "replication": 3,
-            "email": "kitkat3@spartaaceap.com"
-        },
-        "4": {
-            "action": "follow",
-            "replication": 0,
-            "email": "kitkat4@spartaaceap.com"
-        },
-        "5": {
-            "action": "follow",
-            "replication": 1,
-            "email": "kitkat5@spartaaceap.com"
-        },
-        "6": {
-            "action": "follow",
-            "replication": 2,
-            "email": "kitkat6@spartaaceap.com"
-        },
-        "7": {
-            "action": "follow",
-            "replication": 3,
-            "email": "kitkat7@spartaaceap.com"
-        },
-        "8": {
-            "action": "join",
-            "replication": 0,
-            "email": "kitkat8@spartaaceap.com"
-        },
-        "9": {
-            "action": "join",
-            "replication": 1,
-            "email": "kitkat9@spartaaceap.com"
-        },
-        "10": {
-            "action": "join",
-            "replication": 2,
-            "email": "kitkat10@spartaaceap.com"
-        },
-        "11": {
-            "action": "join",
-            "replication": 3,
-            "email": "kitkat11@spartaaceap.com"
-        },
-        "12": {
-            "action": "open",
-            "replication": 0,
-            "email": "kitkat12@spartaaceap.com"
-        },
-        "13": {
-            "action": "open",
-            "replication": 1,
-            "email": "kitkat13@spartaaceap.com"
-        },
-        "14": {
-            "action": "open",
-            "replication": 2,
-            "email": "kitkat14@spartaaceap.com"
-        },
-        "15": {
-            "action": "open",
-            "replication": 3,
-            "email": "kitkat15@spartaaceap.com"
-        },
-        "16": {
-            "action": "search",
-            "replication": 0,
-            "email": "kitkat16@spartaaceap.com"
-        },
-        "17": {
-            "action": "search",
-            "replication": 1,
-            "email": "kitkat17@spartaaceap.com"
-        },
-        "18": {
-            "action": "search",
-            "replication": 2,
-            "email": "kitkat18@spartaaceap.com"
-        },
-        "19": {
-            "action": "search",
-            "replication": 3,
-            "email": "kitkat19@spartaaceap.com"
-        },
-        "20": {
-            "action": "",
-            "replication": 0,
-            "email": "kitkat20@spartaaceap.com"
-        },
-        "21": {
-            "action": "",
-            "replication": 1,
-            "email": "kitkat21@spartaaceap.com"
-        },
-        "22": {
-            "action": "",
-            "replication": 2,
-            "email": "kitkat22@spartaaceap.com"
-        },
-        "23": {
-            "action": "",
-            "replication": 3,
-            "email": "kitkat23@spartaaceap.com"
-        },
-        "24": {
-            "action": "",
-            "replication": 4,
-            "email": "kitkat24@spartaaceap.com"
-        },
-        "25": {
-            "action": "follow",
-            "replication": 4,
-            "email": "testing12@spartaaceap.com"
-        },
-
         "26": {
             "action": "like",
             "replication": 4,
