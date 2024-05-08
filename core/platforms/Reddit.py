@@ -159,9 +159,9 @@ class RedditPRAW():
 
 class Reddit(Platform):
     name = 'reddit'
-    url='https://new.reddit.com/?redirect=false'
-    search_url='https://new.reddit.com/search/?q=%s'
-    creation_url='https://new.reddit.com/register/'
+    url='https://www.reddit.com/'
+    search_url='https://www.reddit.com/search/?q=%s'
+    creation_url='https://www.reddit.com/register/'
 
     def __init__(self, userId):
         super().__init__(Reddit.name, Reddit.url, userId)
@@ -177,7 +177,7 @@ class Reddit(Platform):
             self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
 
     def loggedIn(self):
-        self.loadPage('https://new.reddit.com/settings/')
+        self.loadPage('https://www.reddit.com/settings/')
         wait(4)
         # get url of the page
         url = self.driver.current_url
@@ -384,7 +384,50 @@ class Reddit(Platform):
             r = r.split('\n')[0]
         return r
 
+    
     def getPagePosts(self, n=10):
+        debug('Getting homepage post')
+        wait(1)
+
+        wait(5)
+        self.driver.get(Reddit.url)
+        wait(5)
+
+        try:
+            feed = self.driver.find_element(By.XPATH, '//shreddit-feed')
+            containers = feed.find_elements(By.XPATH, './/shreddit-post')
+        except:
+            error('Error getting shredddit-feed or shreddit-post')
+
+        posts_ids = dict()
+        for container in containers:
+            try:
+                post_id = container.get_attribute('id')
+                ps = container.find_elements(By.XPATH, './/div[@id="-post-rtjson-content"]')
+                reason = ''
+                if len(ps) > 0:
+                    reason = ps[0].text
+                posts_ids[post_id] = reason
+            except Exception as e:
+                error("Error getting post url")
+                pass
+
+
+        api = RedditPRAW()
+
+        posts = []
+        i = 0
+        for id in posts_ids:
+            post_id = id.split('_')[-1]
+            post = api.getPost(post_id)
+            post['position'] = i
+            post['reason'] = posts_ids[id]
+            post = self.convertToObject(post, 'home')
+            posts.append(post)
+
+        return posts
+
+    def dep_getPagePosts(self, n=10):
         debug('Getting homepage post')
         wait(1)
 

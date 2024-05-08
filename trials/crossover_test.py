@@ -10,12 +10,12 @@ from core.experiment.Experiment import Experiment
 from core.constants import SMALL_WAIT_TIME, WAIT_TIME
 from core.utils.IPManager import IPManager
 import json
-from core.browser.Selenium import BrowserFactory, SimpleBrowser
+from core.browser.Selenium import BrowserFactory
 from core.utils.zookeeper import getId
 from core.experiment.Subject import Subject
 from core.account_creation.GoogleWorkspace import GoogleWorkspace
-from core.utils.util import wait, bigWait
-from core.utils.log import debug, error, logging
+from core.utils.util import wait, waitMinute
+from core.utils.log import clearLog, debug, error, logging
 from core.constants import PRAW
 
 def isGoogleSigned(experiment, email):
@@ -61,8 +61,7 @@ def signinPlatforms(experiment, subjects):
             error(f'\t Error signing in {subject.id} on {subject.platform}')
             error(f'\t {e}')
         debug(f'Signed in {subject.id} on {subject.platform}')
-        bigWait(SMALL_WAIT_TIME)
-    chrome.saveBrowser()
+        waitMinute()
 
 def observe(experiment, subjects, cross, dose):
     debug("OBSERVING")
@@ -72,7 +71,7 @@ def observe(experiment, subjects, cross, dose):
         observed = experiment.getItem(plt_obs)
         if observed:
             debug(f'ALREADY OBSERVED: Platform: {subject.platform}, Subject: {subject.id}')
-            # continue
+            continue
         wait(3)
         debug(f'OBSERVING: Platform: {subject.platform}, Subject: {subject.id}')
 
@@ -94,7 +93,7 @@ def observe(experiment, subjects, cross, dose):
         except Exception as e:
             error(f'Error observing {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 def noise(experiment, topics, actions, subjects, cross):
     debug("NOISE")
@@ -104,7 +103,7 @@ def noise(experiment, topics, actions, subjects, cross):
         plt_obs = f"noise_{plt}"
         treated = experiment.getItem(plt_obs)
         if treated:
-            debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
+            debug(f'ALREADY NOISED: Platform: {subject.platform}, Subject: {subject.id}')
             continue
         wait(3)
 
@@ -127,7 +126,7 @@ def noise(experiment, topics, actions, subjects, cross):
         except Exception as e:
             error(f'Error noising {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 def treatment(experiment, topics, subjects, cross, dose):
     debug("TREATMENT")
@@ -138,7 +137,7 @@ def treatment(experiment, topics, subjects, cross, dose):
         treated = experiment.getItem(plt_obs)
         if treated:
             debug(f'ALREADY TREATED: Platform: {subject.platform}, Subject: {subject.id}')
-            # continue
+            continue
         wait(3)
         debug(f'TREATING: Platform: {subject.platform}, Subject: {subject.id}')
         if not subject.checkSignin():
@@ -159,13 +158,14 @@ def treatment(experiment, topics, subjects, cross, dose):
         except Exception as e:
             error(f'Error treating {subject.id} on {plt}')
             error(e)
-        bigWait(SMALL_WAIT_TIME)
+        waitMinute()
 
 if __name__ == '__main__':
-    # BrowserFactory('uc_single')
-    CLIENT_ID = '25'
+    BrowserFactory('uc_single')
+    # CLIENT_ID = getId()
     EXPERIMENT_ID = sys.argv[1]
     CROSSOVER = sys.argv[2]
+    CLIENT_ID = '25'
 
     print(f'CLIENT_ID: {CLIENT_ID}, EXPERIMENT_ID: {EXPERIMENT_ID}, CROSSOVER: {CROSSOVER}')
 
@@ -174,7 +174,9 @@ if __name__ == '__main__':
     
     experiment.basicSetup()
 
-    platforms = ['Twitter']
+    clearLog()
+
+    platforms = config['platforms']
     experiment_id = config['experiment_id']
 
     email = config['users'][CLIENT_ID]['email']
@@ -186,35 +188,27 @@ if __name__ == '__main__':
     noise_topics = config['noise_topics'][CROSSOVER]
     noise_actions = config['noise_actions']
     dosage = config['dosage']
-    
+    dosage = 3
+
     isGoogleSigned(experiment, email)
     subjects, chrome = setupSubjects(platforms, experiment_id, email, action, topic, replicate)
 
     isChromeSigned(chrome)
 
+    signinPlatforms(experiment, subjects)
     chrome.saveBrowser()
-
-    isChromeSigned(chrome)
-
-
-    # signinPlatforms(experiment, subjects)
     
-    # if int(CROSSOVER) > 0:
-    #     observe(experiment, subjects, CROSSOVER, -1)
+    if int(CROSSOVER) > 0:
+        observe(experiment, subjects, CROSSOVER, -1)
 
-    # noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
-    # observe(experiment, subjects, CROSSOVER, 0)
+    noise(experiment, noise_topics, noise_actions, subjects, CROSSOVER)
+    chrome.wait(1)
+    observe(experiment, subjects, CROSSOVER, 0)
+    chrome.refreshBrowser(clean=False)
 
-    debug("FORCE CLOSING....")
-    SimpleBrowser(chrome.chromeid).refreshBrowser(clean=True)
-    wait(5)
-
-    # for dose in range(dosage):
-    #     # bigWait(WAIT_TIME)
-    #     treatment(experiment, topics, subjects, CROSSOVER, dose)
-    #     bigWait(WAIT_TIME)
-    #     observe(experiment, subjects, CROSSOVER, dose+1)
-
-    treatment(experiment, topics, subjects, CROSSOVER, 0)
-
-    SimpleBrowser(chrome.chromeid).forceCloseDriver()
+    for dose in range(dosage):
+        chrome.wait(1)
+        treatment(experiment, topics, subjects, CROSSOVER, dose)
+        chrome.wait(1)
+        observe(experiment, subjects, CROSSOVER, dose+1)
+        chrome.refreshBrowser(clean=False)
