@@ -188,7 +188,8 @@ if __name__ == '__main__':
     noise_topics = config['noise_topics'][CROSSOVER]
     noise_actions = config['noise_actions']
     dosage = config['dosage']
-    
+    dosage = 3
+
     isGoogleSigned(experiment, email)
     subjects, chrome = setupSubjects(platforms, experiment_id, email, action, topic, replicate)
 

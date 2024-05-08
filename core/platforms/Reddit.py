@@ -160,7 +160,7 @@ class RedditPRAW():
 class Reddit(Platform):
     name = 'reddit'
     url='https://www.reddit.com/'
-    search_url='https://www..reddit.com/search/?q=%s'
+    search_url='https://www.reddit.com/search/?q=%s'
     creation_url='https://www.reddit.com/register/'
 
     def __init__(self, userId):
