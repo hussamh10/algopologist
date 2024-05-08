@@ -203,6 +203,11 @@
             "action": "follow",
             "replication": 4,
             "email": "testing12@spartaaceap.com"
+        },
+        "26": {
+            "action": "join",
+            "replication": 4,
+            "email": "testing12@spartaaceap.com"
         }
 
     }

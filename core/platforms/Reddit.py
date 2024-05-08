@@ -334,17 +334,16 @@ class Reddit(Platform):
         return user
 
     def followUser(self):
-        wait(1)
-        people = self.driver.find_element(By.XPATH, '//button[text()="People"]')
-        people.click()
-        wait(2)
-        self._getPeopleResults()
-        user = self._joinNthUser(0)
-        return user
+        raise Exception("No follow user in Reddit")
         
     def joinCommunity(self):
         wait(1)
-        communities = self.driver.find_element(By.XPATH, '//button[text()="Communities"]')
+        # replace www. with old. to get old reddit
+        url = self.driver.current_url
+        url = url.replace('www.', 'new.')
+        self.driver.get(url)
+        wait(10)
+        communities = self.driver.find_element(By.XPATH, '//Button[text()="Communities"]')
         communities.click()
         wait(2)
         self._getCommunityResults()
@@ -425,6 +424,7 @@ class Reddit(Platform):
             post = self.convertToObject(post, 'home')
             posts.append(post)
 
+        debug('Got posts: ' + str(len(posts)))
         return posts
 
     def dep_getPagePosts(self, n=10):
