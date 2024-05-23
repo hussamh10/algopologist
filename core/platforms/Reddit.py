@@ -533,13 +533,18 @@ class Reddit(Platform):
             post_info['position'] = i
             opened.append(post_info)
             wait(2)
-            dislike = self.driver.find_element(By.XPATH, '//button[@aria-label="downvote"]')
-            like = self.driver.find_element(By.XPATH, '//button[@aria-label="upvote"]')
-            if dislike.get_attribute('aria-pressed') == 'true':
-                debug('already disliked')
+            # dislike = self.driver.find_element(By.XPATH, '//button[@aria-label="downvote"]')
+            try:    
+                like = self.driver.find_element(By.XPATH, '//button[@aria-label="upvote"]')
+            except:
+                error('Error liking post')
                 close = self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
                 close.click()
-            elif like.get_attribute('aria-pressed') == 'true':
+            # if dislike.get_attribute('aria-pressed') == 'true':
+            #     debug('already disliked')
+            #     close = self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
+            #     close.click()
+            if like.get_attribute('aria-pressed') == 'true':
                 debug('already liked')
                 close = self.driver.find_element(By.XPATH, '//button[@aria-label="Close"]')
                 close.click()
