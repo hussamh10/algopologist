@@ -157,6 +157,10 @@ class Subject():
         debug("Refreshing profile....")
         SimpleBrowser(self.chromeid).refreshBrowser(clean)
 
+    def refreshBrowser(self, clean=False):
+        debug("Closing browser....")
+        SimpleBrowser(self.chromeid).forceCloseDriver()
+
     def wait(self, minutes):
         debug(f"Waiting: {minutes} minute(s)...")
         for i in tqdm(range(minutes)):

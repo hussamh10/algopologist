@@ -215,3 +215,5 @@ if __name__ == '__main__':
         chrome.wait(1)
         observe(experiment, subjects, CROSSOVER, dose+1)
         chrome.refreshBrowser(clean=False)
+
+    chrome.closeBrowser()
