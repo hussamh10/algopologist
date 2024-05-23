@@ -1,30 +1,38 @@
-@REM python google-blocked.py kitkat 0
-@REM python google-blocked.py kitkat 1
-@REM python google-blocked.py kitkat 2
-@REM python google-blocked.py kitkat 3
-@REM taskkill /F /IM chrome.exe
-@REM python google-blocked.py kitkat 4
-@REM python google-blocked.py kitkat 5
-@REM python google-blocked.py kitkat 6
-@REM python google-blocked.py kitkat 7
-@REM taskkill /F /IM chrome.exe
-@REM python google-blocked.py kitkat 8
-@REM python google-blocked.py kitkat 9
-@REM python google-blocked.py kitkat 10
-@REM python google-blocked.py kitkat 11
-@REM python google-blocked.py kitkat 12
-@REM taskkill /F /IM chrome.exe
-@REM python google-blocked.py kitkat 13
-@REM python google-blocked.py kitkat 14
-@REM python google-blocked.py kitkat 15
-@REM python google-blocked.py kitkat 16
-@REM taskkill /F /IM chrome.exe
-@REM python google-blocked.py kitkat 17
-@REM python google-blocked.py kitkat 18
-@REM python google-blocked.py kitkat 19
-@REM python google-blocked.py kitkat 20
+python google-blocked.py butterfinger 0
+python google-blocked.py butterfinger 1
+python google-blocked.py butterfinger 2
+python google-blocked.py butterfinger 3
 taskkill /F /IM chrome.exe
-python google-blocked.py kitkat 21
-python google-blocked.py kitkat 22
-python google-blocked.py kitkat 23
-python google-blocked.py kitkat 24
+python google-blocked.py butterfinger 4
+python google-blocked.py butterfinger 5
+python google-blocked.py butterfinger 6
+python google-blocked.py butterfinger 7
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 8
+python google-blocked.py butterfinger 9
+python google-blocked.py butterfinger 10
+python google-blocked.py butterfinger 11
+python google-blocked.py butterfinger 12
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 13
+python google-blocked.py butterfinger 14
+python google-blocked.py butterfinger 15
+python google-blocked.py butterfinger 16
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 17
+python google-blocked.py butterfinger 18
+python google-blocked.py butterfinger 19
+python google-blocked.py butterfinger 20
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 21
+python google-blocked.py butterfinger 22
+python google-blocked.py butterfinger 23
+python google-blocked.py butterfinger 24
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 25
+python google-blocked.py butterfinger 26
+python google-blocked.py butterfinger 27
+python google-blocked.py butterfinger 28
+taskkill /F /IM chrome.exe
+python google-blocked.py butterfinger 29
+python google-blocked.py butterfinger 30

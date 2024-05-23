@@ -91,6 +91,8 @@ if __name__ == "__main__":
           "password": constants.BASIC_PASSWORD,
           "primaryEmail": email,
         }
+        print(user)
         addUser(service, user)
       except Exception as e:
+         print(e)
          pass
