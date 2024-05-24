@@ -1,10 +1,9 @@
-python crossover_local.py kitkat 0 26
+python crossover_local.py katkit 0 26
 timeout /t 600 /nobreak
-python crossover_local.py kitkat 0 27
+python crossover_local.py katkit 0 27
 timeout /t 600 /nobreak
-python crossover_local.py kitkat 0 28
+python crossover_local.py katkit 0 28
 timeout /t 600 /nobreak
-python crossover_local.py kitkat 0 29
+python crossover_local.py katkit 0 29
 timeout /t 600 /nobreak
-python crossover_local.py kitkat 0 30
-shutdown -l
+python crossover_local.py katkit 0 30
