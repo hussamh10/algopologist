@@ -146,13 +146,13 @@ class Twitter(Platform):
         return False
 
     def isLiked(self, tweet):
-        likeds = tweet.find_elements(By.XPATH, './/div[@data-testid="unlike"]')
+        likeds = tweet.find_elements(By.XPATH, './/*[@data-testid="unlike"]')
         if len(likeds) > 0:
             return True
         return False
 
     def likable(self):
-        likeds = self.driver.find_elements(By.XPATH, '//div[@aria-label="Liked"]')
+        likeds = self.driver.find_elements(By.XPATH, '//*[@aria-label="Liked"]')
         if len(likeds) > 0:
             return False
         return True
@@ -179,7 +179,7 @@ class Twitter(Platform):
                 debug('already opened')
                 continue
 
-            tweet_text = tweet.find_element(By.XPATH, './/div[@data-testid="tweetText"]')
+            tweet_text = tweet.find_element(By.XPATH, './/*[@data-testid="tweetText"]')
             tweet_text.click()
             sleep(2)
             debug('opened')
@@ -189,7 +189,7 @@ class Twitter(Platform):
                 debug('is ad')
                 continue
 
-            back = self.driver.find_elements(By.XPATH, '//div[@aria-label="Back"]')
+            back = self.driver.find_elements(By.XPATH, '//*[@aria-label="Back"]')
             if len(back) > 0:
                 back[0].click()
             else:
@@ -217,10 +217,14 @@ class Twitter(Platform):
                 self.scrollDown()
                 tweets = self.driver.find_elements(By.XPATH, '//article[@data-testid="tweet"]')
             tweet = tweets[i]
-            post = self.getPost(tweet)
+            try:
+                post = self.getPost(tweet)
+            except Exception as e:
+                error('Could not get post')
+                continue
             post['position'] = i
             post = self.convertToObject(post, 'search')
-            tweet_text = tweet.find_element(By.XPATH, './/div[@data-testid="tweetText"]')
+            tweet_text = tweet.find_element(By.XPATH, './/*[@data-testid="tweetText"]')
             tweet_text.click()
             sleep(2)
             debug('opened')
@@ -235,14 +239,14 @@ class Twitter(Platform):
                 continue
 
             if self.likable():
-                like = self.driver.find_element(By.XPATH, '//div[@data-testid="like"]')
+                like = self.driver.find_element(By.XPATH, '//*[@data-testid="like"]')
                 like.click()
                 liked = post.copy()
                 debug('liked')
                 waitMinute()
                 return liked, opened
 
-            back = self.driver.find_elements(By.XPATH, '//div[@aria-label="Back"]')
+            back = self.driver.find_elements(By.XPATH, '//*[@aria-label="Back"]')
             if len(back) > 0:
                 back[0].click()
             else:
@@ -291,11 +295,11 @@ class Twitter(Platform):
         followers = convertStringToNumber(followers)
         user['followers'] = followers
 
-        username = self.driver.find_element(By.XPATH, '//div[@data-testid="UserName"]')
+        username = self.driver.find_element(By.XPATH, '//*[@data-testid="UserName"]')
         user['name'] = username.text.split('\n')[0]
 
         try:
-            description = self.driver.find_element(By.XPATH, '//div[@data-testid="UserDescription"]')
+            description = self.driver.find_element(By.XPATH, '//*[@data-testid="UserDescription"]')
             user['description'] = description.text
         except:
             user['description'] = None
@@ -309,7 +313,7 @@ class Twitter(Platform):
         people.click()
         sleep(2)
 
-        users = self.driver.find_elements(By.XPATH, '//div[@data-testid="UserCell"]')
+        users = self.driver.find_elements(By.XPATH, '//*[@data-testid="UserCell"]')
         
         position = -1
         for user in users:
@@ -366,30 +370,30 @@ class Twitter(Platform):
                     post['username'] = link.split('/')[-4]
 
         try:
-            post['text'] = tweet.find_element(By.XPATH, './/div[@data-testid="tweetText"]').text
+            post['text'] = tweet.find_element(By.XPATH, './/*[@data-testid="tweetText"]').text
         except:
             post['text'] = ''
             error('Could not find text')
         post['isAd'] = self.isAd(tweet)
 
-        group = tweet.find_element(By.XPATH, './/div[@role="group"]')
+        group = tweet.find_element(By.XPATH, './/*[@role="group"]')
         group = group.text.split('\n')
 
         if len(group) != 4:
-            group = tweet.find_element(By.XPATH, './/div[@role="group"]')
+            group = tweet.find_element(By.XPATH, './/*[@role="group"]')
             group = group.text.split('\n')
 
-        replies = tweet.find_element(By.XPATH, './/div[@data-testid="reply"]').text
-        post['comments'] = convertStringToNumber(replies)
+        # replies = tweet.find_element(By.XPATH, './/*[@data-testid="reply"]').text
+        # post['comments'] = convertStringToNumber(replies)
         
-        retweets = tweet.find_element(By.XPATH, './/div[@data-testid="retweet"]').text
+        retweets = tweet.find_element(By.XPATH, './/*[@data-testid="retweet"]').text
         post['retweets'] = convertStringToNumber(retweets)
 
         _liked = self.isLiked(tweet)
         if _liked:
-            likes = tweet.find_element(By.XPATH, './/div[@data-testid="unlike"]').text
+            likes = tweet.find_element(By.XPATH, './/*[@data-testid="unlike"]').text
         else:
-            likes = tweet.find_element(By.XPATH, './/div[@data-testid="like"]').text
+            likes = tweet.find_element(By.XPATH, './/*[@data-testid="like"]').text
         post['likes'] = convertStringToNumber(likes)
 
         post['views'] = convertStringToNumber(group[-1])
@@ -397,11 +401,11 @@ class Twitter(Platform):
         #has video
         post['attachment'] = 'none'
 
-        videos = tweet.find_elements(By.XPATH, './/div[@data-testid="videoComponent"]')
+        videos = tweet.find_elements(By.XPATH, './/*[@data-testid="videoComponent"]')
         if len(videos) > 0:
             post['attachment'] = 'video'
 
-        images = tweet.find_elements(By.XPATH, './/div[@aria-label="Image"]')
+        images = tweet.find_elements(By.XPATH, './/*[@aria-label="Image"]')
         if len(images) > 0:
             post['attachment'] = 'image'
 
@@ -471,7 +475,7 @@ class Twitter(Platform):
         return obj
 
     def isJoined(self, l):
-        joined = l.find_elements(By.XPATH, './/div[@aria-label="Following"]')
+        joined = l.find_elements(By.XPATH, './/*[@aria-label="Following"]')
         if len(joined) > 0:
             return True
         return False
@@ -483,7 +487,7 @@ class Twitter(Platform):
         people.click()
         sleep(2)
 
-        lists = self.driver.find_elements(By.XPATH, '//div[@data-testid="listCell"]')
+        lists = self.driver.find_elements(By.XPATH, '//*[@data-testid="listCell"]')
         
         for l in lists:
             text = l.text.split('\n')
@@ -496,7 +500,7 @@ class Twitter(Platform):
                 debug(f'Already followed {listname}')
                 continue
 
-            join_button = l.find_element(By.XPATH, './/div[@aria-label="Follow"]')
+            join_button = l.find_element(By.XPATH, './/*[@aria-label="Follow"]')
             join_button.click()
             debug(f'Followed {listname}')
             return listname

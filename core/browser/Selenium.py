@@ -157,7 +157,7 @@ class SimpleBrowser(Browser):
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-infobars")
         
-        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False)
+        instance.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=CHROME_VERSION)
         sleep(4)
         monkey.GotIt()
         sleep(2)
@@ -175,7 +175,7 @@ class SimpleBrowser(Browser):
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-infobars")
         
-        self.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False)
+        self.driver = uc.Chrome(user_data_dir=path, options=options, use_subprocess=False, version_main=CHROME_VERSION)
         sleep(4)
         monkey.GotIt()
         sleep(2)

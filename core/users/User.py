@@ -197,8 +197,8 @@ class User:
             scrolls = scrolls * 2
         
         for i in range(scrolls):
-            self.platform.scrollDown()
             posts += self.platform.getPagePosts(posts_n)
+            self.platform.scrollDown()
             sleep(2)
         return posts
 
