@@ -2,6 +2,7 @@ import json
 import os
 import sqlite3
 from core.constants import BASE_DIR
+from core.utils.log import info
 
 class Experiment(): 
     _instance = None
@@ -85,10 +86,12 @@ class Experiment():
 
 
     def getItem(self, item):
+        info(f'··· GET ITEM: {item}')
         items = json.load(open(os.path.join(self.path, 'items.json'), 'r'))
         return items[f'{item}']
 
     def updateItem(self, item, value):
+        info(f'··· UPDATE ITEM: {item}: {value}')
         items = json.load(open(os.path.join(self.path, 'items.json'), 'r'))
         items[f'{item}'] = value
         json.dump(items, open(os.path.join(self.path, 'items.json'), 'w'))

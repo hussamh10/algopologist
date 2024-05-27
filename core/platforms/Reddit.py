@@ -45,14 +45,18 @@ class RedditPRAW():
 
         
     def isPostInDB(self, id):
-        db = sql.connect(self.db_path)
-        query = f"SELECT * FROM posts WHERE id='{id}'"
-        res = db.execute(query).fetchall()
-        db.close()
-        if len(res) == 0:
+        try:
+            db = sql.connect(self.db_path)
+            query = f"SELECT * FROM posts WHERE id='{id}'"
+            res = db.execute(query).fetchall()
+            db.close()
+            if len(res) == 0:
+                return False
+            else:
+                return True
+        except Exception as e:
+            error(e)
             return False
-        else:
-            return True
 
     def isArchived(self, id):
         submission = self.reddit_client.submission(id)
