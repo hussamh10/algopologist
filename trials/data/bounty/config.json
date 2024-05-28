@@ -1,0 +1,234 @@
+{
+    "crossovers": 3,
+    "dosage": 5,
+    "experiment_id": "bounty",
+    "email_template": "spartaaceap",
+    "noise_actions": [
+        "like",
+        "like",
+        "like"
+    ],
+    "actions": [
+        "search",
+        "like",
+        "follow",
+        "join",
+        "open",
+        ""
+    ],
+    "platforms": [
+        "YouTube",
+        "Reddit",
+        "Twitter"
+    ],
+    "cross":{
+        "0": {
+            "topic": "Fitness"
+        },
+        "1":{
+            "topic": "Elections"
+        },
+        "2":{
+            "topic": "NFL"
+        }
+    },
+    "replications": 5,
+    "noise_topics": {
+        "0": {
+            "youtube": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "reddit": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" },
+            "twitter": { "search": "Dinner Recipes", "like": "Dinner Recipes", "follow": "Cooking", "join": "Cooking", "open": "Dinner Recipes", "": "" }
+        },
+        "1": {
+            "youtube": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "reddit": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" },
+            "twitter": { "search": "Lunch Recipes", "like": "Lunch Recipes", "follow": "Cooking", "join": "Cooking", "open": "Lunch Recipes", "": "" }
+        },
+        "2": {
+            "youtube": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "reddit": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" },
+            "twitter": { "search": "Breakfast Recipes", "like": "Breakfast Recipes", "follow": "Cooking", "join": "Cooking", "open": "Breakfast Recipes", "": "" }
+        }
+    },
+    "topics": {
+        "NFL": {
+            "youtube": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "reddit": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"},
+            "twitter": { "like": "Kansas city chiefs", "follow": "NFL", "join": "NFL", "open": "Kansas city chiefs", "": "" , "search": "Kansas city chiefs"}
+        },
+        "Fitness": {
+            "youtube": { "like": "chest workout", "follow": "fitness", "join": "fitness", "open": "chess workout", "": "" , "search": "chest workout"},
+            "reddit": { "like": "chest workout", "follow": "fitness coach", "join": "fitness", "open": "chest workout", "": "" , "search": "chest workout"},
+            "twitter": { "like": "chest workout", "follow": "fitness coach", "join": "Fitness", "open": "chest workout", "": "" , "search": "chest workout"}
+        },
+        "Elections": {
+            "youtube": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "reddit": { "like": "presidential campaign 2024", "follow": "US election 2024 news", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"},
+            "twitter": { "like": "presidential campaign 2024", "follow": "presidential campaign 2024", "join": "US elections news", "open": "presidential campaign 2024", "": "" , "search": "presidential campaign 2024"}
+        },
+        "":{
+
+            "youtube": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "reddit": { "like": "", "follow": "", "join": "", "open": "", "": "" },
+            "twitter": { "like": "", "follow": "", "join": "", "open": "", "": "" }
+        }
+    },
+    "users": {
+        "0": {
+            "action": "like",
+            "replication": 0,
+            "email": "butterfinger0@spartachocolat.com"
+        },
+        "1": {
+            "action": "like",
+            "replication": 1,
+            "email": "butterfinger1@spartachocolat.com"
+        },
+        "2": {
+            "action": "like",
+            "replication": 2,
+            "email": "butterfinger2@spartachocolat.com"
+        },
+        "3": {
+            "action": "like",
+            "replication": 3,
+            "email": "butterfinger3@spartachocolat.com"
+        },
+        "4": {
+            "action": "follow",
+            "replication": 0,
+            "email": "butterfinger4@spartachocolat.com"
+        },
+        "5": {
+            "action": "follow",
+            "replication": 1,
+            "email": "butterfinger5@spartachocolat.com"
+        },
+        "6": {
+            "action": "follow",
+            "replication": 2,
+            "email": "butterfinger6@spartachocolat.com"
+        },
+        "7": {
+            "action": "follow",
+            "replication": 3,
+            "email": "butterfinger7@spartachocolat.com"
+        },
+        "8": {
+            "action": "join",
+            "replication": 0,
+            "email": "butterfinger8@spartachocolat.com"
+        },
+        "9": {
+            "action": "join",
+            "replication": 1,
+            "email": "butterfinger9@spartachocolat.com"
+        },
+        "10": {
+            "action": "join",
+            "replication": 2,
+            "email": "butterfinger10@spartachocolat.com"
+        },
+        "11": {
+            "action": "join",
+            "replication": 3,
+            "email": "butterfinger11@spartachocolat.com"
+        },
+        "12": {
+            "action": "open",
+            "replication": 0,
+            "email": "butterfinger12@spartachocolat.com"
+        },
+        "13": {
+            "action": "open",
+            "replication": 1,
+            "email": "butterfinger13@spartachocolat.com"
+        },
+        "14": {
+            "action": "open",
+            "replication": 2,
+            "email": "butterfinger14@spartachocolat.com"
+        },
+        "15": {
+            "action": "open",
+            "replication": 3,
+            "email": "butterfinger15@spartachocolat.com"
+        },
+        "16": {
+            "action": "search",
+            "replication": 0,
+            "email": "butterfinger16@spartachocolat.com"
+        },
+        "17": {
+            "action": "search",
+            "replication": 1,
+            "email": "butterfinger17@spartachocolat.com"
+        },
+        "18": {
+            "action": "search",
+            "replication": 2,
+            "email": "butterfinger18@spartachocolat.com"
+        },
+        "19": {
+            "action": "search",
+            "replication": 3,
+            "email": "butterfinger19@spartachocolat.com"
+        },
+        "20": {
+            "action": "",
+            "replication": 0,
+            "email": "butterfinger20@spartachocolat.com"
+        },
+        "21": {
+            "action": "",
+            "replication": 1,
+            "email": "butterfinger21@spartachocolat.com"
+        },
+        "22": {
+            "action": "",
+            "replication": 2,
+            "email": "butterfinger22@spartachocolat.com"
+        },
+        "23": {
+            "action": "",
+            "replication": 3,
+            "email": "butterfinger23@spartachocolat.com"
+        },
+        "24": {
+            "action": "join",
+            "replication": 4,
+            "email": "butterfinger24@spartachocolat.com"
+        },
+        "25": {
+            "action": "follow",
+            "replication": 4,
+            "email": "butterfinger25@spartachocolat.com"
+        },
+        "26": {
+            "action": "like",
+            "replication": 4,
+            "email": "butterfinger26@spartachocolat.com"
+        },
+        "27": {
+            "action": "open",
+            "replication": 4,
+            "email": "butterfinger27@spartachocolat.com"
+        },
+        "28": {
+            "action": "search",
+            "replication": 4,
+            "email": "butterfinger28@spartachocolat.com"
+        },
+
+        "29": {
+            "action": "like",
+            "replication": 99,
+            "email": "butterfinger29@spartachocolat.com"
+        },
+        "30": {
+            "action": "like",
+            "replication": 99,
+            "email": "butterfinger30@spartachocolat.com"
+        }
+    }
+}
