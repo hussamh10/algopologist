@@ -77,158 +77,147 @@
         "0": {
             "action": "like",
             "replication": 0,
-            "email": "butterfinger0@spartachocolat.com"
+            "email": "bounty0@spartaaceap.com"
         },
         "1": {
             "action": "like",
             "replication": 1,
-            "email": "butterfinger1@spartachocolat.com"
+            "email": "bounty1@spartaaceap.com"
         },
         "2": {
             "action": "like",
             "replication": 2,
-            "email": "butterfinger2@spartachocolat.com"
+            "email": "bounty2@spartaaceap.com"
         },
         "3": {
             "action": "like",
             "replication": 3,
-            "email": "butterfinger3@spartachocolat.com"
+            "email": "bounty3@spartaaceap.com"
         },
         "4": {
             "action": "follow",
             "replication": 0,
-            "email": "butterfinger4@spartachocolat.com"
+            "email": "bounty4@spartaaceap.com"
         },
         "5": {
             "action": "follow",
             "replication": 1,
-            "email": "butterfinger5@spartachocolat.com"
+            "email": "bounty5@spartaaceap.com"
         },
         "6": {
             "action": "follow",
             "replication": 2,
-            "email": "butterfinger6@spartachocolat.com"
+            "email": "bounty6@spartaaceap.com"
         },
         "7": {
             "action": "follow",
             "replication": 3,
-            "email": "butterfinger7@spartachocolat.com"
+            "email": "bounty7@spartaaceap.com"
         },
         "8": {
             "action": "join",
             "replication": 0,
-            "email": "butterfinger8@spartachocolat.com"
+            "email": "bounty8@spartaaceap.com"
         },
         "9": {
             "action": "join",
             "replication": 1,
-            "email": "butterfinger9@spartachocolat.com"
+            "email": "bounty9@spartaaceap.com"
         },
         "10": {
             "action": "join",
             "replication": 2,
-            "email": "butterfinger10@spartachocolat.com"
+            "email": "bounty10@spartaaceap.com"
         },
         "11": {
             "action": "join",
             "replication": 3,
-            "email": "butterfinger11@spartachocolat.com"
+            "email": "bounty11@spartaaceap.com"
         },
         "12": {
             "action": "open",
             "replication": 0,
-            "email": "butterfinger12@spartachocolat.com"
+            "email": "bounty12@spartaaceap.com"
         },
         "13": {
             "action": "open",
             "replication": 1,
-            "email": "butterfinger13@spartachocolat.com"
+            "email": "bounty13@spartaaceap.com"
         },
         "14": {
             "action": "open",
             "replication": 2,
-            "email": "butterfinger14@spartachocolat.com"
+            "email": "bounty14@spartaaceap.com"
         },
         "15": {
             "action": "open",
             "replication": 3,
-            "email": "butterfinger15@spartachocolat.com"
+            "email": "bounty15@spartaaceap.com"
         },
         "16": {
             "action": "search",
             "replication": 0,
-            "email": "butterfinger16@spartachocolat.com"
+            "email": "bounty16@spartaaceap.com"
         },
         "17": {
             "action": "search",
             "replication": 1,
-            "email": "butterfinger17@spartachocolat.com"
+            "email": "bounty17@spartaaceap.com"
         },
         "18": {
             "action": "search",
             "replication": 2,
-            "email": "butterfinger18@spartachocolat.com"
+            "email": "bounty18@spartaaceap.com"
         },
         "19": {
             "action": "search",
             "replication": 3,
-            "email": "butterfinger19@spartachocolat.com"
+            "email": "bounty19@spartaaceap.com"
         },
         "20": {
             "action": "",
             "replication": 0,
-            "email": "butterfinger20@spartachocolat.com"
+            "email": "bounty20@spartaaceap.com"
         },
         "21": {
             "action": "",
             "replication": 1,
-            "email": "butterfinger21@spartachocolat.com"
+            "email": "bounty21@spartaaceap.com"
         },
         "22": {
             "action": "",
             "replication": 2,
-            "email": "butterfinger22@spartachocolat.com"
+            "email": "bounty22@spartaaceap.com"
         },
         "23": {
             "action": "",
             "replication": 3,
-            "email": "butterfinger23@spartachocolat.com"
+            "email": "bounty23@spartaaceap.com"
         },
         "24": {
             "action": "join",
             "replication": 4,
-            "email": "butterfinger24@spartachocolat.com"
+            "email": "bounty24@spartaaceap.com"
         },
         "25": {
             "action": "follow",
             "replication": 4,
-            "email": "butterfinger25@spartachocolat.com"
+            "email": "bounty25@spartaaceap.com"
         },
         "26": {
             "action": "like",
             "replication": 4,
-            "email": "butterfinger26@spartachocolat.com"
+            "email": "bounty26@spartaaceap.com"
         },
         "27": {
             "action": "open",
             "replication": 4,
-            "email": "butterfinger27@spartachocolat.com"
+            "email": "bounty27@spartaaceap.com"
         },
         "28": {
             "action": "search",
             "replication": 4,
-            "email": "butterfinger28@spartachocolat.com"
-        },
-
-        "29": {
-            "action": "like",
-            "replication": 99,
-            "email": "butterfinger29@spartachocolat.com"
-        },
-        "30": {
-            "action": "like",
-            "replication": 99,
-            "email": "butterfinger30@spartachocolat.com"
+            "email": "bounty28@spartaaceap.com"
         }
     }
 }
